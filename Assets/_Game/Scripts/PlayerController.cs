@@ -5,8 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D), typeof(Animator))]
 public class PlayerController : MonoBehaviour
 {
-    public float m_Speed = 0.3f;
-    public Vector2 m_Movement;
+    public float m_Speed = 2.2f;
+    private Vector2 m_Movement;
     protected Rigidbody2D m_Rb;
     protected Animator m_Anim;
 
