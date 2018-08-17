@@ -16,9 +16,10 @@ MonoBehaviour:
   - {fileID: 114788089366497760}
   EditorEvents:
   - {fileID: 114729813111237760}
+  - {fileID: 114991515023131192}
   MasterBankRef: {fileID: 114788089366497760}
   StringsBankRef: {fileID: 114329789679712220}
-  stringsBankWriteTime: 636701317247287000
+  stringsBankWriteTime: 636701327234438232
   cacheVersion: 2
 --- !u!114 &114247662425996768
 MonoBehaviour:
@@ -51,11 +52,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\FMOD_Assets\sound\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636701317247287000
+  lastModified: 636701327234438232
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 720
+    Value: 768
   Exists: 1
 --- !u!114 &114543246554030780
 MonoBehaviour:
@@ -111,9 +112,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\Probook\Desktop\Jam\Extra-Credits-Jam-2018\Assets\FMOD_Assets\sound\Build\Desktop\Master
     Bank.bank
-  lastModified: 636701317249507127
+  lastModified: 636701327219717390
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1093600
+    Value: 1332416
   Exists: 1
+--- !u!114 &114991515023131192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/TitleST
+  guid: 13eca0dd0ff6cc46a08efd7aef88b904
+  Banks:
+  - {fileID: 114788089366497760}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 19243
