@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{d7bbb450-9364-439b-a106-7a44b452a1d4}">
+        <property name="name">
+            <value>tile</value>
+        </property>
+        <relationship name="folder">
+            <destination>{0bec7023-cad8-4ae2-bd25-a34002f37a5b}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{e6514dc1-aea0-4548-bce2-b23539d4e008}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{e6514dc1-aea0-4548-bce2-b23539d4e008}">
+        <property name="maximum">
+            <value>4</value>
+        </property>
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+    </object>
+</objects>
