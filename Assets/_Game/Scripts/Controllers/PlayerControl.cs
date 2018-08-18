@@ -7,15 +7,42 @@ using UnityEngine;
 /// </summary>
 public class PlayerControl : BaseMovementController
 {
-
+	//FMOD
+	//UI
+	[FMODUnity.EventRef]
+	//"stepsEvent" stores event path
+	public string stepsEvent;
+	
+	//Event instance
+	FMOD.Studio.EventInstance steps;
+	
+	//TILE VARIABLE HERE (substitute number)
+	int tile = 1;
+	
     private void OnEnable()
     {
         EventManager.OnSetPlayerControl += SetPlayerControl;
+		
+		//FMOD
+		//Instances "steps" and enables it
+		steps = FMODUnity.RuntimeManager.CreateInstance(stepsEvent);
+        steps.start();
+		//Attaches instance to object
+		FMODUnity.RuntimeManager.AttachInstanceToGameObject(steps, GetComponent<Transform>(), GetComponent<Rigidbody>());
+
+		//starts "speed" as 0
+		steps.setParameterValue("speed", 0);
+		//starts "tile" as 1 (wood)
+		steps.setParameterValue("tile", 1);
     }
 
     private void OnDisable()
     {
         EventManager.OnSetPlayerControl -= SetPlayerControl;
+		
+		//FMOD
+		//Releases "steps" resources
+		steps.release();
     }
 
     public bool isControlDisabled = false;
@@ -67,7 +94,18 @@ public class PlayerControl : BaseMovementController
                     if (_MovementPath == Vector3.up) { _TileMove._FacingDirection = MoveDirection.UP; }
                     if (_MovementPath == Vector3.down) { _TileMove._FacingDirection = MoveDirection.DOWN; }
                     transform.position += _MovementPath * Time.deltaTime * _TileMove.Speed;
+					
+					//FMOD
+					//if player is moving change speed parameter to hear sound
+					steps.setParameterValue("speed", 80);
                 }
+				
+				if (!isMoving)
+				{
+					//FMOD
+					//if player is not moving change speed to 0 so no sound is heard
+					steps.setParameterValue("speed", 0);
+				}
             }
             else
             {
