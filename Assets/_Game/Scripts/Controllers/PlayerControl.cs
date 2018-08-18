@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using Fungus;
+using UnityEngine;
 
 /// <summary>
 /// This class is responsible for handling player movement and player interaction controls. Anything that involves input access can be invoked/handled through here.
