@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{f7029497-3025-45ce-ad10-3eb8a4a02f97}">
+        <property name="assetPath">
+            <value>metalHardWallHit02.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>0.52700680272108846</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{5e33648b-59db-4362-be37-9eb28d6ebdbc}</destination>
+        </relationship>
+    </object>
+</objects>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{8cf83911-5a88-443e-ad3c-f71ea9cf883e}">
+        <property name="name">
+            <value>wallTile</value>
+        </property>
+        <relationship name="folder">
+            <destination>{0bec7023-cad8-4ae2-bd25-a34002f37a5b}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{e9e6a44d-a6b5-4461-b46a-16d8ea70768d}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{e9e6a44d-a6b5-4461-b46a-16d8ea70768d}">
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+    </object>
+</objects>

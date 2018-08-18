@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{92a31834-15d7-45da-8c89-b7cd98ea989f}">
+        <property name="assetPath">
+            <value>packZipper06.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>1.1764172335600906</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{5e33648b-59db-4362-be37-9eb28d6ebdbc}</destination>
+        </relationship>
+    </object>
+</objects>
