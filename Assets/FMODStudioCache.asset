@@ -13,17 +13,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 114329789679712220}
-  - {fileID: 114578247168382726}
+  - {fileID: 114077462862061656}
   EditorEvents:
   - {fileID: 114038278223235238}
   - {fileID: 114210983120836860}
   - {fileID: 114641560587111616}
-  - {fileID: 114907540315088494}
-  - {fileID: 114847380058112968}
-  - {fileID: 114995573018255596}
-  MasterBankRef: {fileID: 114578247168382726}
+  - {fileID: 114418938466831902}
+  - {fileID: 114643565072135150}
+  - {fileID: 114910565674368816}
+  MasterBankRef: {fileID: 114077462862061656}
   StringsBankRef: {fileID: 114329789679712220}
-  stringsBankWriteTime: 636702408314415399
+  stringsBankWriteTime: 636702094210245700
   cacheVersion: 2
 --- !u!114 &114038278223235238
 MonoBehaviour:
@@ -39,7 +39,7 @@ MonoBehaviour:
   Path: event:/walpole
   guid: 06bcd7da985b8246ab79326265db929b
   Banks:
-  - {fileID: 114578247168382726}
+  - {fileID: 114077462862061656}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -62,7 +62,7 @@ MonoBehaviour:
   Min: 0
   Max: 4
   Default: 0
---- !u!114 &114052515695043174
+--- !u!114 &114077462862061656
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -70,29 +70,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: speed
-  Min: 0
-  Max: 100
-  Default: 0
+  Path: D:\Users\monyd\Documents\Projects\Unity\Extra-Credits-Jam-2018\Assets\FMOD_Assets\sound\Build\Desktop\Master
+    Bank.bank
+  lastModified: 636702094210235706
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1240384
+  Exists: 1
 --- !u!114 &114085861646104272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: tile
-  Min: 0
-  Max: 4
-  Default: 0
---- !u!114 &114203579429892872
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,7 +110,7 @@ MonoBehaviour:
   Path: event:/st/titleST
   guid: 13eca0dd0ff6cc46a08efd7aef88b904
   Banks:
-  - {fileID: 114578247168382726}
+  - {fileID: 114077462862061656}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -175,7 +164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\FMOD_Assets\sound\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636702408314415399
+  lastModified: 636702094210245700
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -200,7 +189,59 @@ MonoBehaviour:
   - Name: Desktop
     Value: 663744
   Exists: 1
---- !u!114 &114431906416673544
+--- !u!114 &114367975910537920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: speed
+  Min: 0
+  Max: 100
+  Default: 0
+--- !u!114 &114418666061781922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: speed
+  Min: 0
+  Max: 100
+  Default: 0
+--- !u!114 &114418938466831902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/misc/page
+  guid: 1a248adcc3cf86439011e6ff2ed5477b
+  Banks:
+  - {fileID: 114077462862061656}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2163
+--- !u!114 &114515239860457618
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -234,40 +275,6 @@ MonoBehaviour:
   - Name: Desktop
     Value: 13116
   Exists: 0
---- !u!114 &114563646495623616
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: speed
-  Min: 0
-  Max: 100
-  Default: 0
---- !u!114 &114578247168382726
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\omarm\Documents\Unity\Projects\Extra-Credits-Jam-2018\Assets\FMOD_Assets\sound\Build\Desktop\Master
-    Bank.bank
-  lastModified: 636702408314385471
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 1240384
-  Exists: 1
 --- !u!114 &114641560587111616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -282,16 +289,53 @@ MonoBehaviour:
   Path: event:/sfx/char/steps
   guid: 64dc2a2677566f4fabcd32bc75957a6f
   Banks:
-  - {fileID: 114578247168382726}
+  - {fileID: 114077462862061656}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114203579429892872}
-  - {fileID: 114052515695043174}
+  - {fileID: 114940050100075010}
+  - {fileID: 114418666061781922}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &114643565072135150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/impact/falling
+  guid: 29be3e8449854f4bac0bc856d5db692a
+  Banks:
+  - {fileID: 114077462862061656}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1398
+--- !u!114 &114682623373149304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: speed
+  Min: 0
+  Max: 100
+  Default: 0
 --- !u!114 &114729813111237760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -396,7 +440,7 @@ MonoBehaviour:
   Min: 0
   Max: 4
   Default: 0
---- !u!114 &114845698284346154
+--- !u!114 &114865664134889222
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -407,32 +451,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: speed
+  Name: tile
   Min: 0
-  Max: 100
+  Max: 4
   Default: 0
---- !u!114 &114847380058112968
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/sfx/impact/falling
-  guid: 29be3e8449854f4bac0bc856d5db692a
-  Banks:
-  - {fileID: 114578247168382726}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1398
 --- !u!114 &114866473524821570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -452,22 +474,7 @@ MonoBehaviour:
   - Name: Desktop
     Value: 663744
   Exists: 1
---- !u!114 &114898376931072644
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: tile
-  Min: 0
-  Max: 4
-  Default: 0
---- !u!114 &114907540315088494
+--- !u!114 &114910565674368816
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -478,17 +485,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/sfx/misc/page
-  guid: 1a248adcc3cf86439011e6ff2ed5477b
+  Path: event:/sfx/impact/wall
+  guid: c03b158d3e3d704da5f92ecda97f1f07
   Banks:
-  - {fileID: 114578247168382726}
+  - {fileID: 114077462862061656}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 2163
+  Parameters:
+  - {fileID: 114682623373149304}
+  - {fileID: 114515239860457618}
+  MinDistance: 50
+  MaxDistance: 250
+  Length: 1389
 --- !u!114 &114936583020712836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -503,6 +512,21 @@ MonoBehaviour:
   Name: speed
   Min: 0
   Max: 100
+  Default: 0
+--- !u!114 &114940050100075010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: tile
+  Min: 0
+  Max: 4
   Default: 0
 --- !u!114 &114972615745340938
 MonoBehaviour:
@@ -540,27 +564,3 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 19243
---- !u!114 &114995573018255596
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/sfx/impact/wall
-  guid: c03b158d3e3d704da5f92ecda97f1f07
-  Banks:
-  - {fileID: 114578247168382726}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 114845698284346154}
-  - {fileID: 114431906416673544}
-  MinDistance: 50
-  MaxDistance: 250
-  Length: 1389
