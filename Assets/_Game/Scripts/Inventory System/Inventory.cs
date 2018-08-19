@@ -65,14 +65,20 @@ public class Inventory : MonoBehaviour
         int id = (int)it;
         foreach (var i in slots)
             if (i.HasItem(id))
-                return i.UseItem();
+            {
+                var b = i.UseItem();
+                CompactInv();
+                return b;
+            }
 
         return null;
     }
 
     public Item UseItem(int slotNum)
     {
-        return slotNum >= slots.Length ? null : slots[slotNum].UseItem();
+        var b = slotNum >= slots.Length ? null : slots[slotNum].UseItem();
+        CompactInv();
+        return b;
     }
 
     void CompactInv()
@@ -101,6 +107,7 @@ public class Inventory : MonoBehaviour
                 continue;
 
             s.RemoveItem();
+            CompactInv();
             return;
         }
     }
