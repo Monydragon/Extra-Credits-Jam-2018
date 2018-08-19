@@ -41,20 +41,34 @@ public class Inventory : MonoBehaviour
 
     void Test()
     {
-        var it = ItemSystemUtility.GetItemCopy<Item>((int)ItemItems.Pudding, ItemType.Item);
-        it.stackCount = 4;
+        var it = ItemSystemUtility.GetItemCopy<Item>((int)ItemItems.MoldyBread, ItemType.Item);
+        it.stackCount = 5;
+        Inventory.Inv.PutItem(it);
+
+        it = ItemSystemUtility.GetItemCopy<Item>((int)ItemItems.SlightlyMoldyBread, ItemType.Item);
+        it.stackCount = 5;
         Inventory.Inv.PutItem(it);
 
         it = ItemSystemUtility.GetItemCopy<Item>((int)ItemItems.GoodBread, ItemType.Item);
         it.stackCount = 5;
         Inventory.Inv.PutItem(it);
 
-        it = ItemSystemUtility.GetItemCopy<Item>((int)ItemItems.Carrot, ItemType.Item);
+        it = ItemSystemUtility.GetItemCopy<Item>((int)ItemItems.Pudding, ItemType.Item);
+        it.stackCount = 5;
+        Inventory.Inv.PutItem(it);
+
+        it = ItemSystemUtility.GetItemCopy<Item>((int)ItemItems.Sandwich, ItemType.Item);
+        it.stackCount = 5;
         Inventory.Inv.PutItem(it);
 
         it = ItemSystemUtility.GetItemCopy<Item>((int)ItemItems.Water, ItemType.Item);
+        it.stackCount = 5;
         Inventory.Inv.PutItem(it);
-        StartCoroutine(T());
+
+        it = ItemSystemUtility.GetItemCopy<Item>((int)ItemItems.RadiationPills, ItemType.Item);
+        it.stackCount = 5;
+        Inventory.Inv.PutItem(it);
+        //        StartCoroutine(T());
     }
 
     System.Collections.IEnumerator T()
