@@ -1,15 +1,30 @@
 ﻿using UnityEngine;
 using ItemSystem;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class InventorySlot : MonoBehaviour
+public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerDownHandler, IPointerExitHandler
 {
+    public delegate void MouseEnter(int slotNum);
+    public delegate void MouseClick(int slotNum);
+    public delegate void MouseExit(int slotNum);
+
+    public event MouseEnter MouseEnterEvent;
+    public event MouseClick MouseClickEvent;
+    public event MouseExit MouseExitEvent;
+
+    int num;
     Item item;
     Image itemImg;
 
-    void Start()
+    void Awake()
     {
-        itemImg = transform.GetComponentInChildren<Image>(true);
+        itemImg = transform.GetChild(0).GetComponent<Image>();
+    }
+
+    public void SetNumber(int slotNum)
+    {
+        num = slotNum;
     }
 
     /// <summary>
@@ -39,12 +54,20 @@ public class InventorySlot : MonoBehaviour
         return item;
     }
 
+    public bool HasItem(int id)
+    {
+        return item != null && item.itemID == id;
+    }
+
     /// <summary>
     /// Returns the item, decrements the stackCount and removes the item if the stackCount reaches zero.
     /// </summary>
     /// <returns></returns>
     public Item UseItem()
     {
+        if (item == null)
+            return null;
+
         Item i = item;
 
         item.stackCount--;
@@ -58,5 +81,20 @@ public class InventorySlot : MonoBehaviour
     {
         item = null;
         itemImg.sprite = null;
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        MouseEnterEvent.Invoke(num);
+    }
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        MouseClickEvent.Invoke(num);
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        MouseExitEvent.Invoke(num);
     }
 }

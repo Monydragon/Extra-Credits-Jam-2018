@@ -25,8 +25,8 @@ MonoBehaviour:
     healing: 3
     radiation: 0
     hunger: -2
-    thirst: 0
     price: 1
+    stackCount: 0
     useSfx: {fileID: 0}
   - itemName: Slightly Moldy Bread
     itemDescription: Closer to regular bread. Just don't look at the bad parts and
@@ -41,8 +41,8 @@ MonoBehaviour:
     healing: 7
     radiation: 0
     hunger: -3
-    thirst: 0
     price: 3
+    stackCount: 0
     useSfx: {fileID: 0}
   - itemName: Good Bread
     itemDescription: Delicious, slightly fluffy and enjoyable.
@@ -56,8 +56,8 @@ MonoBehaviour:
     healing: 10
     radiation: 0
     hunger: 0
-    thirst: 0
     price: 5
+    stackCount: 0
     useSfx: {fileID: 0}
   - itemName: Carrot
     itemDescription: Orange vegetable. Tastes sort of sweet.
@@ -71,8 +71,8 @@ MonoBehaviour:
     healing: 5
     radiation: 0
     hunger: 0
-    thirst: 0
     price: 3
+    stackCount: 0
     useSfx: {fileID: 0}
   - itemName: Pudding
     itemDescription: Vanilla pudding with slight mold on top. Best to throw the mold
@@ -87,8 +87,8 @@ MonoBehaviour:
     healing: 15
     radiation: 0
     hunger: 0
-    thirst: 0
     price: 9
+    stackCount: 0
     useSfx: {fileID: 0}
   - itemName: Sandwich
     itemDescription: Best item on menu. The peanut butter goes well with the peach
@@ -103,8 +103,8 @@ MonoBehaviour:
     healing: 20
     radiation: 0
     hunger: 0
-    thirst: 0
     price: 11
+    stackCount: 0
     useSfx: {fileID: 0}
   - itemName: Water
     itemDescription: Good, plain and simple.
@@ -118,8 +118,8 @@ MonoBehaviour:
     healing: 3
     radiation: 0
     hunger: 0
-    thirst: 0
     price: 1
+    stackCount: 0
     useSfx: {fileID: 0}
   - itemName: Radiation Pills
     itemDescription: Reduce radiation effects.
@@ -133,8 +133,8 @@ MonoBehaviour:
     healing: 0
     radiation: 0
     hunger: 0
-    thirst: 0
     price: 2
+    stackCount: 0
     useSfx: {fileID: 0}
   usedIDs: bba596b115b4427aa6ea13f42c63f644d79982f03649640abb1eb57c752d4f53
   typesOfUsedIDs: 0500000005000000050000000500000005000000050000000500000005000000
