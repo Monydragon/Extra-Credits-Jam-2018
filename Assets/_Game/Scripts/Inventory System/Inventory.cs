@@ -32,8 +32,13 @@ public class Inventory : MonoBehaviour
             slots[i] = s;
         }
 
-        Inventory.Inv.PutItem(ItemSystemUtility.GetItemCopy<Item>((int)ItemItems.Pudding, ItemType.Item));
-        Inventory.Inv.PutItem(ItemSystemUtility.GetItemCopy<Item>((int)ItemItems.GoodBread, ItemType.Item));
+        var it = ItemSystemUtility.GetItemCopy<Item>((int)ItemItems.Pudding, ItemType.Item);
+        it.stackCount = 4;
+        Inventory.Inv.PutItem(it);
+
+        it = ItemSystemUtility.GetItemCopy<Item>((int)ItemItems.GoodBread, ItemType.Item);
+        it.stackCount = 5;
+        Inventory.Inv.PutItem(it);
     }
 
     /// <summary>
@@ -60,14 +65,20 @@ public class Inventory : MonoBehaviour
         int id = (int)it;
         foreach (var i in slots)
             if (i.HasItem(id))
-                return i.UseItem();
+            {
+                var b = i.UseItem();
+                CompactInv();
+                return b;
+            }
 
         return null;
     }
 
     public Item UseItem(int slotNum)
     {
-        return slotNum >= slots.Length ? null : slots[slotNum].UseItem();
+        var b = slotNum >= slots.Length ? null : slots[slotNum].UseItem();
+        CompactInv();
+        return b;
     }
 
     void CompactInv()
@@ -96,6 +107,7 @@ public class Inventory : MonoBehaviour
                 continue;
 
             s.RemoveItem();
+            CompactInv();
             return;
         }
     }
