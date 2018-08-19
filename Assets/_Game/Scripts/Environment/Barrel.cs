@@ -40,12 +40,12 @@ public class Barrel : MonoBehaviour
     /// Pass transform of the object that is throwing the barrel
     /// </summary>
     /// <param name="tr"></param>
-    public void Throw(Vector3 pos, float spd)
+    public void Throw(Vector3 dir, float spd)
     {
         if (thrown)
             return;
 
-        StartCoroutine(Thrown(pos, spd));
+        StartCoroutine(Thrown(dir, spd));
         thrown = true;
     }
 
@@ -55,9 +55,8 @@ public class Barrel : MonoBehaviour
             Explode();
     }
 
-    IEnumerator Thrown(Vector3 pos, float spd)
+    IEnumerator Thrown(Vector3 dir, float spd)
     {
-        var dir = -(pos - transform.position).normalized;
         while (true)
         {
             rb.MovePosition(transform.position + dir * spd * Time.deltaTime);

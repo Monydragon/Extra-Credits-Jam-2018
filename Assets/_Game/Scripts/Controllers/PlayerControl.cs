@@ -10,12 +10,13 @@ using UnityEngine.UI;
 /// </summary>
 public partial class PlayerControl : BaseMovementController
 {
+    public static PlayerControl instance;
+
     public Status status;
 
     public GameObject statusPanel;
 
     private Transform healthUI;
-    private Transform hungerUI;
     private Transform radsUI;
 
     //FMOD
@@ -66,13 +67,12 @@ public partial class PlayerControl : BaseMovementController
         if (statusPanel != null)
         {
             healthUI = statusPanel.transform.GetChild(0);
-            hungerUI = statusPanel.transform.GetChild(1);
-            radsUI = statusPanel.transform.GetChild(2);
+            radsUI = statusPanel.transform.GetChild(1);
             UpdateStatusUI();
         }
     }
 
-    void HandleAnimation()
+    private void HandleAnimation()
     {
         if (_Animator != null)
         {
@@ -96,7 +96,7 @@ public partial class PlayerControl : BaseMovementController
         UpdateStatusUI();
     }
 
-    public void HandleInput()
+    protected void HandleInput()
     {
         if (!isControlDisabled)
         {
@@ -165,12 +165,9 @@ public partial class PlayerControl : BaseMovementController
             if (Input.GetKeyDown(KeyCode.Alpha9)) { UseItem(Inventory.Inv.UseItem(8)); }
             if (Input.GetKeyDown(KeyCode.Alpha0)) { UseItem(Inventory.Inv.UseItem(9)); }
         }
-
-
-
     }
 
-    private void UseItem(Item item)
+    public void UseItem(Item item)
     {
         if (item != null)
         {
@@ -194,39 +191,26 @@ public partial class PlayerControl : BaseMovementController
 
     }
 
-    public void ApplyStatus(int health, int hunger, int rads)
+    public void ApplyStatus(int health, int rads)
     {
         status.Health += health;
-        status.Hunger += hunger;
         status.Rads += rads;
     }
 
     public void UpdateStatusUI()
     {
 
-        if(status.Health <= 20 && status.Health >= 0)
+        if(status.Health <= 100 && status.Health >= 0)
         {
-            healthUI.gameObject.SetActive(true);
-            healthUI.GetChild(0).GetComponent<Image>().fillAmount = (status.Health * 5) / 100;
+            healthUI.GetChild(0).GetComponent<Image>().fillAmount = status.Health / 100;
             healthUI.GetChild(1).GetComponent<TextMeshProUGUI>().text = status.Health.ToString();
         }
-//        else { healthUI.gameObject.SetActive(false); }
-
-        if (status.Hunger <= 20 && status.Hunger >= 0)
-        {
-            hungerUI.gameObject.SetActive(true);
-            hungerUI.GetChild(0).GetComponent<Image>().fillAmount = (status.Hunger * 5) / 100;
-            hungerUI.GetChild(1).GetComponent<TextMeshProUGUI>().text = status.Hunger.ToString();
-        }
-//        else { hungerUI.gameObject.SetActive(false); }
 
         if (status.Rads >= 0)
         {
-            radsUI.gameObject.SetActive(true);
-            radsUI.GetChild(0).GetComponent<Image>().fillAmount = (status.Rads * 5) / 100;
+            radsUI.GetChild(0).GetComponent<Image>().fillAmount = status.Rads / 100;
             radsUI.GetChild(1).GetComponent<TextMeshProUGUI>().text = status.Rads.ToString();
         }
-//        else { radsUI.gameObject.SetActive(false); }
     }
 
     public void SetPlayerControl(bool value) => isControlDisabled = !value;

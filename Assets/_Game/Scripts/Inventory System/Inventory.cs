@@ -36,7 +36,7 @@ public class Inventory : MonoBehaviour
             s.CompactInvEvent += CompactInv;
             slots[i] = s;
         }
-        Test();
+//        Test();
     }
 
     void Test()

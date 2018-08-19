@@ -63,7 +63,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!70 &70773751722840302
 CapsuleCollider2D:
   m_ObjectHideFlags: 1
@@ -127,9 +127,9 @@ MonoBehaviour:
     DownLeft: {fileID: 0}
   _Tilemap: {fileID: 0}
   status:
-    health: 10
-    hunger: 10
-    rads: 10
+    health: 20
+    hunger: 20
+    rads: 20
   statusPanel: {fileID: 0}
   stepsEvent: event:/sfx/char/steps
   isControlDisabled: 0
