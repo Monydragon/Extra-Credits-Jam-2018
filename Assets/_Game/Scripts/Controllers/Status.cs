@@ -1,5 +1,6 @@
 ﻿using System;
 using ItemSystem;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
     [Serializable]
@@ -7,7 +8,6 @@ using UnityEngine;
     {
         [SerializeField][Range(0,20)] private float health;
 
-        [SerializeField][Range(0,20)] private float hunger;
 
         [SerializeField][Range(0,20)] private float rads;
 
@@ -19,17 +19,6 @@ using UnityEngine;
                 if (value > 20) { health = 20; }
                 else if(value <= 0) { health = 0; }
                 else { health = value;}
-            }
-        }
-
-        public float Hunger
-        {
-            get { return hunger; }
-            set
-            {
-                if (value > 20) { hunger = 20; }
-                else if (value < 0) { health -= 1; }
-                else { hunger = value; }
             }
         }
 
@@ -48,14 +37,13 @@ using UnityEngine;
         {
             Health -= item.damage;
             Health += item.healing;
-            Hunger += item.hunger;
             Rads += item.radiation; 
         }
 
+        [Button("Reset Status", ButtonSizes.Medium, ButtonStyle.Box)]
         public void ResetStatus()
         {
             Health = 20;
-            Hunger = 20;
             Rads = 0;
         }
     }

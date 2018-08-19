@@ -9,13 +9,19 @@ public class BullyController : BaseMovementController
     public enum EnemyState
     {
         Idle = 0,
-        Chase = 1,
-        Charge = 2,
-        ThrowBarrel = 3,
+        Think = 1,
+        Chase = 2,
+        Charge = 3,
+        ThrowBarrel = 4,
     }
+
+    public float throwDistanceThreshold = 1.5f;
+    public float throwSpeed = 10f;
+    public int damage = 2;
 
     public Status status;
     public EnemyState state;
+    public Transform player;
 
     [FMODUnity.EventRef]
     //"stepsEvent" stores event path
@@ -78,7 +84,6 @@ public class BullyController : BaseMovementController
 
     public void AiInput()
     {
-        var player = GameObject.FindGameObjectWithTag("Player");
         var dist = Vector3.Distance(transform.position, player.transform.position);
         var dirDist = (player.transform.position - transform.position).normalized;
 
@@ -114,15 +119,15 @@ public class BullyController : BaseMovementController
         }
     }
 
-    public void ApplyStatus(int health, int hunger, int rads)
+    public void ApplyStatus(int health, int rads)
     {
         status.Health += health;
-        status.Hunger += hunger;
         status.Rads += rads;
     }
 
     IEnumerator Think()
     {
+        state = EnemyState.Think;
         while (true)
         {
             int randomVal = Random.Range(0, 3);
@@ -141,7 +146,7 @@ public class BullyController : BaseMovementController
     IEnumerator Chase()
     {
         state = EnemyState.Chase;
-        var randomSec = Random.Range(5, 11);
+        var randomSec = Random.Range(3, 5);
         yield return new WaitForSeconds(randomSec);
     }
 
@@ -150,11 +155,11 @@ public class BullyController : BaseMovementController
 
         state = EnemyState.Charge;
         var oldSpeed = TileMove.Speed;
-        var newSpeed = TileMove.Speed * 3;
+        var newSpeed = TileMove.Speed * 2.5f;
         TileMove.Speed = 0;
         yield return new WaitForSeconds(1.5f);
         TileMove.Speed = newSpeed;
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(2.5f);
         TileMove.Speed = oldSpeed;
     }
 
@@ -179,11 +184,16 @@ public class BullyController : BaseMovementController
 
         while (targetBarrel != null)
         {
-            transform.position = Vector3.MoveTowards(transform.position, targetBarrel.transform.position, 1);
+            transform.position += (targetBarrel.transform.position - transform.position).normalized * Time.deltaTime * TileMove.Speed;
             var barrelDist = Vector3.Distance(transform.position, targetBarrel.transform.position);
-            if (barrelDist <= 2)
+            if (barrelDist <= throwDistanceThreshold)
             {
                 Debug.Log("Try to throw barrel");
+                var barrelControl = targetBarrel.GetComponent<Barrel>();
+                GetComponent<Collider2D>().enabled = false;
+                barrelControl.Throw((player.position - transform.position).normalized, throwSpeed);
+                yield return new WaitForSeconds(0.3f);
+                GetComponent<Collider2D>().enabled = true;
             }
             yield return null;
         }
@@ -192,7 +202,34 @@ public class BullyController : BaseMovementController
 
     private void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         StartCoroutine(Think());
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.transform.tag == "Player")
+        {
+            StartCoroutine(DealDamage(collision.gameObject, damage));
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.transform.tag == "Player")
+        {
+            StartCoroutine(DealDamage(collision.gameObject, damage));
+        }
+    }
+
+
+
+    IEnumerator DealDamage(GameObject obj, int amount)
+    {
+        var pc = obj.GetComponent<PlayerControl>();
+        pc.ApplyStatus(-amount,0);
+        yield return new WaitForSeconds(2f);
+
     }
 
 

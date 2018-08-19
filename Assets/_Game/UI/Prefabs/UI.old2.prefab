@@ -730,7 +730,7 @@ GameObject:
   - component: {fileID: 114277640516245708}
   - component: {fileID: 114669774256974036}
   m_Layer: 5
-  m_Name: UI Updated
+  m_Name: UI.old2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
