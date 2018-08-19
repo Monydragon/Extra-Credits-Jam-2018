@@ -1,21 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
-[RequireComponent(typeof(BoxCollider2D))]
+[RequireComponent(typeof(SpriteRenderer), typeof(CircleCollider2D), typeof(Rigidbody2D))]
 public class Barrel : MonoBehaviour
 {
     [Range(-20, 20)]
-    float effectRadius, healthEffect, radEffect;
-
+    public float effectRadius, healthEffect, radEffect;
+    Rigidbody2D rb;
+    bool thrown;
+    
     void Start()
     {
-
-    }
-
-    void Update()
-    {
-
+        rb = GetComponent<Rigidbody2D>();
     }
 
     public void Explode()
@@ -34,14 +32,36 @@ public class Barrel : MonoBehaviour
                 //e.GetComponent<BullyController>()
             }
         }
+
+        Destroy(gameObject);
     }
 
     /// <summary>
     /// Pass transform of the object that is throwing the barrel
     /// </summary>
     /// <param name="tr"></param>
-    public void Throw(Transform tr)
+    public void Throw(Vector3 pos, float spd)
     {
+        if (thrown)
+            return;
 
+        StartCoroutine(Thrown(pos, spd));
+        thrown = true;
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (thrown)
+            Explode();
+    }
+
+    IEnumerator Thrown(Vector3 pos, float spd)
+    {
+        var dir = -(pos - transform.position).normalized;
+        while (true)
+        {
+            rb.MovePosition(transform.position + dir * spd * Time.deltaTime);
+            yield return null;
+        }
     }
 }

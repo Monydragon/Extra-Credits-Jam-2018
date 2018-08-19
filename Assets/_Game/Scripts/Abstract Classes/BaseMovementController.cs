@@ -32,7 +32,7 @@ public abstract class BaseMovementController : MonoBehaviour
 		_Collider = GetComponent<Collider2D>();
 		if (_Tilemap == null)
 		{
-			_Tilemap = GetComponentInParent<Tilemap>() ?? GameObject.FindGameObjectWithTag("TileMap").GetComponent<Tilemap>();
+			//_Tilemap = GetComponentInParent<Tilemap>() ?? GameObject.FindGameObjectWithTag("TileMap").GetComponent<Tilemap>();
 		}
 	}
 
