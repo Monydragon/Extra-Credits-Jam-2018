@@ -138,6 +138,7 @@
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 2100928
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 88032
+[LOG] Thread::initThread                       :     Init FMOD file thread. Priority: 1, Stack Size: 16384, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000007D13F5FC
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
