@@ -93,6 +93,7 @@ public partial class PlayerControl : BaseMovementController
         _TileMove.CheckArea(transform);
         HandleAnimation();
         HandleInput();
+        UpdateStatusUI();
     }
 
     public void HandleInput()
@@ -196,39 +197,29 @@ public partial class PlayerControl : BaseMovementController
     public void UpdateStatusUI()
     {
 
-        if(status.Health < 20 && status.Health > 0)
+        if(status.Health <= 20 && status.Health >= 0)
         {
             healthUI.gameObject.SetActive(true);
             healthUI.GetChild(0).GetComponent<Image>().fillAmount = (status.Health * 5) / 100;
             healthUI.GetChild(1).GetComponent<TextMeshProUGUI>().text = status.Health.ToString();
         }
-        else { healthUI.gameObject.SetActive(false); }
+//        else { healthUI.gameObject.SetActive(false); }
 
-        if (status.Hunger < 20 && status.Hunger > 0)
+        if (status.Hunger <= 20 && status.Hunger >= 0)
         {
             hungerUI.gameObject.SetActive(true);
             hungerUI.GetChild(0).GetComponent<Image>().fillAmount = (status.Hunger * 5) / 100;
             hungerUI.GetChild(1).GetComponent<TextMeshProUGUI>().text = status.Hunger.ToString();
         }
-        else { hungerUI.gameObject.SetActive(false); }
+//        else { hungerUI.gameObject.SetActive(false); }
 
-        if (status.Rads > 0)
+        if (status.Rads >= 0)
         {
             radsUI.gameObject.SetActive(true);
             radsUI.GetChild(0).GetComponent<Image>().fillAmount = (status.Rads * 5) / 100;
             radsUI.GetChild(1).GetComponent<TextMeshProUGUI>().text = status.Rads.ToString();
         }
-        else { radsUI.gameObject.SetActive(false); }
-//
-//        if (status.Hunger >= 20) { } else { }
-//        if(status.Rads <= 0) { } else { }
-//        if()
-//            
-//        
-//        hungerUI.GetComponent<Image>().fillAmount = (status.Hunger / 100) * 5;
-//        hungerUI.GetComponentInChildren<TextMeshProUGUI>().text = status.Hunger.ToString();
-//        radsUI.GetComponent<Image>().fillAmount = (status.Rads / 100) * 5;
-//        radsUI.GetComponentInChildren<TextMeshProUGUI>().text = status.Rads.ToString();
+//        else { radsUI.gameObject.SetActive(false); }
     }
 
     public void SetPlayerControl(bool value) => isControlDisabled = !value;
