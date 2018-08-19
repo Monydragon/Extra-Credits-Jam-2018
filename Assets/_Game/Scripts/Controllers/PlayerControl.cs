@@ -60,8 +60,9 @@ public partial class PlayerControl : BaseMovementController
     private bool isMoving = false;
     private Vector3 _MovementPath;
 
-    public void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         if (statusPanel != null)
         {
             healthUI = statusPanel.transform.GetChild(0);
@@ -69,7 +70,6 @@ public partial class PlayerControl : BaseMovementController
             radsUI = statusPanel.transform.GetChild(2);
             UpdateStatusUI();
         }
-        
     }
 
     void HandleAnimation()
@@ -87,6 +87,7 @@ public partial class PlayerControl : BaseMovementController
             }
         }
     }
+
     protected override void Move()
     {
         _TileMove.CheckArea(transform);
@@ -192,10 +193,6 @@ public partial class PlayerControl : BaseMovementController
 
     }
 
-    private void Update()
-    {
-//        UpdateStatusUI();
-    }
     public void UpdateStatusUI()
     {
 

@@ -158,15 +158,11 @@ public class Inventory : MonoBehaviour
 
     void MouseClick(int slotNum, PointerEventData.InputButton mouseBtn)
     {
-<<<<<<< HEAD
         if (slots[slotNum].GetItem() == null || mouseBtn != PointerEventData.InputButton.Right)
             return;
 
         ItemInstance.CreateItemInstance((ItemItems)slots[slotNum].UseItem().itemID, player.position);
         ShowInfoPanel(slotNum);
-=======
-        Debug.Log($"Click Slot {slotNum}");
->>>>>>> 1f4e5aac2825318dad95e3494971053c28ddbe52
     }
 
     void HideInfoPanel(int slotNum)
