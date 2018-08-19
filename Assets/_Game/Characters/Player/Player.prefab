@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 95128528334013052}
   - component: {fileID: 50748768004779052}
   - component: {fileID: 70773751722840302}
-  - component: {fileID: 70384138010909280}
   - component: {fileID: 114887293701359256}
   m_Layer: 0
   m_Name: Player
@@ -65,21 +64,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!70 &70384138010909280
-CapsuleCollider2D:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1973143457750114}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1.5, y: 1.5}
-  m_Direction: 0
 --- !u!70 &70773751722840302
 CapsuleCollider2D:
   m_ObjectHideFlags: 1
@@ -142,6 +126,7 @@ MonoBehaviour:
     DownRight: {fileID: 0}
     DownLeft: {fileID: 0}
   _Tilemap: {fileID: 0}
+  stepsEvent: event:/sfx/char/steps
   isControlDisabled: 0
 --- !u!212 &212185970870497946
 SpriteRenderer:
