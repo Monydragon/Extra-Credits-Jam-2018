@@ -2229,6 +2229,7 @@ GameObject:
   - component: {fileID: 1186625463}
   - component: {fileID: 1186625464}
   - component: {fileID: 1186625462}
+  - component: {fileID: 1186625466}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -2263,7 +2264,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1186625463}
   selectedCommands:
-  - {fileID: 1186625462}
+  - {fileID: 1186625466}
   variables: []
   description: 
   stepPause: 0
@@ -2283,28 +2284,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1186625460}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
-  conversationText:
-    stringRef: {fileID: 0}
-    stringVal: 'character: player: This is cool!
-
-      ???: Is it?'
-  clearPrevious:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  waitForInput:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  waitForSeconds:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  fadeWhenDone:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
+  storyText: SEE LOOK WORKING DIALOGUE!
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &1186625463
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2320,7 +2317,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 66
-    y: 71
+    y: 70
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -2331,6 +2328,7 @@ MonoBehaviour:
   eventHandler: {fileID: 1186625464}
   commandList:
   - {fileID: 1186625462}
+  - {fileID: 1186625466}
 --- !u!114 &1186625464
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2359,6 +2357,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1186625466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1186625460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 2
+  indentLevel: 0
+  storyText: Look See! Working Dialogue!
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &1280737134
 GameObject:
   m_ObjectHideFlags: 0
@@ -23180,6 +23204,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -750.0001, y: 0}
+  m_AnchoredPosition: {x: -750, y: 165}
   m_SizeDelta: {x: 1500, y: 335}
   m_Pivot: {x: 0, y: 0}

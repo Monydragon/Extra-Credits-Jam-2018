@@ -1,25 +1,30 @@
-﻿using UnityEngine;
-using ItemSystem;
+﻿using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using ItemSystem;
 
 public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerDownHandler, IPointerExitHandler
 {
     public delegate void MouseEnter(int slotNum);
-    public delegate void MouseClick(int slotNum);
+    public delegate void MouseClick(int slotNum, PointerEventData.InputButton mouseBtn);
     public delegate void MouseExit(int slotNum);
+    public delegate void CompactInv();
 
     public event MouseEnter MouseEnterEvent;
     public event MouseClick MouseClickEvent;
     public event MouseExit MouseExitEvent;
+    public event CompactInv CompactInvEvent;
 
     int num;
     Item item;
     Image itemImg;
+    TextMeshProUGUI countTxt;
 
     void Awake()
     {
         itemImg = transform.GetChild(0).GetComponent<Image>();
+        countTxt = transform.GetChild(1).GetComponent<TextMeshProUGUI>();
     }
 
     public void SetNumber(int slotNum)
@@ -36,13 +41,14 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerDownHa
         if (item == null)
         {
             item = i;
-            itemImg.sprite = i?.itemIcon;
+            itemImg.sprite = i.itemIcon;
+            UpdateCount();
             return true;
         }
 
         else if (item.itemID == i.itemID && item.stackable && item.stackCount < item.maxStackAmount)
         {
-            Mathf.Clamp(item.stackCount + i.stackCount, 0, item.maxStackAmount);
+            item.stackCount = Mathf.Clamp(item.stackCount + i.stackCount, 0, item.maxStackAmount);
             return true;
         }
 
@@ -74,13 +80,23 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerDownHa
         if (item.stackCount <= 0)
             RemoveItem();
 
+        UpdateCount();
         return i;
     }
 
-    public void RemoveItem()
+    public void RemoveItem(bool compact = true)
     {
         item = null;
         itemImg.sprite = null;
+        UpdateCount();
+
+        if (compact)
+            CompactInvEvent.Invoke();
+    }
+
+    public void UpdateCount()
+    {
+        countTxt.text = item == null ? "" : item.stackCount.ToString();
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -90,7 +106,7 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerDownHa
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        MouseClickEvent.Invoke(num);
+        MouseClickEvent.Invoke(num, eventData.button);
     }
 
     public void OnPointerExit(PointerEventData eventData)
