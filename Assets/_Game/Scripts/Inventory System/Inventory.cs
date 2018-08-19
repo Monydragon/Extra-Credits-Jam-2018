@@ -38,25 +38,6 @@ public class Inventory : MonoBehaviour
         }
         Test();
     }
-<<<<<<< HEAD
-
-    void Test()
-    {
-        var it = ItemSystemUtility.GetItemCopy<Item>((int)ItemItems.Pudding, ItemType.Item);
-        it.stackCount = 4;
-        Inventory.Inv.PutItem(it);
-
-        it = ItemSystemUtility.GetItemCopy<Item>((int)ItemItems.GoodBread, ItemType.Item);
-        it.stackCount = 5;
-        Inventory.Inv.PutItem(it);
-
-        it = ItemSystemUtility.GetItemCopy<Item>((int)ItemItems.Carrot, ItemType.Item);
-        Inventory.Inv.PutItem(it);
-
-        it = ItemSystemUtility.GetItemCopy<Item>((int)ItemItems.Water, ItemType.Item);
-        Inventory.Inv.PutItem(it);
-        StartCoroutine(T());
-=======
 
     void Test()
     {
@@ -88,7 +69,6 @@ public class Inventory : MonoBehaviour
         it.stackCount = 5;
         Inventory.Inv.PutItem(it);
         //        StartCoroutine(T());
->>>>>>> f140eb3adf8b82a7efb9cdb350dd64361d5cbeca
     }
 
     System.Collections.IEnumerator T()

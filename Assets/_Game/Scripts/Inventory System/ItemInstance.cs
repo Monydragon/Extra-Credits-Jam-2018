@@ -8,13 +8,13 @@ public class ItemInstance : MonoBehaviour
     public ItemItems itemToMake;
     [HideInInspector]
     public Item item;
+    bool canPick;
 
     public static GameObject CreateItemInstance(ItemItems i)
     {
         var go = new GameObject(i.ToString());
         go.SetActive(false);
         go.layer = 8;
-        go.AddComponent<Mono_BaseItemObject>();
         go.AddComponent<ItemInstance>().itemToMake = i;
         go.AddComponent<SpriteRenderer>().sortingOrder = -1;
         go.SetActive(true);
@@ -46,5 +46,26 @@ public class ItemInstance : MonoBehaviour
         gameObject.AddComponent<BoxCollider2D>().isTrigger = true;
 
         transform.position = new Vector3(Mathf.Floor(transform.position.x) + 0.5f, Mathf.Floor(transform.position.y) + 0.5f, 0);
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+            canPick = true;
+    }
+
+    void Update()
+    {
+        if (!canPick)
+            return;
+
+        if (Input.GetKeyDown(KeyCode.E) && Inventory.Inv.PutItem(item))
+            Destroy(gameObject);
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.tag == "Player")
+            canPick = false;
     }
 }
