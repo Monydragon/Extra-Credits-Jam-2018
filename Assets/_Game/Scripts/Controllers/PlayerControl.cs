@@ -1,15 +1,26 @@
 ﻿using System.Collections;
 using Fungus;
+using ItemSystem;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 /// <summary>
 /// This class is responsible for handling player movement and player interaction controls. Anything that involves input access can be invoked/handled through here.
 /// </summary>
-public class PlayerControl : BaseMovementController
+public partial class PlayerControl : BaseMovementController
 {
-	//FMOD
-	//UI
-	[FMODUnity.EventRef]
+    public Status status;
+
+    public GameObject statusPanel;
+
+    private Transform healthUI;
+    private Transform hungerUI;
+    private Transform radsUI;
+
+    //FMOD
+    //UI
+    [FMODUnity.EventRef]
 	//"stepsEvent" stores event path
 	public string stepsEvent;
 	
@@ -49,8 +60,16 @@ public class PlayerControl : BaseMovementController
     private bool isMoving = false;
     private Vector3 _MovementPath;
 
-    public void Start()
+    public void Awake()
     {
+        if (statusPanel != null)
+        {
+            healthUI = statusPanel.transform.GetChild(0);
+            hungerUI = statusPanel.transform.GetChild(1);
+            radsUI = statusPanel.transform.GetChild(2);
+            UpdateStatusUI();
+        }
+        
     }
 
     void HandleAnimation()
@@ -131,10 +150,88 @@ public class PlayerControl : BaseMovementController
                     EventManager.ObjectInteract(gameObject, interactedObject);
                 }
             }
+
+            //REFACTOR: CLean this up
+            if (Input.GetKeyDown(KeyCode.Alpha1)) { UseItem(Inventory.Inv.UseItem(0)); }
+            if (Input.GetKeyDown(KeyCode.Alpha2)) { UseItem(Inventory.Inv.UseItem(1)); }
+            if (Input.GetKeyDown(KeyCode.Alpha3)) { UseItem(Inventory.Inv.UseItem(2)); }
+            if (Input.GetKeyDown(KeyCode.Alpha4)) { UseItem(Inventory.Inv.UseItem(3)); }
+            if (Input.GetKeyDown(KeyCode.Alpha5)) { UseItem(Inventory.Inv.UseItem(4)); }
+            if (Input.GetKeyDown(KeyCode.Alpha6)) { UseItem(Inventory.Inv.UseItem(5)); }
+            if (Input.GetKeyDown(KeyCode.Alpha7)) { UseItem(Inventory.Inv.UseItem(6)); }
+            if (Input.GetKeyDown(KeyCode.Alpha8)) { UseItem(Inventory.Inv.UseItem(7)); }
+            if (Input.GetKeyDown(KeyCode.Alpha9)) { UseItem(Inventory.Inv.UseItem(8)); }
+            if (Input.GetKeyDown(KeyCode.Alpha0)) { UseItem(Inventory.Inv.UseItem(9)); }
         }
 
 
 
+    }
+
+    private void UseItem(Item item)
+    {
+        if (item != null)
+        {
+            switch (item.itemID)
+            {
+//                case (int)ItemItems.Carrot:
+//                    Debug.Log("THIS IS A CAROT");
+//                    break;
+//                case (int)ItemItems.GoodBread:
+//                    Debug.Log("THIS IS A GOOD BREAD");
+//                    break;
+//                case (int)ItemItems.Pudding:
+//                    Debug.Log("THIS IS A PUDDING");
+//                    break;
+                default:
+                    status.UseItem(item);
+                    UpdateStatusUI();
+                    break;
+            }
+        }
+
+    }
+
+    private void Update()
+    {
+//        UpdateStatusUI();
+    }
+    public void UpdateStatusUI()
+    {
+
+        if(status.Health < 20 && status.Health > 0)
+        {
+            healthUI.gameObject.SetActive(true);
+            healthUI.GetChild(0).GetComponent<Image>().fillAmount = (status.Health * 5) / 100;
+            healthUI.GetChild(1).GetComponent<TextMeshProUGUI>().text = status.Health.ToString();
+        }
+        else { healthUI.gameObject.SetActive(false); }
+
+        if (status.Hunger < 20 && status.Hunger > 0)
+        {
+            hungerUI.gameObject.SetActive(true);
+            hungerUI.GetChild(0).GetComponent<Image>().fillAmount = (status.Hunger * 5) / 100;
+            hungerUI.GetChild(1).GetComponent<TextMeshProUGUI>().text = status.Hunger.ToString();
+        }
+        else { hungerUI.gameObject.SetActive(false); }
+
+        if (status.Rads > 0)
+        {
+            radsUI.gameObject.SetActive(true);
+            radsUI.GetChild(0).GetComponent<Image>().fillAmount = (status.Rads * 5) / 100;
+            radsUI.GetChild(1).GetComponent<TextMeshProUGUI>().text = status.Rads.ToString();
+        }
+        else { radsUI.gameObject.SetActive(false); }
+//
+//        if (status.Hunger >= 20) { } else { }
+//        if(status.Rads <= 0) { } else { }
+//        if()
+//            
+//        
+//        hungerUI.GetComponent<Image>().fillAmount = (status.Hunger / 100) * 5;
+//        hungerUI.GetComponentInChildren<TextMeshProUGUI>().text = status.Hunger.ToString();
+//        radsUI.GetComponent<Image>().fillAmount = (status.Rads / 100) * 5;
+//        radsUI.GetComponentInChildren<TextMeshProUGUI>().text = status.Rads.ToString();
     }
 
     public void SetPlayerControl(bool value) => isControlDisabled = !value;

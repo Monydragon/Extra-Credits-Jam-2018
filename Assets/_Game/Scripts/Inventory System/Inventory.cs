@@ -127,7 +127,7 @@ public class Inventory : MonoBehaviour
 
     void MouseClick(int slotNum)
     {
-        Debug.Log("Click");
+        Debug.Log($"Click Slot {slotNum}");
     }
 
     void HideInfoPanel(int slotNum)
