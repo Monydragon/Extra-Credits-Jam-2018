@@ -50,15 +50,15 @@ public class ItemInstance : MonoBehaviour
     {
         if (collision.tag == "Player")
             canPick = true;
+        if (canPick)
+        {
+            Inventory.Inv.PutItem(item);
+            Destroy(gameObject);
+        }
     }
 
     void Update()
     {
-        if (!canPick)
-            return;
-
-        if (Input.GetKeyDown(KeyCode.E) && Inventory.Inv.PutItem(item))
-            Destroy(gameObject);
     }
 
     void OnTriggerExit2D(Collider2D other)

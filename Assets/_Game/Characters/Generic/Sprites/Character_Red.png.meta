@@ -2,15 +2,18 @@ fileFormatVersion: 2
 guid: 60cc6d19eba33c44f95a38b7f415cfcf
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Up0
-    21300002: Up1
-    21300004: Up2
-    21300006: Right0
-    21300008: Right1
-    21300010: Right2
-    21300012: Down0
-    21300014: Down1
-    21300016: Down2
+    21300000: Character_Red_0
+    21300002: Character_Red_1
+    21300004: Character_Red_2
+    21300006: Character_Red_3
+    21300008: Character_Red_4
+    21300010: Character_Red_5
+    21300012: Character_Red_6
+    21300014: Character_Red_7
+    21300016: Character_Red_8
+    21300018: Character_Red_9
+    21300020: Character_Red_10
+    21300022: Character_Red_11
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -54,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -90,6 +93,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -104,7 +118,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Up0
+      name: Character_Red_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec430252b8823db42a4b6a9dfaab1b91
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Red_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b99ae4ec91b2247ba73307a95ec73a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Red_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bb303d7e3274d748963ba23f6ea60ae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Red_3
       rect:
         serializedVersion: 2
         x: 0
@@ -112,19 +186,19 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffe827c5cd443da4f9b9e9eefecc7e5b
+      spriteID: e607cb7df40db234cb8024b19f3aa36d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Up1
+      name: Character_Red_4
       rect:
         serializedVersion: 2
         x: 64
@@ -132,19 +206,19 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e728db08e41ffa45bb56b6e68df093b
+      spriteID: ff4d02c7954c1024ea069dd5b9e363fb
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Up2
+      name: Character_Red_5
       rect:
         serializedVersion: 2
         x: 128
@@ -152,19 +226,19 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9a428385454bdf488e2b0ae16c9b1a2
+      spriteID: 1e373b71af733d34bbd4056a0cd47dbc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Right0
+      name: Character_Red_6
       rect:
         serializedVersion: 2
         x: 0
@@ -172,19 +246,19 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 623a485acf712d44ebe3f2db40f02c27
+      spriteID: ceb4bd49e412a9344926dc477976d8da
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Right1
+      name: Character_Red_7
       rect:
         serializedVersion: 2
         x: 64
@@ -192,19 +266,19 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6aa9481fcbff2cb459e6b4022bfc7250
+      spriteID: ec0c359f88afc2741a8bf578e16069e1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Right2
+      name: Character_Red_8
       rect:
         serializedVersion: 2
         x: 128
@@ -212,19 +286,19 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dabebf4c046df34479826442a8475363
+      spriteID: 00bfb5cf1e2e6394a87de16b03706ec7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Down0
+      name: Character_Red_9
       rect:
         serializedVersion: 2
         x: 0
@@ -232,19 +306,19 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a299c6c6005ce0488b2ed2484de2f5d
+      spriteID: 74a55ea4bbc8247499656bcc9f731e36
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Down1
+      name: Character_Red_10
       rect:
         serializedVersion: 2
         x: 64
@@ -252,19 +326,19 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6df7ee611806bbc4598fa45534ef6064
+      spriteID: de635b6c935c8d34d848a26a0283a790
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Down2
+      name: Character_Red_11
       rect:
         serializedVersion: 2
         x: 128
@@ -272,13 +346,13 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9804c8d487e11e4f8de94c99b862638
+      spriteID: 0efa2f36baac05144a652fbec03e246d
       vertices: []
       indices: 
       edges: []

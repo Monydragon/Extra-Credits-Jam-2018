@@ -17,7 +17,7 @@ MonoBehaviour:
       too bad if you don't look at it.
     itemID: -1315527237
     stackable: 1
-    maxStackAmount: 5
+    maxStackAmount: 99
     itemSprite: {fileID: 21300042, guid: 28c1ddfd86935974eb0f43b96605c840, type: 3}
     itemIcon: {fileID: 21300042, guid: 28c1ddfd86935974eb0f43b96605c840, type: 3}
     itemType: 5
@@ -33,7 +33,7 @@ MonoBehaviour:
       savor the fresher parts.
     itemID: 2051191829
     stackable: 1
-    maxStackAmount: 5
+    maxStackAmount: 99
     itemSprite: {fileID: 21300042, guid: 28c1ddfd86935974eb0f43b96605c840, type: 3}
     itemIcon: {fileID: 21300042, guid: 28c1ddfd86935974eb0f43b96605c840, type: 3}
     itemType: 5
@@ -48,7 +48,7 @@ MonoBehaviour:
     itemDescription: Delicious, slightly fluffy and enjoyable.
     itemID: -200021338
     stackable: 1
-    maxStackAmount: 5
+    maxStackAmount: 99
     itemSprite: {fileID: 21300042, guid: 28c1ddfd86935974eb0f43b96605c840, type: 3}
     itemIcon: {fileID: 21300042, guid: 28c1ddfd86935974eb0f43b96605c840, type: 3}
     itemType: 5
@@ -63,7 +63,7 @@ MonoBehaviour:
     itemDescription: Orange vegetable. Tastes sort of sweet.
     itemID: 1156997932
     stackable: 1
-    maxStackAmount: 5
+    maxStackAmount: 99
     itemSprite: {fileID: 21300030, guid: 28c1ddfd86935974eb0f43b96605c840, type: 3}
     itemIcon: {fileID: 21300030, guid: 28c1ddfd86935974eb0f43b96605c840, type: 3}
     itemType: 5
@@ -79,7 +79,7 @@ MonoBehaviour:
       away.
     itemID: -259876393
     stackable: 1
-    maxStackAmount: 5
+    maxStackAmount: 99
     itemSprite: {fileID: 21300044, guid: 28c1ddfd86935974eb0f43b96605c840, type: 3}
     itemIcon: {fileID: 21300044, guid: 28c1ddfd86935974eb0f43b96605c840, type: 3}
     itemType: 5
@@ -95,7 +95,7 @@ MonoBehaviour:
       jelly.
     itemID: 174344502
     stackable: 1
-    maxStackAmount: 5
+    maxStackAmount: 99
     itemSprite: {fileID: 21300052, guid: 28c1ddfd86935974eb0f43b96605c840, type: 3}
     itemIcon: {fileID: 21300052, guid: 28c1ddfd86935974eb0f43b96605c840, type: 3}
     itemType: 5
@@ -110,7 +110,7 @@ MonoBehaviour:
     itemDescription: Good, plain and simple.
     itemID: 2092244667
     stackable: 1
-    maxStackAmount: 5
+    maxStackAmount: 99
     itemSprite: {fileID: 21300062, guid: 28c1ddfd86935974eb0f43b96605c840, type: 3}
     itemIcon: {fileID: 21300062, guid: 28c1ddfd86935974eb0f43b96605c840, type: 3}
     itemType: 5
@@ -125,7 +125,7 @@ MonoBehaviour:
     itemDescription: Reduce radiation effects.
     itemID: 1397697909
     stackable: 1
-    maxStackAmount: 20
+    maxStackAmount: 99
     itemSprite: {fileID: 21300060, guid: 28c1ddfd86935974eb0f43b96605c840, type: 3}
     itemIcon: {fileID: 21300060, guid: 28c1ddfd86935974eb0f43b96605c840, type: 3}
     itemType: 5
