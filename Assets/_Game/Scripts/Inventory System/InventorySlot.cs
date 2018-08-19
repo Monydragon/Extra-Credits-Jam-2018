@@ -46,7 +46,7 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerDownHa
 
         else if (item.itemID == i.itemID && item.stackable && item.stackCount < item.maxStackAmount)
         {
-            Mathf.Clamp(item.stackCount + i.stackCount, 0, item.maxStackAmount);
+            item.stackCount = Mathf.Clamp(item.stackCount + i.stackCount, 0, item.maxStackAmount);
             return true;
         }
 
