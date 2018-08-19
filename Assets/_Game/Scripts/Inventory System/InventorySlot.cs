@@ -1,7 +1,8 @@
-﻿using UnityEngine;
-using ItemSystem;
+﻿using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using ItemSystem;
 
 public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerDownHandler, IPointerExitHandler
 {
@@ -16,10 +17,12 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerDownHa
     int num;
     Item item;
     Image itemImg;
+    TextMeshProUGUI countTxt;
 
     void Awake()
     {
         itemImg = transform.GetChild(0).GetComponent<Image>();
+        countTxt = transform.GetChild(1).GetComponent<TextMeshProUGUI>();
     }
 
     public void SetNumber(int slotNum)
@@ -37,6 +40,7 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerDownHa
         {
             item = i;
             itemImg.sprite = i?.itemIcon;
+            countTxt.text = i.stackCount.ToString();
             return true;
         }
 
@@ -81,6 +85,7 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerDownHa
     {
         item = null;
         itemImg.sprite = null;
+        countTxt.text = "";
     }
 
     public void OnPointerEnter(PointerEventData eventData)

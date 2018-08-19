@@ -32,8 +32,13 @@ public class Inventory : MonoBehaviour
             slots[i] = s;
         }
 
-        Inventory.Inv.PutItem(ItemSystemUtility.GetItemCopy<Item>((int)ItemItems.Pudding, ItemType.Item));
-        Inventory.Inv.PutItem(ItemSystemUtility.GetItemCopy<Item>((int)ItemItems.GoodBread, ItemType.Item));
+        var it = ItemSystemUtility.GetItemCopy<Item>((int)ItemItems.Pudding, ItemType.Item);
+        it.stackCount = 4;
+        Inventory.Inv.PutItem(it);
+
+        it = ItemSystemUtility.GetItemCopy<Item>((int)ItemItems.GoodBread, ItemType.Item);
+        it.stackCount = 5;
+        Inventory.Inv.PutItem(it);
     }
 
     /// <summary>
