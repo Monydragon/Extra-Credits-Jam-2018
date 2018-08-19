@@ -7,12 +7,14 @@ using ItemSystem;
 public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerDownHandler, IPointerExitHandler
 {
     public delegate void MouseEnter(int slotNum);
-    public delegate void MouseClick(int slotNum);
+    public delegate void MouseClick(int slotNum, PointerEventData.InputButton mouseBtn);
     public delegate void MouseExit(int slotNum);
+    public delegate void CompactInv();
 
     public event MouseEnter MouseEnterEvent;
     public event MouseClick MouseClickEvent;
     public event MouseExit MouseExitEvent;
+    public event CompactInv CompactInvEvent;
 
     int num;
     Item item;
@@ -39,8 +41,8 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerDownHa
         if (item == null)
         {
             item = i;
-            itemImg.sprite = i?.itemIcon;
-            countTxt.text = i.stackCount.ToString();
+            itemImg.sprite = i.itemIcon;
+            UpdateCount();
             return true;
         }
 
@@ -78,14 +80,23 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerDownHa
         if (item.stackCount <= 0)
             RemoveItem();
 
+        UpdateCount();
         return i;
     }
 
-    public void RemoveItem()
+    public void RemoveItem(bool compact = true)
     {
         item = null;
         itemImg.sprite = null;
-        countTxt.text = "";
+        UpdateCount();
+
+        if (compact)
+            CompactInvEvent.Invoke();
+    }
+
+    public void UpdateCount()
+    {
+        countTxt.text = item == null ? "" : item.stackCount.ToString();
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -95,7 +106,7 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerDownHa
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        MouseClickEvent.Invoke(num);
+        MouseClickEvent.Invoke(num, eventData.button);
     }
 
     public void OnPointerExit(PointerEventData eventData)

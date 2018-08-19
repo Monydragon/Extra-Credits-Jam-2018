@@ -1,12 +1,16 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using ItemSystem;
+using UnityEngine.EventSystems;
 
 public class Inventory : MonoBehaviour
 {
     /// <summary>Current inventory</summary>
     public static Inventory Inv { get; private set; }
 
+
+    [SerializeField]
+    Transform player;
     InfoPanel infoPanel;
     readonly InventorySlot[] slots = new InventorySlot[10];
 
@@ -29,9 +33,14 @@ public class Inventory : MonoBehaviour
             s.MouseEnterEvent += ShowInfoPanel;
             s.MouseClickEvent += MouseClick;
             s.MouseExitEvent += HideInfoPanel;
+            s.CompactInvEvent += CompactInv;
             slots[i] = s;
         }
+        Test();
+    }
 
+    void Test()
+    {
         var it = ItemSystemUtility.GetItemCopy<Item>((int)ItemItems.Pudding, ItemType.Item);
         it.stackCount = 4;
         Inventory.Inv.PutItem(it);
@@ -39,6 +48,21 @@ public class Inventory : MonoBehaviour
         it = ItemSystemUtility.GetItemCopy<Item>((int)ItemItems.GoodBread, ItemType.Item);
         it.stackCount = 5;
         Inventory.Inv.PutItem(it);
+
+        it = ItemSystemUtility.GetItemCopy<Item>((int)ItemItems.Carrot, ItemType.Item);
+        Inventory.Inv.PutItem(it);
+
+        it = ItemSystemUtility.GetItemCopy<Item>((int)ItemItems.Water, ItemType.Item);
+        Inventory.Inv.PutItem(it);
+        StartCoroutine(T());
+    }
+
+    System.Collections.IEnumerator T()
+    {
+        yield return new WaitForSeconds(2);
+        Inventory.Inv.UseItem(1);
+        Inventory.Inv.UseItem(2);
+        yield return null;
     }
 
     /// <summary>
@@ -65,24 +89,19 @@ public class Inventory : MonoBehaviour
         int id = (int)it;
         foreach (var i in slots)
             if (i.HasItem(id))
-            {
-                var b = i.UseItem();
-                CompactInv();
-                return b;
-            }
+                return i.UseItem();
 
         return null;
     }
 
     public Item UseItem(int slotNum)
     {
-        var b = slotNum >= slots.Length ? null : slots[slotNum].UseItem();
-        CompactInv();
-        return b;
+        return slotNum >= slots.Length ? null : slots[slotNum].UseItem();
     }
 
     void CompactInv()
     {
+        //Get all items from the slots and empty the slots
         List<Item> items = new List<Item>(10);
         for (int i = 0; i < slots.Length; i++)
         {
@@ -91,10 +110,11 @@ public class Inventory : MonoBehaviour
                 continue;
 
             items.Add(it);
-            slots[i].RemoveItem();
+            slots[i].RemoveItem(false);
         }
 
-        for (int i = 0; i < slots.Length; i++)
+        //Fill them in order
+        for (int i = 0; i < items.Count; i++)
             slots[i].PutItem(items[i]);
     }
 
@@ -107,7 +127,6 @@ public class Inventory : MonoBehaviour
                 continue;
 
             s.RemoveItem();
-            CompactInv();
             return;
         }
     }
@@ -137,9 +156,13 @@ public class Inventory : MonoBehaviour
         infoPanel.gameObject.SetActive(true);
     }
 
-    void MouseClick(int slotNum)
+    void MouseClick(int slotNum, PointerEventData.InputButton mouseBtn)
     {
-        Debug.Log("Click");
+        if (slots[slotNum].GetItem() == null || mouseBtn != PointerEventData.InputButton.Right)
+            return;
+
+        ItemInstance.CreateItemInstance((ItemItems)slots[slotNum].UseItem().itemID, player.position);
+        ShowInfoPanel(slotNum);
     }
 
     void HideInfoPanel(int slotNum)
