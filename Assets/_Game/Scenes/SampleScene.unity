@@ -152,13 +152,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114887293701359256, guid: 4594487366a1fcd46b1000dbd3879171,
-        type: 2}
-      propertyPath: _TileMove.Use8Directional
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 70384138010909280, guid: 4594487366a1fcd46b1000dbd3879171, type: 2}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4594487366a1fcd46b1000dbd3879171, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &242294263
