@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{6c2c8626-9a8d-422d-b181-9acbf103549d}">
+        <property name="assetPath">
+            <value>AlarmEvac.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>12</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{5e33648b-59db-4362-be37-9eb28d6ebdbc}</destination>
+        </relationship>
+    </object>
+</objects>
