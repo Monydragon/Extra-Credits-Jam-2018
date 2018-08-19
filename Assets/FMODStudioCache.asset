@@ -26,10 +26,27 @@ MonoBehaviour:
   - {fileID: 114375556016106408}
   - {fileID: 114360421683987834}
   - {fileID: 114585469949794460}
+  - {fileID: 114395893749289826}
+  - {fileID: 114863695245214434}
   MasterBankRef: {fileID: 114729178351631866}
   StringsBankRef: {fileID: 114329789679712220}
-  stringsBankWriteTime: 636702919147756858
+  stringsBankWriteTime: 636702950103819960
   cacheVersion: 2
+--- !u!114 &114035467640225800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: vol
+  Min: 0
+  Max: 100
+  Default: 0
 --- !u!114 &114038278223235238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,7 +166,8 @@ MonoBehaviour:
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
-  Parameters: []
+  Parameters:
+  - {fileID: 114318657723425398}
   MinDistance: 0
   MaxDistance: 0
   Length: 19243
@@ -232,6 +250,21 @@ MonoBehaviour:
   Min: 0
   Max: 100
   Default: 0
+--- !u!114 &114318657723425398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: vol
+  Min: 0
+  Max: 100
+  Default: 0
 --- !u!114 &114329789679712220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,11 +277,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\FMOD_Assets\sound\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636702919147756858
+  lastModified: 636702950103819960
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1192
+    Value: 1288
   Exists: 1
 --- !u!114 &114337952187332132
 MonoBehaviour:
@@ -288,7 +321,8 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114212751206981340}
+  - {fileID: 114035467640225800}
+  - {fileID: 114766118550939052}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -351,6 +385,28 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 6000
+--- !u!114 &114395893749289826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/worldEvents/nuke
+  guid: 70fc035ecf2cd54fb9e2236556e06471
+  Banks:
+  - {fileID: 114729178351631866}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 36089
 --- !u!114 &114418666061781922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -388,6 +444,36 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2163
+--- !u!114 &114456855218921388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: wallTile
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114477907784874246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: tile
+  Min: 0
+  Max: 4
+  Default: 0
 --- !u!114 &114515239860457618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -423,6 +509,21 @@ MonoBehaviour:
     Value: 13116
   Exists: 0
 --- !u!114 &114545522740174696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: speed
+  Min: 0
+  Max: 100
+  Default: 0
+--- !u!114 &114563454169058374
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -500,8 +601,8 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114282159041754358}
-  - {fileID: 114545522740174696}
+  - {fileID: 114477907784874246}
+  - {fileID: 114710657723197790}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -542,6 +643,21 @@ MonoBehaviour:
   Min: 0
   Max: 100
   Default: 0
+--- !u!114 &114710657723197790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: speed
+  Min: 0
+  Max: 100
+  Default: 0
 --- !u!114 &114729178351631866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -555,11 +671,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\omarm\Documents\Unity\Projects\Extra-Credits-Jam-2018\Assets\FMOD_Assets\sound\Build\Desktop\Master
     Bank.bank
-  lastModified: 636702919147736907
+  lastModified: 636702950103760118
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1546720
+    Value: 2188960
   Exists: 1
 --- !u!114 &114729813111237760
 MonoBehaviour:
@@ -582,6 +698,21 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 95307
+--- !u!114 &114766118550939052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: intensity
+  Min: 0
+  Max: 10
+  Default: 0
 --- !u!114 &114777107008651968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -650,6 +781,21 @@ MonoBehaviour:
   - Name: Desktop
     Value: 663744
   Exists: 1
+--- !u!114 &114838904215433874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: alarmType
+  Min: 0
+  Max: 3
+  Default: 0
 --- !u!114 &114840693231822000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -680,6 +826,29 @@ MonoBehaviour:
   Min: 0
   Max: 100
   Default: 0
+--- !u!114 &114863695245214434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/worldEvents/alarm
+  guid: e35e1a5c4a60bd4a9f7aa06cbcbf9497
+  Banks:
+  - {fileID: 114729178351631866}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114838904215433874}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
 --- !u!114 &114865664134889222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -748,8 +917,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 114292356919314210}
-  - {fileID: 114140711788542950}
+  - {fileID: 114563454169058374}
+  - {fileID: 114456855218921388}
   MinDistance: 50
   MaxDistance: 250
   Length: 1389

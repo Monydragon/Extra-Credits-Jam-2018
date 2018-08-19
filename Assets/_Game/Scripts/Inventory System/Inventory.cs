@@ -88,7 +88,8 @@ public class Inventory : MonoBehaviour
     {
         foreach (var s in slots)
             if (s.GetItem() == null || s.HasItem(it.itemID))
-                return s.PutItem(it);
+                if (s.PutItem(it))
+                    return true;
 
         return false;
     }
