@@ -6,6 +6,7 @@ using Sirenix.Serialization;
 using Sirenix.Utilities;
 using Unity.Linq;
 using UnityEngine;
+using ItemSystem;
 
 public class SpawnManager : MonoBehaviour
 {
@@ -17,13 +18,13 @@ public class SpawnManager : MonoBehaviour
 
         public SpawnPointSpawn()
         {
-            
+
         }
 
         public SpawnPointSpawn(GameObject spawnPoint = null, GameObject prefab = null)
         {
             SpawnPoint = spawnPoint;
-            prefab = prefab;
+            Prefab = prefab;
         }
     }
 
@@ -31,7 +32,7 @@ public class SpawnManager : MonoBehaviour
     [OdinSerialize] public List<GameObject> Prefabs;
 
     [Range(0, 30)]
-    public int amountOfSpawns = 5;
+    public int minSpawns = 8, maxSpawns = 10;
 
 
     [ExecuteInEditMode]
@@ -68,12 +69,34 @@ public class SpawnManager : MonoBehaviour
             SetSpawnPoints();
             SetPrefabs();
         }
-        
+
     }
-    private void Start()
+
+    void Start()
     {
+        int amountOfSpawns = Random.Range(minSpawns, maxSpawns + 1);
+        var usedPoints = new List<int>(amountOfSpawns);
+        for (int i = 0; i < amountOfSpawns && i < spawnPoints.Count; i++)
+        {
+            //Get a random spawn point to use and make sure we didn't already use it
+            int index = Random.Range(0, spawnPoints.Count);
+            while (usedPoints.Contains(index))
+                index = Random.Range(0, spawnPoints.Count);
 
+            usedPoints.Add(index);
+
+            //Instantiate the prefab
+            var s = spawnPoints[index];
+            if (s.Prefab.name != "Item")
+            {
+                var go = Instantiate(s.Prefab, s.SpawnPoint.transform.position, Quaternion.identity);
+            }
+
+            else
+            {
+                Item it = ItemSystemUtility.GetRandomItemCopy<Item>(ItemType.Item);
+                ItemInstance.CreateItemInstance((ItemItems)it.itemID, s.SpawnPoint.transform.position);
+            }
+        }
     }
-
-
 }

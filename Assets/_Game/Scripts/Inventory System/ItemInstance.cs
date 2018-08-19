@@ -1,13 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using ItemSystem;
 
 public class ItemInstance : MonoBehaviour
 {
     public ItemItems itemToMake;
-    [HideInInspector]
-    public Item item;
+    
+    Item item;
     bool canPick;
 
     public static GameObject CreateItemInstance(ItemItems i)
