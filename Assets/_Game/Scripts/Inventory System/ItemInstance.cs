@@ -34,11 +34,6 @@ public class ItemInstance : MonoBehaviour
         SetItem();
     }
 
-    void Update()
-    {
-
-    }
-
     public void SetItem()
     {
         if (itemToMake == ItemItems.None)
