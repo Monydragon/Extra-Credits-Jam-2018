@@ -2,8 +2,6 @@
 using ItemSystem;
 using UnityEngine;
 
-public partial class PlayerControl
-{
     [Serializable]
     public struct Status
     {
@@ -61,5 +59,3 @@ public partial class PlayerControl
             Rads = 0;
         }
     }
-
-}

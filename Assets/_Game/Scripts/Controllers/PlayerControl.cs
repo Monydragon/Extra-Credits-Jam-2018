@@ -194,6 +194,13 @@ public partial class PlayerControl : BaseMovementController
 
     }
 
+    public void ApplyStatus(int health, int hunger, int rads)
+    {
+        status.Health += health;
+        status.Hunger += hunger;
+        status.Rads += rads;
+    }
+
     public void UpdateStatusUI()
     {
 
