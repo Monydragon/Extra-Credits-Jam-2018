@@ -162,6 +162,11 @@ Prefab:
       propertyPath: statusPanel
       value: 
       objectReference: {fileID: 1357379881}
+    - target: {fileID: 114887293701359256, guid: 4594487366a1fcd46b1000dbd3879171,
+        type: 2}
+      propertyPath: dieSfx
+      value: event:/sfx/characters/death
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4594487366a1fcd46b1000dbd3879171, type: 2}
   m_IsPrefabAsset: 0
@@ -550,84 +555,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &639288046 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1973143457750114, guid: 4594487366a1fcd46b1000dbd3879171,
-    type: 2}
-  m_PrefabInternal: {fileID: 708447055}
---- !u!114 &639288047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 639288046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d96adabbd7a06ff4a9e5caebd9b5e12b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _TileMove:
-    _FacingDirection: 1
-    Use8Directional: 1
-    SmoothMovement: 1
-    Speed: 2
-    ColliderMask:
-      serializedVersion: 2
-      m_Bits: 256
-    RayCheckDistance: 0.75
-    Up: {fileID: 0}
-    Right: {fileID: 0}
-    Down: {fileID: 0}
-    Left: {fileID: 0}
-    UpLeft: {fileID: 0}
-    UpRight: {fileID: 0}
-    DownRight: {fileID: 0}
-    DownLeft: {fileID: 0}
-  _Tilemap: {fileID: 972329262}
-  barrelDistThreshold: 1.5
-  throwSpeed: 10
-  chargePause: 1
-  chargeDuration: 1.5
-  chargeSpdMult: 2
-  damage: 2
-  status:
-    health: 0
-    rads: 0
-  state: 0
-  player: {fileID: 0}
-  stepsEvent: event:/sfx/char/steps
-  hurtSfx: 
-  dieSfx: 
-  isControlDisabled: 0
---- !u!114 &639288053
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 639288046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5812814b7685642dbad1c7b3dd6e5abf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  localTagList: []
---- !u!1 &695022160 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1973143457750114, guid: 4594487366a1fcd46b1000dbd3879171,
-    type: 2}
-  m_PrefabInternal: {fileID: 129390929}
---- !u!114 &695022166
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 695022160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5812814b7685642dbad1c7b3dd6e5abf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  localTagList: []
 --- !u!1001 &708447055
 Prefab:
   m_ObjectHideFlags: 0
@@ -672,6 +599,16 @@ Prefab:
       propertyPath: _Tilemap
       value: 
       objectReference: {fileID: 972329262}
+    - target: {fileID: 114605001588253748, guid: 4d5906f1ff113e546bef05c3eea233da,
+        type: 2}
+      propertyPath: stepsEvent
+      value: event:/sfx/characters/steps3D
+      objectReference: {fileID: 0}
+    - target: {fileID: 114605001588253748, guid: 4d5906f1ff113e546bef05c3eea233da,
+        type: 2}
+      propertyPath: dieSfx
+      value: event:/sfx/characters/death
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d5906f1ff113e546bef05c3eea233da, type: 2}
   m_IsPrefabAsset: 0
