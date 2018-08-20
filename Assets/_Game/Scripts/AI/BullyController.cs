@@ -15,8 +15,7 @@ public class BullyController : BaseMovementController
         ThrowBarrel = 4,
     }
 
-    public float throwDistanceThreshold = 1.5f;
-    public float throwSpeed = 10f;
+    public float barrelDistThreshold = 1.5f, throwSpeed = 10f, chargePause = 1f, chargeDuration = 1.5f, chargeSpdMult = 2;
     public int damage = 2;
 
     public Status status;
@@ -29,6 +28,10 @@ public class BullyController : BaseMovementController
 
     //Event instance
     FMOD.Studio.EventInstance steps;
+
+    public bool isControlDisabled = false;
+    private bool isMoving = false;
+    private Vector3 _MovementPath;
 
     private void OnEnable()
     {
@@ -52,9 +55,11 @@ public class BullyController : BaseMovementController
         steps.release();
     }
 
-    public bool isControlDisabled = false;
-    private bool isMoving = false;
-    private Vector3 _MovementPath;
+    private void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+        StartCoroutine(Think());
+    }
 
     void HandleAnimation()
     {
@@ -76,7 +81,7 @@ public class BullyController : BaseMovementController
     {
         _TileMove.CheckArea(transform);
         HandleAnimation();
-        if (state == EnemyState.Chase || state == EnemyState.Charge)
+        if (state == EnemyState.Chase)
         {
             AiInput();
         }
@@ -87,7 +92,7 @@ public class BullyController : BaseMovementController
         var dist = Vector3.Distance(transform.position, player.transform.position);
         var dirDist = (player.transform.position - transform.position).normalized;
 
-        Debug.DrawLine(transform.position, player.transform.position, Color.red, Mathf.Infinity);
+        //Debug.DrawLine(transform.position, player.transform.position, Color.red, Mathf.Infinity);
 
         if (dist > 0)
         {
@@ -117,6 +122,11 @@ public class BullyController : BaseMovementController
             //if player is not moving change speed to 0 so no sound is heard
             steps.setParameterValue("speed", 0);
         }
+    }
+
+    void LateUpdate()
+    {
+        _Rb.velocity = Vector2.zero;
     }
 
     public void ApplyStatus(int health, int rads)
@@ -152,15 +162,28 @@ public class BullyController : BaseMovementController
 
     IEnumerator Charge()
     {
-
         state = EnemyState.Charge;
-        var oldSpeed = TileMove.Speed;
-        var newSpeed = TileMove.Speed * 2.5f;
-        TileMove.Speed = 0;
-        yield return new WaitForSeconds(1.5f);
-        TileMove.Speed = newSpeed;
-        yield return new WaitForSeconds(2.5f);
-        TileMove.Speed = oldSpeed;
+        isMoving = false;
+        HandleAnimation();
+        yield return new WaitForSeconds(chargePause);
+
+        float t = 0;
+        Vector3 dir = (player.transform.position - transform.position).normalized;
+        _MovementPath = dir;
+        isMoving = true;
+        HandleAnimation();
+        while (t < chargeDuration)
+        {
+            transform.position += dir * TileMove.Speed * chargeSpdMult * Time.deltaTime;
+            t += Time.deltaTime;
+            yield return null;
+        }
+
+        isMoving = false;
+        HandleAnimation();
+        yield return new WaitForSeconds(chargePause);
+        isMoving = true;
+        HandleAnimation();
     }
 
     IEnumerator ThrowBarrel()
@@ -172,38 +195,37 @@ public class BullyController : BaseMovementController
 
         if (!barrels.Any()) yield break;
 
+        //Find nearest barrel
         for (int i = 0; i < barrels.Length; i++)
         {
             var barrelDist = Vector3.Distance(transform.position, barrels[i].transform.position);
-            if ( barrelDist < minDist)
+            if (barrelDist < minDist)
             {
                 minDist = barrelDist;
                 targetBarrel = barrels[i];
             }
         }
 
+        isMoving = true;
+        _MovementPath = (targetBarrel.transform.position - transform.position).normalized;
+        HandleAnimation();
+
         while (targetBarrel != null)
         {
             transform.position += (targetBarrel.transform.position - transform.position).normalized * Time.deltaTime * TileMove.Speed;
-            var barrelDist = Vector3.Distance(transform.position, targetBarrel.transform.position);
-            if (barrelDist <= throwDistanceThreshold)
+            if (Vector3.Distance(transform.position, targetBarrel.transform.position) <= barrelDistThreshold)
             {
-                Debug.Log("Try to throw barrel");
-                var barrelControl = targetBarrel.GetComponent<Barrel>();
                 GetComponent<Collider2D>().enabled = false;
-                barrelControl.Throw((player.position - transform.position).normalized, throwSpeed);
+
+                targetBarrel.GetComponent<Barrel>().Throw((player.position - transform.position).normalized, throwSpeed);
                 yield return new WaitForSeconds(0.3f);
+
                 GetComponent<Collider2D>().enabled = true;
+                yield break;
             }
+
             yield return null;
         }
-
-    }
-
-    private void Start()
-    {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
-        StartCoroutine(Think());
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -222,15 +244,10 @@ public class BullyController : BaseMovementController
         }
     }
 
-
-
     IEnumerator DealDamage(GameObject obj, int amount)
     {
         var pc = obj.GetComponent<PlayerControl>();
-        pc.ApplyStatus(-amount,0);
+        pc.ApplyStatus(-amount, 0);
         yield return new WaitForSeconds(2f);
-
     }
-
-
 }

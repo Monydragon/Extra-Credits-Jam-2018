@@ -9,9 +9,11 @@ public class Barrel : MonoBehaviour
     [Range(-20, 20)]
     public float effectRadius, healthEffect, radEffect;
     Rigidbody2D rb;
+    Vector3 dir;
+    int bounces;
     bool thrown;
-    
-    void Start()
+
+    void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
     }
@@ -45,17 +47,23 @@ public class Barrel : MonoBehaviour
         if (thrown)
             return;
 
-        StartCoroutine(Thrown(dir, spd));
+        this.dir = dir;
+        StartCoroutine(Thrown(spd));
         thrown = true;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (thrown)
+        if (thrown && (collision.transform.tag == "Player" || collision.transform.tag == "Enemy" || bounces > 3))
             Explode();
+        else
+        {
+            dir = dir - (Vector3)collision.contacts[0].normal * 2 * Vector3.Dot(dir, collision.contacts[0].normal);
+            bounces++;
+        }
     }
 
-    IEnumerator Thrown(Vector3 dir, float spd)
+    IEnumerator Thrown(float spd)
     {
         while (true)
         {

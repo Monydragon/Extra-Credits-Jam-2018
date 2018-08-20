@@ -22,39 +22,39 @@ public partial class PlayerControl : BaseMovementController
     //FMOD
     //UI
     [FMODUnity.EventRef]
-	//"stepsEvent" stores event path
-	public string stepsEvent;
-	
-	//Event instance
-	FMOD.Studio.EventInstance steps;
-	
-	//TILE VARIABLE HERE (substitute number)
-	int tile = 1;
-	
+    //"stepsEvent" stores event path
+    public string stepsEvent;
+
+    //Event instance
+    FMOD.Studio.EventInstance steps;
+
+    //TILE VARIABLE HERE (substitute number)
+    int tile = 1;
+
     private void OnEnable()
     {
         EventManager.OnSetPlayerControl += SetPlayerControl;
-		
-		//FMOD
-		//Instances "steps" and enables it
-		steps = FMODUnity.RuntimeManager.CreateInstance(stepsEvent);
-        steps.start();
-		//Attaches instance to object
-		FMODUnity.RuntimeManager.AttachInstanceToGameObject(steps, GetComponent<Transform>(), GetComponent<Rigidbody>());
 
-		//starts "speed" as 0
-		steps.setParameterValue("speed", 0);
-		//starts "tile" as 1 (wood)
-		steps.setParameterValue("tile", 1);
+        //FMOD
+        //Instances "steps" and enables it
+        steps = FMODUnity.RuntimeManager.CreateInstance(stepsEvent);
+        steps.start();
+        //Attaches instance to object
+        FMODUnity.RuntimeManager.AttachInstanceToGameObject(steps, GetComponent<Transform>(), GetComponent<Rigidbody>());
+
+        //starts "speed" as 0
+        steps.setParameterValue("speed", 0);
+        //starts "tile" as 1 (wood)
+        steps.setParameterValue("tile", 1);
     }
 
     private void OnDisable()
     {
         EventManager.OnSetPlayerControl -= SetPlayerControl;
-		
-		//FMOD
-		//Releases "steps" resources
-		steps.release();
+
+        //FMOD
+        //Releases "steps" resources
+        steps.release();
     }
 
     public bool isControlDisabled = false;
@@ -115,21 +115,23 @@ public partial class PlayerControl : BaseMovementController
                     if (_MovementPath == Vector3.up) { _TileMove._FacingDirection = MoveDirection.UP; }
                     if (_MovementPath == Vector3.down) { _TileMove._FacingDirection = MoveDirection.DOWN; }
                     transform.position += _MovementPath * Time.deltaTime * _TileMove.Speed;
-					
-					//FMOD
-					//if player is moving change speed parameter to hear sound
-					steps.setParameterValue("speed", 80);
+
+                    //FMOD
+                    //if player is moving change speed parameter to hear sound
+                    steps.setParameterValue("speed", 80);
                 }
-				
-				if (!isMoving)
-				{
-					//FMOD
-					//if player is not moving change speed to 0 so no sound is heard
-					steps.setParameterValue("speed", 0);
-				}
+
+                if (!isMoving)
+                {
+                    //FMOD
+                    //if player is not moving change speed to 0 so no sound is heard
+                    steps.setParameterValue("speed", 0);
+                }
             }
             else
             {
+                if (!Input.anyKey)
+                    _Rb.velocity = Vector2.zero;
 
                 if (Input.GetKeyDown(KeyCode.UpArrow) && !Input.GetKeyDown(KeyCode.RightArrow) && !Input.GetKeyDown(KeyCode.LeftArrow) && !Input.GetKeyDown(KeyCode.DownArrow)) { _TileMove.Move(transform, MoveDirection.UP, _TileMove.Speed); }
                 if (Input.GetKeyDown(KeyCode.RightArrow) && !Input.GetKeyDown(KeyCode.UpArrow) && !Input.GetKeyDown(KeyCode.DownArrow) && !Input.GetKeyDown(KeyCode.LeftArrow)) { _TileMove.Move(transform, MoveDirection.RIGHT, _TileMove.Speed); }
@@ -173,15 +175,15 @@ public partial class PlayerControl : BaseMovementController
         {
             switch (item.itemID)
             {
-//                case (int)ItemItems.Carrot:
-//                    Debug.Log("THIS IS A CAROT");
-//                    break;
-//                case (int)ItemItems.GoodBread:
-//                    Debug.Log("THIS IS A GOOD BREAD");
-//                    break;
-//                case (int)ItemItems.Pudding:
-//                    Debug.Log("THIS IS A PUDDING");
-//                    break;
+                //                case (int)ItemItems.Carrot:
+                //                    Debug.Log("THIS IS A CAROT");
+                //                    break;
+                //                case (int)ItemItems.GoodBread:
+                //                    Debug.Log("THIS IS A GOOD BREAD");
+                //                    break;
+                //                case (int)ItemItems.Pudding:
+                //                    Debug.Log("THIS IS A PUDDING");
+                //                    break;
                 default:
                     status.UseItem(item);
                     UpdateStatusUI();
@@ -200,7 +202,7 @@ public partial class PlayerControl : BaseMovementController
     public void UpdateStatusUI()
     {
 
-        if(status.Health <= 100 && status.Health >= 0)
+        if (status.Health <= 100 && status.Health >= 0)
         {
             healthUI.GetChild(0).GetComponent<Image>().fillAmount = status.Health / 100;
             healthUI.GetChild(1).GetComponent<TextMeshProUGUI>().text = status.Health.ToString();
@@ -215,4 +217,17 @@ public partial class PlayerControl : BaseMovementController
 
     public void SetPlayerControl(bool value) => isControlDisabled = !value;
 
+    void OnCollisionEnter2D(UnityEngine.Collision2D collision)
+    {
+        if (collision.transform.tag == "Barrel")
+            StartCoroutine(BarrelHit());
+    }
+
+    IEnumerator BarrelHit()
+    {
+        isControlDisabled = true;
+        yield return new WaitForSeconds(0.4f);
+        _Rb.velocity = Vector2.zero;
+        isControlDisabled = false;
+    }
 }
