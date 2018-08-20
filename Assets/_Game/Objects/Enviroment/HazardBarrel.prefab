@@ -92,7 +92,7 @@ MonoBehaviour:
   effectRadius: 1.5
   healthEffect: -4
   radEffect: 2
-  throwSfx: 
+  throwSfx: event:/sfx/characters/push
   bounceSfx: event:/sfx/impact/barrel
   explodeSfx: event:/sfx/impact/explosion
 --- !u!212 &212000897312943832
