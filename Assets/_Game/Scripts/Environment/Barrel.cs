@@ -44,7 +44,11 @@ public class Barrel : MonoBehaviour
                 b.GetComponent<Barrel>().Explode();
 
         RuntimeManager.PlayOneShot(explodeSfx, transform.position);
-        Destroy(gameObject);
+        GetComponent<SpriteRenderer>().enabled = false;
+        GetComponent<Collider2D>().enabled = false;
+        rb.simulated = false;
+        transform.GetChild(0).gameObject.SetActive(true);
+        Destroy(gameObject, 3);
     }
 
     /// <summary>
