@@ -164,7 +164,7 @@ public class SpawnManager : MonoBehaviour
         {
             //Get a random spawn point to use and make sure we didn't already use it
             int index = Random.Range(0, spawnPoints.Count);
-            while (usedPoints.Contains(index))
+            while (usedPoints.Contains(index) || transform.GetChild(0).GetChild(index).childCount > 0)
             {
                 index = Random.Range(0, spawnPoints.Count);
             }
@@ -179,8 +179,8 @@ public class SpawnManager : MonoBehaviour
                 Debug.Log("Skipping because player is blocking the spawn point");
                 continue;
             }
-            GameObject go = null;
 
+            GameObject go = null;
             var tags = s.Prefab.MultiTags();
             var spawned = false;
             foreach (var tag in tags)
