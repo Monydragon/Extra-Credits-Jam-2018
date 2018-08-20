@@ -90,9 +90,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   effectRadius: 1.5
-  healthEffect: -5
+  healthEffect: -4
   radEffect: 2
-  spd: 0
 --- !u!212 &212000897312943832
 SpriteRenderer:
   m_ObjectHideFlags: 1

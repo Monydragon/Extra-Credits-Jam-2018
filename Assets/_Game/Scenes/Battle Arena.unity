@@ -162,6 +162,11 @@ Prefab:
       propertyPath: statusPanel
       value: 
       objectReference: {fileID: 1357379881}
+    - target: {fileID: 114887293701359256, guid: 4594487366a1fcd46b1000dbd3879171,
+        type: 2}
+      propertyPath: _TileMove.Speed
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4594487366a1fcd46b1000dbd3879171, type: 2}
   m_IsPrefabAsset: 0
@@ -569,7 +574,7 @@ MonoBehaviour:
     _FacingDirection: 1
     Use8Directional: 1
     SmoothMovement: 1
-    Speed: 2
+    Speed: 3
     ColliderMask:
       serializedVersion: 2
       m_Bits: 256
@@ -583,15 +588,18 @@ MonoBehaviour:
     DownRight: {fileID: 0}
     DownLeft: {fileID: 0}
   _Tilemap: {fileID: 972329262}
-  throwDistanceThreshold: 1.5
+  barrelDistThreshold: 1
   throwSpeed: 10
+  chargePause: 1
+  chargeDuration: 1
+  chargeSpdMult: 3
   damage: 2
   status:
     health: 0
     rads: 0
   state: 0
   player: {fileID: 0}
-  stepsEvent: event:/sfx/char/steps
+  stepsEvent: event:/sfx/char/steps3D
   isControlDisabled: 0
 --- !u!1001 &708447055
 Prefab:

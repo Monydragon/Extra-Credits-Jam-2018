@@ -7,33 +7,32 @@ using UnityEditor;
 public class Barrel : MonoBehaviour
 {
     [Range(-20, 20)]
-    public float effectRadius, healthEffect, radEffect;
+    public float effectRadius;
+    [Range(-20, 20)]
+    public int healthEffect, radEffect;
+
+    Transform playerTr;
     Rigidbody2D rb;
     Vector3 dir;
     int bounces;
-    bool thrown;
+    bool thrown, playerCanThrow;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        playerTr = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     public void Explode()
     {
-        var pc = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerControl>();
+        var pc = playerTr.GetComponent<PlayerControl>();
         if (Vector3.Distance(transform.position, pc.transform.position) <= effectRadius)
-        {
-            //Hurt player
-        }
+            pc.ApplyStatus(healthEffect, radEffect);
 
         var enemies = GameObject.FindGameObjectsWithTag("Enemy");
         foreach (var e in enemies)
-        {
             if (Vector3.Distance(transform.position, e.transform.position) <= effectRadius)
-            {
-                //e.GetComponent<BullyController>()
-            }
-        }
+                e.GetComponent<BullyController>().ApplyStatus(healthEffect, radEffect);
 
         Destroy(gameObject);
     }
@@ -54,13 +53,33 @@ public class Barrel : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (thrown && (collision.transform.tag == "Player" || collision.transform.tag == "Enemy" || bounces > 3))
-            Explode();
-        else
+        if (thrown)
         {
-            dir = dir - (Vector3)collision.contacts[0].normal * 2 * Vector3.Dot(dir, collision.contacts[0].normal);
-            bounces++;
+            if (collision.transform.tag == "Player" || collision.transform.tag == "Enemy" || bounces > 3)
+                Explode();
+            else
+            {
+                dir = dir - (Vector3)collision.contacts[0].normal * 2 * Vector3.Dot(dir, collision.contacts[0].normal);
+                bounces++;
+            }
         }
+
+        else if (collision.transform.tag == "Player")
+        {
+            playerCanThrow = true;
+        }
+    }
+
+    void Update()
+    {
+        if (playerCanThrow && Input.GetKeyDown(KeyCode.E))
+            Throw((transform.position - playerTr.position).normalized, 10);
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.transform.tag == "Player")
+            playerCanThrow = false;
     }
 
     IEnumerator Thrown(float spd)
