@@ -136,13 +136,14 @@ public class BullyController : BaseMovementController
         status.Rads += rads;
         RuntimeManager.PlayOneShot(hurtSfx, transform.position);
 
-        if (health <= 0)
+        if (status.Health <= 0)
             Die();
     }
 
     void Die()
     {
         RuntimeManager.PlayOneShot(dieSfx, transform.position);
+        KillsUI.UI.AddKill();
         Destroy(gameObject);
     }
 

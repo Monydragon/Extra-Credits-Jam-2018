@@ -200,13 +200,14 @@ public partial class PlayerControl : BaseMovementController
         status.Rads += rads;
         RuntimeManager.PlayOneShot(hurtSfx, transform.position);
 
-        if (health <= 0)
+        if (status.Health <= 0)
             StartCoroutine(Die());
     }
 
     IEnumerator Die()
     {
         RuntimeManager.PlayOneShot(dieSfx, transform.position);
+        TimerUI.UI.Stop();
         yield return new WaitForSeconds(2);
         UnityEngine.SceneManagement.SceneManager.LoadScene("DeathScene");
     }
