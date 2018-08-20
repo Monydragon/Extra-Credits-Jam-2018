@@ -38,6 +38,11 @@ public class Barrel : MonoBehaviour
             if (Vector3.Distance(transform.position, e.transform.position) <= effectRadius)
                 e.GetComponent<BullyController>().ApplyStatus(healthEffect, radEffect);
 
+        var barrels = GameObject.FindGameObjectsWithTag("Barrel");
+        foreach (var b in barrels)
+            if (Vector3.Distance(transform.position, b.transform.position) <= effectRadius)
+                b.GetComponent<Barrel>().Explode();
+
         RuntimeManager.PlayOneShot(explodeSfx, transform.position);
         Destroy(gameObject);
     }
