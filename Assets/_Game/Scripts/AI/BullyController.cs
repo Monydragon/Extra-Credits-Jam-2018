@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.AccessControl;
 using UnityEngine;
+using FMODUnity;
 
 public class BullyController : BaseMovementController
 {
@@ -22,15 +23,15 @@ public class BullyController : BaseMovementController
     public EnemyState state;
     public Transform player;
 
-    [FMODUnity.EventRef]
+    [EventRef]
     //"stepsEvent" stores event path
-    public string stepsEvent;
+    public string stepsEvent, hurtSfx, dieSfx;
 
     //Event instance
     FMOD.Studio.EventInstance steps;
 
     public bool isControlDisabled = false;
-    private bool isMoving = false;
+    private bool isMoving = false, canHurt = true;
     private Vector3 _MovementPath;
 
     private void OnEnable()
@@ -133,6 +134,16 @@ public class BullyController : BaseMovementController
     {
         status.Health += health;
         status.Rads += rads;
+        RuntimeManager.PlayOneShot(hurtSfx, transform.position);
+
+        if (health <= 0)
+            Die();
+    }
+
+    void Die()
+    {
+        RuntimeManager.PlayOneShot(dieSfx, transform.position);
+        Destroy(gameObject);
     }
 
     IEnumerator Think()
@@ -176,6 +187,11 @@ public class BullyController : BaseMovementController
         {
             transform.position += dir * TileMove.Speed * chargeSpdMult * Time.deltaTime;
             t += Time.deltaTime;
+
+            //If we hit something stop
+            if (TileMove.Up != null && TileMove.Up.tag != "Item" || TileMove.Right != null && TileMove.Right.tag != "Item" || TileMove.Down != null && TileMove.Down.tag != "Item" || TileMove.Left != null && TileMove.Left.tag != "Item" ||
+                TileMove.UpRight != null && TileMove.UpRight.tag != "Item" || TileMove.UpLeft != null && TileMove.UpLeft.tag != "Item" || TileMove.DownRight != null && TileMove.DownRight.tag != "Item")
+                break;
             yield return null;
         }
 
@@ -228,26 +244,17 @@ public class BullyController : BaseMovementController
         }
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.transform.tag == "Player")
-        {
-            StartCoroutine(DealDamage(collision.gameObject, damage));
-        }
-    }
-
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        if (collision.transform.tag == "Player")
-        {
-            StartCoroutine(DealDamage(collision.gameObject, damage));
-        }
+        if (canHurt && collision.transform.tag == "Player")
+            StartCoroutine(DealDamage(collision.gameObject, state == EnemyState.Charge ? damage * 2 : damage));
     }
 
     IEnumerator DealDamage(GameObject obj, int amount)
     {
-        var pc = obj.GetComponent<PlayerControl>();
-        pc.ApplyStatus(-amount, 0);
+        canHurt = false;
+        obj.GetComponent<PlayerControl>().ApplyStatus(-amount, 0);
         yield return new WaitForSeconds(2f);
+        canHurt = true;
     }
 }

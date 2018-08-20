@@ -6,14 +6,17 @@ using UnityEngine;
     [Serializable]
     public struct Status
     {
-        [SerializeField][Range(0,100)] private float health, rads;
+        [SerializeField][Range(0,20)] private float health;
+
+
+        [SerializeField][Range(0,20)] private float rads;
 
         public float Health
         {
             get { return health; }
             set
             {
-                if (value > 100) { health = 100; }
+                if (value > 20) { health = 20; }
                 else if(value <= 0) { health = 0; }
                 else { health = value;}
             }
@@ -24,7 +27,7 @@ using UnityEngine;
             get { return rads; }
             set
             {
-                if (value > 50) { health -= 5; rads = value; }
+                if (value > 20) { health -= 1; }
                 else if (value <= 0) { rads = 0; }
                 else { rads = value; }
             }
@@ -40,7 +43,7 @@ using UnityEngine;
         [Button("Reset Status", ButtonSizes.Medium, ButtonStyle.Box)]
         public void ResetStatus()
         {
-            Health = 100;
+            Health = 20;
             Rads = 0;
         }
     }

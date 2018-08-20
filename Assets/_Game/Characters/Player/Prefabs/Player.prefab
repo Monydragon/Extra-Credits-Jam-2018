@@ -112,7 +112,7 @@ MonoBehaviour:
     _FacingDirection: 1
     Use8Directional: 1
     SmoothMovement: 1
-    Speed: 3
+    Speed: 4
     ColliderMask:
       serializedVersion: 2
       m_Bits: 256
@@ -128,10 +128,11 @@ MonoBehaviour:
   _Tilemap: {fileID: 0}
   status:
     health: 20
-    hunger: 20
     rads: 20
   statusPanel: {fileID: 0}
   stepsEvent: event:/sfx/char/steps
+  hurtSfx: event:/sfx/char/hurt
+  dieSfx: 
   isControlDisabled: 0
 --- !u!212 &212185970870497946
 SpriteRenderer:

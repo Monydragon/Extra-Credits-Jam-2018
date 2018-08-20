@@ -2,39 +2,43 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using FMODUnity;
 
 [RequireComponent(typeof(SpriteRenderer), typeof(CircleCollider2D), typeof(Rigidbody2D))]
 public class Barrel : MonoBehaviour
 {
     [Range(-20, 20)]
-    public float effectRadius, healthEffect, radEffect;
+    public float effectRadius;
+    [Range(-20, 20)]
+    public int healthEffect, radEffect;
+
+    [EventRef]
+    public string throwSfx, bounceSfx, explodeSfx;
+
+    Transform playerTr;
     Rigidbody2D rb;
     Vector3 dir;
     int bounces;
-    bool thrown;
+    bool thrown, playerCanThrow;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        playerTr = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     public void Explode()
     {
-        var pc = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerControl>();
+        var pc = playerTr.GetComponent<PlayerControl>();
         if (Vector3.Distance(transform.position, pc.transform.position) <= effectRadius)
-        {
-            //Hurt player
-        }
+            pc.ApplyStatus(healthEffect, radEffect);
 
         var enemies = GameObject.FindGameObjectsWithTag("Enemy");
         foreach (var e in enemies)
-        {
             if (Vector3.Distance(transform.position, e.transform.position) <= effectRadius)
-            {
-                //e.GetComponent<BullyController>()
-            }
-        }
+                e.GetComponent<BullyController>().ApplyStatus(healthEffect, radEffect);
 
+        RuntimeManager.PlayOneShot(explodeSfx, transform.position);
         Destroy(gameObject);
     }
 
@@ -50,24 +54,52 @@ public class Barrel : MonoBehaviour
         this.dir = dir;
         StartCoroutine(Thrown(spd));
         thrown = true;
+        RuntimeManager.PlayOneShot(throwSfx, transform.position);
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (thrown && (collision.transform.tag == "Player" || collision.transform.tag == "Enemy" || bounces > 3))
-            Explode();
-        else
+        if (thrown)
         {
-            dir = dir - (Vector3)collision.contacts[0].normal * 2 * Vector3.Dot(dir, collision.contacts[0].normal);
-            bounces++;
+            if (collision.transform.tag == "Player" || collision.transform.tag == "Enemy" || bounces > 3)
+                Explode();
+            else
+            {
+                dir = dir - (Vector3)collision.contacts[0].normal * 2 * Vector3.Dot(dir, collision.contacts[0].normal);
+                bounces++;
+                RuntimeManager.PlayOneShot(bounceSfx, transform.position);
+            }
         }
+
+        else if (collision.transform.tag == "Player")
+        {
+            playerCanThrow = true;
+        }
+    }
+
+    void Update()
+    {
+        if (playerCanThrow && Input.GetKeyDown(KeyCode.E))
+            Throw((transform.position - playerTr.position).normalized, 10);
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.transform.tag == "Player")
+            playerCanThrow = false;
     }
 
     IEnumerator Thrown(float spd)
     {
+        float time = 0;
         while (true)
         {
             rb.MovePosition(transform.position + dir * spd * Time.deltaTime);
+
+            time += Time.deltaTime;
+            if (time > 10)
+                Destroy(gameObject);
+
             yield return null;
         }
     }

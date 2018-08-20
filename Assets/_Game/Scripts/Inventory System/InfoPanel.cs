@@ -23,7 +23,7 @@ public class InfoPanel : MonoBehaviour
         descTxt.text = item.itemDescription;
 
         string stackMsg = item.stackable ? $"{item.stackCount}/{item.maxStackAmount}" : "Does not stack";
-        infoTxt.text = $"Healing:\t{item.healing}\nRadiation:\t{item.radiation}\nAmount:\t{stackMsg}";
+        infoTxt.text = $"Healing:\t{item.healing}\nHunger:\t{item.hunger}\nRadiation:\t{item.radiation}\nAmount:\t{stackMsg}";
 
         rect.anchoredPosition = new Vector2((slotSize / 2f) + (slotSize + slotSeparation) * slotNum, rect.anchoredPosition.y);
     }

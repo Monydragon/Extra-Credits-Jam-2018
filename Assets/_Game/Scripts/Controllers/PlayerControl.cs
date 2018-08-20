@@ -1,5 +1,5 @@
 ﻿using System.Collections;
-using Fungus;
+using FMODUnity;
 using ItemSystem;
 using TMPro;
 using UnityEngine;
@@ -21,9 +21,9 @@ public partial class PlayerControl : BaseMovementController
 
     //FMOD
     //UI
-    [FMODUnity.EventRef]
+    [EventRef]
     //"stepsEvent" stores event path
-    public string stepsEvent;
+    public string stepsEvent, hurtSfx, dieSfx;
 
     //Event instance
     FMOD.Studio.EventInstance steps;
@@ -100,6 +100,9 @@ public partial class PlayerControl : BaseMovementController
     {
         if (!isControlDisabled)
         {
+            if (!Input.anyKey)
+                _Rb.velocity = Vector2.zero;
+
             if (TileMove.SmoothMovement)
             {
                 //TODO: Replace movement control with InContol handling?
@@ -130,9 +133,6 @@ public partial class PlayerControl : BaseMovementController
             }
             else
             {
-                if (!Input.anyKey)
-                    _Rb.velocity = Vector2.zero;
-
                 if (Input.GetKeyDown(KeyCode.UpArrow) && !Input.GetKeyDown(KeyCode.RightArrow) && !Input.GetKeyDown(KeyCode.LeftArrow) && !Input.GetKeyDown(KeyCode.DownArrow)) { _TileMove.Move(transform, MoveDirection.UP, _TileMove.Speed); }
                 if (Input.GetKeyDown(KeyCode.RightArrow) && !Input.GetKeyDown(KeyCode.UpArrow) && !Input.GetKeyDown(KeyCode.DownArrow) && !Input.GetKeyDown(KeyCode.LeftArrow)) { _TileMove.Move(transform, MoveDirection.RIGHT, _TileMove.Speed); }
                 if (Input.GetKeyDown(KeyCode.DownArrow) && !Input.GetKeyDown(KeyCode.RightArrow) && !Input.GetKeyDown(KeyCode.LeftArrow) && !Input.GetKeyDown(KeyCode.UpArrow)) { _TileMove.Move(transform, MoveDirection.DOWN, _TileMove.Speed); }
@@ -186,6 +186,7 @@ public partial class PlayerControl : BaseMovementController
                 //                    break;
                 default:
                     status.UseItem(item);
+                    RuntimeManager.PlayOneShot(item.useSfx, transform.position);
                     UpdateStatusUI();
                     break;
             }
@@ -197,6 +198,17 @@ public partial class PlayerControl : BaseMovementController
     {
         status.Health += health;
         status.Rads += rads;
+        RuntimeManager.PlayOneShot(hurtSfx, transform.position);
+
+        if (health <= 0)
+            StartCoroutine(Die());
+    }
+
+    IEnumerator Die()
+    {
+        RuntimeManager.PlayOneShot(dieSfx, transform.position);
+        yield return new WaitForSeconds(2);
+        UnityEngine.SceneManagement.SceneManager.LoadScene("DeathScene");
     }
 
     public void UpdateStatusUI()

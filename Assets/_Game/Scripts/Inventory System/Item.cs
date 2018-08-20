@@ -14,7 +14,8 @@ namespace ItemSystem
 
         [Range(1, 20)]
         public int stackCount = 1;
-        public AudioClip useSfx;
+        [FMODUnity.EventRef]
+        public string useSfx;
 
         public override void UpdateUniqueProperties(ItemBase i)
         {
