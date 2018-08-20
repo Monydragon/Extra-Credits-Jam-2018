@@ -15,18 +15,23 @@ public struct IntMinMax
     public int GetRandom() => Random.Range(Min, Max + 1);
 
 }
+
 public class SpawnManager : MonoBehaviour
 {
     [Range(0, 30)] public int minSpawns = 6, maxSpawns = 12;
     public bool setPrefabsOnStart = true;
     public float spawnTimer = 5.0f;
 
+    public int maxEnemies = 3;
+
     public int activeSpawns;
     public int activeBarrels;
+    public int activeEnemies;
 
     [OdinSerialize] public List<SpawnPointSpawn> spawnPoints;
     [OdinSerialize] public List<GameObject> Prefabs;
 
+    public Transform playerTransform;
     private void Awake()
     {
         if (spawnPoints.Any()) return;
@@ -80,12 +85,15 @@ public class SpawnManager : MonoBehaviour
 
             //Instantiate the prefab
             var s = spawnPoints[index];
-            var playerTransform = MultiTags.FindGameObjectWithMultiTag("Player").transform;
-            if (Vector2.Distance(playerTransform.position, s.SpawnPoint.transform.position) < 1.5f)
+            if (playerTransform != null)
             {
-                Debug.Log("Skipping because player is blocking the spawn point");
-                continue;
+                if (Vector2.Distance(playerTransform.position, s.SpawnPoint.transform.position) < 1.5f)
+                {
+                    Debug.Log("Skipping because player is blocking the spawn point");
+                    continue;
+                }
             }
+
             GameObject go = null;
 
             var tags = s.Prefab.MultiTags();
@@ -99,6 +107,17 @@ public class SpawnManager : MonoBehaviour
                         go = ItemInstance.CreateItemInstance((ItemItems)it.itemID, s.SpawnPoint.transform.position);
                         spawned = true;
                         break;
+                    case "Enemy":
+                        if (activeEnemies < maxEnemies)
+                        {
+                            go = Instantiate(s.Prefab, s.SpawnPoint.transform.position, Quaternion.identity);
+                            spawned = true;
+                        }
+                        else
+                        {
+                            Debug.Log("Skipped because max enemies!");
+                        }
+                        break;
                     default:
                         go = Instantiate(s.Prefab, s.SpawnPoint.transform.position, Quaternion.identity);
                         spawned = true;
@@ -106,6 +125,8 @@ public class SpawnManager : MonoBehaviour
                 }
                 if (spawned) { break; }
             }
+
+            if (go == null) continue;
 
             go.transform.SetParent(s.SpawnPoint.transform);
             go.AddTag("SpawnedObject");
@@ -115,13 +136,10 @@ public class SpawnManager : MonoBehaviour
 
     public void Start()
     {
+        if(playerTransform == null) { playerTransform = MultiTags.FindGameObjectWithMultiTag("Player").transform; }
+
+        SpawnAll();
         StartCoroutine(SpawnMore());
-    }
-
-    public void RandomizedSpawn()
-    {
-        SetPrefabs();
-
     }
 
     IEnumerator SpawnMore()
@@ -154,7 +172,7 @@ public class SpawnManager : MonoBehaviour
 
             //Instantiate the prefab
             var s = spawnPoints[index];
-            var playerTransform = MultiTags.FindGameObjectWithMultiTag("Player").transform;
+            var playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
             if (Vector2.Distance(playerTransform.position, s.SpawnPoint.transform.position) < 1.5f)
             {
                 Debug.Log("Skipping because player is blocking the spawn point");
@@ -173,6 +191,17 @@ public class SpawnManager : MonoBehaviour
                         go = ItemInstance.CreateItemInstance((ItemItems)it.itemID, s.SpawnPoint.transform.position);
                         spawned = true;
                         break;
+                    case "Enemy":
+                        if (activeEnemies < maxEnemies)
+                        {
+                            go = Instantiate(s.Prefab, s.SpawnPoint.transform.position, Quaternion.identity);
+                            spawned = true;
+                        }
+                        else
+                        {
+                            Debug.Log("Max Enemies Reached");
+                        }
+                        break;
                     default:
                         go = Instantiate(s.Prefab, s.SpawnPoint.transform.position, Quaternion.identity);
                         spawned = true;
@@ -181,6 +210,7 @@ public class SpawnManager : MonoBehaviour
                 if (spawned) { break; }
             }
 
+            if(go == null) continue;
             go.transform.SetParent(s.SpawnPoint.transform);
             go.AddTag("SpawnedObject");
         }
