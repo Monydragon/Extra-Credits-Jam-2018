@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using FMODUnity;
 
 [RequireComponent(typeof(SpriteRenderer), typeof(CircleCollider2D), typeof(Rigidbody2D))]
 public class Barrel : MonoBehaviour
@@ -10,6 +11,9 @@ public class Barrel : MonoBehaviour
     public float effectRadius;
     [Range(-20, 20)]
     public int healthEffect, radEffect;
+
+    [EventRef]
+    public string throwSfx, bounceSfx, explodeSfx;
 
     Transform playerTr;
     Rigidbody2D rb;
@@ -34,6 +38,7 @@ public class Barrel : MonoBehaviour
             if (Vector3.Distance(transform.position, e.transform.position) <= effectRadius)
                 e.GetComponent<BullyController>().ApplyStatus(healthEffect, radEffect);
 
+        RuntimeManager.PlayOneShot(explodeSfx, transform.position);
         Destroy(gameObject);
     }
 
@@ -49,6 +54,7 @@ public class Barrel : MonoBehaviour
         this.dir = dir;
         StartCoroutine(Thrown(spd));
         thrown = true;
+        RuntimeManager.PlayOneShot(throwSfx, transform.position);
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -61,6 +67,7 @@ public class Barrel : MonoBehaviour
             {
                 dir = dir - (Vector3)collision.contacts[0].normal * 2 * Vector3.Dot(dir, collision.contacts[0].normal);
                 bounces++;
+                RuntimeManager.PlayOneShot(bounceSfx, transform.position);
             }
         }
 
@@ -84,9 +91,15 @@ public class Barrel : MonoBehaviour
 
     IEnumerator Thrown(float spd)
     {
+        float time = 0;
         while (true)
         {
             rb.MovePosition(transform.position + dir * spd * Time.deltaTime);
+
+            time += Time.deltaTime;
+            if (time > 10)
+                Destroy(gameObject);
+
             yield return null;
         }
     }

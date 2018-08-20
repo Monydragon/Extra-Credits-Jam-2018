@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.AccessControl;
 using UnityEngine;
+using FMODUnity;
 
 public class BullyController : BaseMovementController
 {
@@ -22,9 +23,9 @@ public class BullyController : BaseMovementController
     public EnemyState state;
     public Transform player;
 
-    [FMODUnity.EventRef]
+    [EventRef]
     //"stepsEvent" stores event path
-    public string stepsEvent;
+    public string stepsEvent, hurtSfx, dieSfx;
 
     //Event instance
     FMOD.Studio.EventInstance steps;
@@ -133,6 +134,15 @@ public class BullyController : BaseMovementController
     {
         status.Health += health;
         status.Rads += rads;
+        RuntimeManager.PlayOneShot(hurtSfx, transform.position);
+
+        if (health <= 0)
+            Die();
+    }
+
+    void Die()
+    {
+        RuntimeManager.PlayOneShot(dieSfx, transform.position);
     }
 
     IEnumerator Think()

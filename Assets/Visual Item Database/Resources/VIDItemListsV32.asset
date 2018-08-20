@@ -27,7 +27,7 @@ MonoBehaviour:
     hunger: -2
     price: 1
     stackCount: 1
-    useSfx: {fileID: 8300000, guid: c4a72ef80d856c34db20161f6edd2458, type: 3}
+    useSfx: event:/sfx/characters/eat
   - itemName: Slightly Moldy Bread
     itemDescription: Closer to regular bread. Just don't look at the bad parts and
       savor the fresher parts.
@@ -43,7 +43,7 @@ MonoBehaviour:
     hunger: -3
     price: 3
     stackCount: 1
-    useSfx: {fileID: 8300000, guid: c4a72ef80d856c34db20161f6edd2458, type: 3}
+    useSfx: event:/sfx/characters/eat
   - itemName: Good Bread
     itemDescription: Delicious, slightly fluffy and enjoyable.
     itemID: -200021338
@@ -58,7 +58,7 @@ MonoBehaviour:
     hunger: 0
     price: 5
     stackCount: 1
-    useSfx: {fileID: 8300000, guid: c4a72ef80d856c34db20161f6edd2458, type: 3}
+    useSfx: event:/sfx/characters/eat
   - itemName: Carrot
     itemDescription: Orange vegetable. Tastes sort of sweet.
     itemID: 1156997932
@@ -73,7 +73,7 @@ MonoBehaviour:
     hunger: 0
     price: 3
     stackCount: 1
-    useSfx: {fileID: 8300000, guid: c4a72ef80d856c34db20161f6edd2458, type: 3}
+    useSfx: event:/sfx/characters/eat
   - itemName: Pudding
     itemDescription: Vanilla pudding with slight mold on top. Best to throw the mold
       away.
@@ -89,7 +89,7 @@ MonoBehaviour:
     hunger: 0
     price: 9
     stackCount: 1
-    useSfx: {fileID: 8300000, guid: c4a72ef80d856c34db20161f6edd2458, type: 3}
+    useSfx: event:/sfx/characters/eat
   - itemName: Sandwich
     itemDescription: Best item on menu. The peanut butter goes well with the peach
       jelly.
@@ -105,7 +105,7 @@ MonoBehaviour:
     hunger: 0
     price: 11
     stackCount: 1
-    useSfx: {fileID: 8300000, guid: c4a72ef80d856c34db20161f6edd2458, type: 3}
+    useSfx: event:/sfx/characters/eat
   - itemName: Water
     itemDescription: Good, plain and simple.
     itemID: 2092244667
@@ -120,7 +120,7 @@ MonoBehaviour:
     hunger: 0
     price: 1
     stackCount: 1
-    useSfx: {fileID: 8300000, guid: d2c43063b08b6e14a9eec528c56156b3, type: 3}
+    useSfx: event:/sfx/characters/drink
   - itemName: Radiation Pills
     itemDescription: Reduce radiation effects.
     itemID: 1397697909
@@ -135,7 +135,7 @@ MonoBehaviour:
     hunger: 0
     price: 2
     stackCount: 1
-    useSfx: {fileID: 8300000, guid: a706909f2bdfa16479043bcb0f4e4095, type: 3}
+    useSfx: event:/sfx/characters/pills
   usedIDs: bba596b115b4427aa6ea13f42c63f644d79982f03649640abb1eb57c752d4f53
   typesOfUsedIDs: 0500000005000000050000000500000005000000050000000500000005000000
   subtypes: []
