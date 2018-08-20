@@ -9,7 +9,7 @@ namespace ItemSystem
         [Range(-50, 50), Header("Unique properties")]
         public int damage;
 
-        [Range(-20, 20)]
+        [Range(-100, 100)]
         public int healing, radiation, hunger, price;
 
         [Range(1, 20)]

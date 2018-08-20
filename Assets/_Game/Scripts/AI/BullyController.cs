@@ -255,7 +255,7 @@ public class BullyController : BaseMovementController
     {
         canHurt = false;
         obj.GetComponent<PlayerControl>().ApplyStatus(-amount, 0);
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(0.8f);
         canHurt = true;
     }
 }

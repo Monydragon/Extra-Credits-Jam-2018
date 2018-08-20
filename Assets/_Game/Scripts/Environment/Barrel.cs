@@ -19,7 +19,7 @@ public class Barrel : MonoBehaviour
     Rigidbody2D rb;
     Vector3 dir;
     int bounces;
-    bool thrown, playerCanThrow;
+    bool thrown, playerCanThrow, exploded;
 
     void Awake()
     {
@@ -29,6 +29,10 @@ public class Barrel : MonoBehaviour
 
     public void Explode()
     {
+        if (exploded)
+            return;
+        exploded = true;
+
         var pc = playerTr.GetComponent<PlayerControl>();
         if (Vector3.Distance(transform.position, pc.transform.position) <= effectRadius)
             pc.ApplyStatus(healthEffect, radEffect);
@@ -43,6 +47,8 @@ public class Barrel : MonoBehaviour
             if (Vector3.Distance(transform.position, b.transform.position) <= effectRadius)
                 b.GetComponent<Barrel>().Explode();
 
+        RuntimeManager.PlayOneShot(explodeSfx, transform.position);
+        Destroy(gameObject);
         RuntimeManager.PlayOneShot(explodeSfx, transform.position);
         GetComponent<SpriteRenderer>().enabled = false;
         GetComponent<Collider2D>().enabled = false;

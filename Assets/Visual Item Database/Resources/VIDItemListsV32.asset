@@ -22,7 +22,7 @@ MonoBehaviour:
     itemIcon: {fileID: 21300042, guid: 28c1ddfd86935974eb0f43b96605c840, type: 3}
     itemType: 5
     damage: 0
-    healing: 3
+    healing: 5
     radiation: 0
     hunger: -2
     price: 1
@@ -38,7 +38,7 @@ MonoBehaviour:
     itemIcon: {fileID: 21300042, guid: 28c1ddfd86935974eb0f43b96605c840, type: 3}
     itemType: 5
     damage: 0
-    healing: 7
+    healing: 10
     radiation: 0
     hunger: -3
     price: 3
@@ -53,7 +53,7 @@ MonoBehaviour:
     itemIcon: {fileID: 21300042, guid: 28c1ddfd86935974eb0f43b96605c840, type: 3}
     itemType: 5
     damage: 0
-    healing: 10
+    healing: 20
     radiation: 0
     hunger: 0
     price: 5
@@ -68,7 +68,7 @@ MonoBehaviour:
     itemIcon: {fileID: 21300030, guid: 28c1ddfd86935974eb0f43b96605c840, type: 3}
     itemType: 5
     damage: 0
-    healing: 5
+    healing: 30
     radiation: 0
     hunger: 0
     price: 3
@@ -84,7 +84,7 @@ MonoBehaviour:
     itemIcon: {fileID: 21300044, guid: 28c1ddfd86935974eb0f43b96605c840, type: 3}
     itemType: 5
     damage: 0
-    healing: 15
+    healing: 20
     radiation: 0
     hunger: 0
     price: 9
@@ -100,7 +100,7 @@ MonoBehaviour:
     itemIcon: {fileID: 21300052, guid: 28c1ddfd86935974eb0f43b96605c840, type: 3}
     itemType: 5
     damage: 0
-    healing: 20
+    healing: 25
     radiation: 0
     hunger: 0
     price: 11
@@ -115,7 +115,7 @@ MonoBehaviour:
     itemIcon: {fileID: 21300062, guid: 28c1ddfd86935974eb0f43b96605c840, type: 3}
     itemType: 5
     damage: 0
-    healing: 3
+    healing: 10
     radiation: 0
     hunger: 0
     price: 1
@@ -131,7 +131,7 @@ MonoBehaviour:
     itemType: 5
     damage: 0
     healing: 0
-    radiation: 0
+    radiation: -20
     hunger: 0
     price: 2
     stackCount: 1

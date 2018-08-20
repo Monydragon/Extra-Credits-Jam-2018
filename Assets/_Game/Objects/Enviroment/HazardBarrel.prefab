@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 212000897312943832}
   - component: {fileID: 58563475484652434}
   - component: {fileID: 50417080533619926}
+  - component: {fileID: 114526889747460326}
   m_Layer: 8
   m_Name: HazardBarrel
   m_TagString: Barrel
@@ -140,6 +141,20 @@ CircleCollider2D:
   m_Offset: {x: -0.03, y: 0}
   serializedVersion: 2
   m_Radius: 0.47
+--- !u!114 &114526889747460326
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1075369981148180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5812814b7685642dbad1c7b3dd6e5abf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localTagList:
+  - Name: Barrel
+    ID: 0
 --- !u!114 &114644989303588690
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -152,8 +167,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   effectRadius: 1.5
-  healthEffect: -4
-  radEffect: 2
+  healthEffect: -20
+  radEffect: 10
   throwSfx: event:/sfx/characters/push
   bounceSfx: event:/sfx/impact/barrel
   explodeSfx: event:/sfx/impact/explosion
@@ -9504,12 +9519,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21302450, guid: b55ad09e65ddbdc48ab9a1f4e94b6456, type: 3}
+  m_Sprite: {fileID: 21302450, guid: de00b3c4f214df749973dbe52108a452, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.34, y: 0.34}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

@@ -22,7 +22,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnPoint 10
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -37,7 +37,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnPoint 9
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -52,7 +52,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnPoint 24
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -67,7 +67,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnPoint 20
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -82,7 +82,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnPoint 23
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -97,7 +97,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnPoint 25
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -112,7 +112,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnPoint 15
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -127,7 +127,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnPoint 7
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -142,7 +142,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnPoint 27
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -157,7 +157,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnPoint 16
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -172,7 +172,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnPoint 19
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -187,7 +187,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnPoint 14
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -202,7 +202,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnPoint 17
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -217,7 +217,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnPoint 29
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -232,7 +232,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnPoint 11
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -247,7 +247,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnPoint 28
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -262,7 +262,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnPoint 22
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -277,7 +277,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnPoint 18
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -323,7 +323,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnPoint 3
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -338,7 +338,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnPoint 4
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -353,7 +353,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnPoint 1
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -368,7 +368,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnPoint 0
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -383,7 +383,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnPoint 26
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -398,7 +398,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnPoint 12
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -413,7 +413,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnPoint 13
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -428,7 +428,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnPoint 8
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -443,7 +443,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnPoint 2
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -458,7 +458,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnPoint 5
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -473,7 +473,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnPoint 6
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -488,7 +488,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnPoint 21
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -950,69 +950,80 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e5c7aecca4c4854aa57a8c7113cff38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minSpawns: 8
+  maxSpawns: 15
+  setPrefabsOnStart: 1
+  spawnTimer: 1
+  maxEnemies: 3
+  activeSpawns: 0
+  activeBarrels: 0
+  activeEnemies: 0
   spawnPoints:
   - SpawnPoint: {fileID: 1769250408253056}
-    Prefab: {fileID: 100000, guid: fbafb8431307c42c9b1bfb9b27f6bd98, type: 2}
+    Prefab: {fileID: 1756718901606954, guid: 63871124f7faea84c92364263a525fb2, type: 2}
   - SpawnPoint: {fileID: 1726748252962188}
-    Prefab: {fileID: 158064, guid: 613b99a82fe95405db46062e1c071434, type: 2}
+    Prefab: {fileID: 1075369981148180, guid: 504e6e1649b8a5445a541acc1daf2fd9, type: 2}
   - SpawnPoint: {fileID: 1878847706226188}
-    Prefab: {fileID: 100000, guid: fbafb8431307c42c9b1bfb9b27f6bd98, type: 2}
+    Prefab: {fileID: 1075369981148180, guid: 504e6e1649b8a5445a541acc1daf2fd9, type: 2}
   - SpawnPoint: {fileID: 1695511934591828}
-    Prefab: {fileID: 100000, guid: fbafb8431307c42c9b1bfb9b27f6bd98, type: 2}
+    Prefab: {fileID: 1509813307449206, guid: beeca70cc8aabf14f9bc82186e424f3f, type: 2}
   - SpawnPoint: {fileID: 1722990270170942}
-    Prefab: {fileID: 158064, guid: 613b99a82fe95405db46062e1c071434, type: 2}
+    Prefab: {fileID: 1756718901606954, guid: 63871124f7faea84c92364263a525fb2, type: 2}
   - SpawnPoint: {fileID: 1937972034283068}
-    Prefab: {fileID: 100000, guid: fbafb8431307c42c9b1bfb9b27f6bd98, type: 2}
+    Prefab: {fileID: 1756718901606954, guid: 63871124f7faea84c92364263a525fb2, type: 2}
   - SpawnPoint: {fileID: 1938850793143982}
-    Prefab: {fileID: 158064, guid: 613b99a82fe95405db46062e1c071434, type: 2}
+    Prefab: {fileID: 1756718901606954, guid: 63871124f7faea84c92364263a525fb2, type: 2}
   - SpawnPoint: {fileID: 1374781216054770}
-    Prefab: {fileID: 100000, guid: fbafb8431307c42c9b1bfb9b27f6bd98, type: 2}
+    Prefab: {fileID: 1980684911223260, guid: 4d5906f1ff113e546bef05c3eea233da, type: 2}
   - SpawnPoint: {fileID: 1783875277474042}
-    Prefab: {fileID: 100000, guid: fbafb8431307c42c9b1bfb9b27f6bd98, type: 2}
+    Prefab: {fileID: 1509813307449206, guid: beeca70cc8aabf14f9bc82186e424f3f, type: 2}
   - SpawnPoint: {fileID: 1063413343035640}
     Prefab: {fileID: 1756718901606954, guid: 63871124f7faea84c92364263a525fb2, type: 2}
   - SpawnPoint: {fileID: 1032709119474910}
-    Prefab: {fileID: 100000, guid: fbafb8431307c42c9b1bfb9b27f6bd98, type: 2}
-  - SpawnPoint: {fileID: 1491878357948998}
-    Prefab: {fileID: 158064, guid: 613b99a82fe95405db46062e1c071434, type: 2}
-  - SpawnPoint: {fileID: 1770930721959200}
     Prefab: {fileID: 1756718901606954, guid: 63871124f7faea84c92364263a525fb2, type: 2}
+  - SpawnPoint: {fileID: 1491878357948998}
+    Prefab: {fileID: 1980684911223260, guid: 4d5906f1ff113e546bef05c3eea233da, type: 2}
+  - SpawnPoint: {fileID: 1770930721959200}
+    Prefab: {fileID: 1509813307449206, guid: beeca70cc8aabf14f9bc82186e424f3f, type: 2}
   - SpawnPoint: {fileID: 1778513841291130}
-    Prefab: {fileID: 158064, guid: 613b99a82fe95405db46062e1c071434, type: 2}
+    Prefab: {fileID: 1980684911223260, guid: 4d5906f1ff113e546bef05c3eea233da, type: 2}
   - SpawnPoint: {fileID: 1461122380529498}
-    Prefab: {fileID: 158064, guid: 613b99a82fe95405db46062e1c071434, type: 2}
+    Prefab: {fileID: 1075369981148180, guid: 504e6e1649b8a5445a541acc1daf2fd9, type: 2}
   - SpawnPoint: {fileID: 1296202307431810}
     Prefab: {fileID: 1756718901606954, guid: 63871124f7faea84c92364263a525fb2, type: 2}
   - SpawnPoint: {fileID: 1401223946912858}
-    Prefab: {fileID: 158064, guid: 613b99a82fe95405db46062e1c071434, type: 2}
+    Prefab: {fileID: 1756718901606954, guid: 63871124f7faea84c92364263a525fb2, type: 2}
   - SpawnPoint: {fileID: 1478431588374224}
-    Prefab: {fileID: 100000, guid: fbafb8431307c42c9b1bfb9b27f6bd98, type: 2}
+    Prefab: {fileID: 1075369981148180, guid: 504e6e1649b8a5445a541acc1daf2fd9, type: 2}
   - SpawnPoint: {fileID: 1571373269566666}
-    Prefab: {fileID: 100000, guid: fbafb8431307c42c9b1bfb9b27f6bd98, type: 2}
+    Prefab: {fileID: 1075369981148180, guid: 504e6e1649b8a5445a541acc1daf2fd9, type: 2}
   - SpawnPoint: {fileID: 1429511353629180}
-    Prefab: {fileID: 158064, guid: 613b99a82fe95405db46062e1c071434, type: 2}
+    Prefab: {fileID: 1075369981148180, guid: 504e6e1649b8a5445a541acc1daf2fd9, type: 2}
   - SpawnPoint: {fileID: 1114899400841624}
-    Prefab: {fileID: 158064, guid: 613b99a82fe95405db46062e1c071434, type: 2}
+    Prefab: {fileID: 1756718901606954, guid: 63871124f7faea84c92364263a525fb2, type: 2}
   - SpawnPoint: {fileID: 1975358296825800}
     Prefab: {fileID: 1756718901606954, guid: 63871124f7faea84c92364263a525fb2, type: 2}
   - SpawnPoint: {fileID: 1527260735862602}
-    Prefab: {fileID: 158064, guid: 613b99a82fe95405db46062e1c071434, type: 2}
+    Prefab: {fileID: 1980684911223260, guid: 4d5906f1ff113e546bef05c3eea233da, type: 2}
   - SpawnPoint: {fileID: 1145124903791870}
-    Prefab: {fileID: 1756718901606954, guid: 63871124f7faea84c92364263a525fb2, type: 2}
+    Prefab: {fileID: 1075369981148180, guid: 504e6e1649b8a5445a541acc1daf2fd9, type: 2}
   - SpawnPoint: {fileID: 1099237387170156}
-    Prefab: {fileID: 100000, guid: fbafb8431307c42c9b1bfb9b27f6bd98, type: 2}
+    Prefab: {fileID: 1980684911223260, guid: 4d5906f1ff113e546bef05c3eea233da, type: 2}
   - SpawnPoint: {fileID: 1280997036259976}
     Prefab: {fileID: 1756718901606954, guid: 63871124f7faea84c92364263a525fb2, type: 2}
   - SpawnPoint: {fileID: 1769845408906558}
-    Prefab: {fileID: 100000, guid: fbafb8431307c42c9b1bfb9b27f6bd98, type: 2}
-  - SpawnPoint: {fileID: 1385506521051940}
-    Prefab: {fileID: 158064, guid: 613b99a82fe95405db46062e1c071434, type: 2}
-  - SpawnPoint: {fileID: 1492234230606492}
     Prefab: {fileID: 1756718901606954, guid: 63871124f7faea84c92364263a525fb2, type: 2}
+  - SpawnPoint: {fileID: 1385506521051940}
+    Prefab: {fileID: 1756718901606954, guid: 63871124f7faea84c92364263a525fb2, type: 2}
+  - SpawnPoint: {fileID: 1492234230606492}
+    Prefab: {fileID: 1075369981148180, guid: 504e6e1649b8a5445a541acc1daf2fd9, type: 2}
   - SpawnPoint: {fileID: 1488703372466412}
-    Prefab: {fileID: 100000, guid: fbafb8431307c42c9b1bfb9b27f6bd98, type: 2}
+    Prefab: {fileID: 1509813307449206, guid: beeca70cc8aabf14f9bc82186e424f3f, type: 2}
   Prefabs:
+  - {fileID: 1075369981148180, guid: 504e6e1649b8a5445a541acc1daf2fd9, type: 2}
+  - {fileID: 1509813307449206, guid: beeca70cc8aabf14f9bc82186e424f3f, type: 2}
+  - {fileID: 1980684911223260, guid: 4d5906f1ff113e546bef05c3eea233da, type: 2}
   - {fileID: 1756718901606954, guid: 63871124f7faea84c92364263a525fb2, type: 2}
-  - {fileID: 158064, guid: 613b99a82fe95405db46062e1c071434, type: 2}
-  - {fileID: 100000, guid: fbafb8431307c42c9b1bfb9b27f6bd98, type: 2}
-  amountOfSpawns: 8
+  - {fileID: 1756718901606954, guid: 63871124f7faea84c92364263a525fb2, type: 2}
+  - {fileID: 1756718901606954, guid: 63871124f7faea84c92364263a525fb2, type: 2}
+  playerTransform: {fileID: 0}

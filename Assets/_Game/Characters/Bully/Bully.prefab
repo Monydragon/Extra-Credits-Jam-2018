@@ -109,7 +109,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5812814b7685642dbad1c7b3dd6e5abf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  localTagList: []
+  localTagList:
+  - Name: Enemy
+    ID: 0
 --- !u!114 &114605001588253748
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -150,9 +152,9 @@ MonoBehaviour:
     rads: 0
   state: 0
   player: {fileID: 0}
-  stepsEvent: event:/sfx/char/steps3D
+  stepsEvent: event:/sfx/characters/steps3D
   hurtSfx: event:/sfx/char/hurt
-  dieSfx: 
+  dieSfx: event:/sfx/characters/death
   isControlDisabled: 0
 --- !u!212 &212140372839221208
 SpriteRenderer:
