@@ -30,9 +30,10 @@ MonoBehaviour:
   - {fileID: 114176324874222508}
   - {fileID: 114426866426876198}
   - {fileID: 114517947145148504}
+  - {fileID: 114646695277104018}
   MasterBankRef: {fileID: 114743682739912626}
   StringsBankRef: {fileID: 114329789679712220}
-  stringsBankWriteTime: 636703255920216668
+  stringsBankWriteTime: 636703322483808630
   cacheVersion: 2
 --- !u!114 &114002543146262756
 MonoBehaviour:
@@ -240,6 +241,21 @@ MonoBehaviour:
   Min: 0
   Max: 100
   Default: 0
+--- !u!114 &114111165588392742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: vol
+  Min: 0
+  Max: 100
+  Default: 0
 --- !u!114 &114128563545376690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -341,6 +357,21 @@ MonoBehaviour:
   Min: 0
   Max: 100
   Default: 0
+--- !u!114 &114178843460500568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: vol
+  Min: 0
+  Max: 100
+  Default: 0
 --- !u!114 &114182576796923770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -405,7 +436,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114177615308365218}
+  - {fileID: 114111165588392742}
   MinDistance: 0
   MaxDistance: 0
   Length: 19243
@@ -518,6 +549,21 @@ MonoBehaviour:
   Min: 0
   Max: 100
   Default: 0
+--- !u!114 &114298602677790952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: wallTile
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114310271017038496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -575,11 +621,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\FMOD_Assets\sound\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636703255920216668
+  lastModified: 636703322483808630
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1380
+    Value: 1420
   Exists: 1
 --- !u!114 &114337952187332132
 MonoBehaviour:
@@ -615,6 +661,21 @@ MonoBehaviour:
   Min: 0
   Max: 3
   Default: 0
+--- !u!114 &114357091982345484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: speed
+  Min: 0
+  Max: 100
+  Default: 0
 --- !u!114 &114357422829790192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -634,8 +695,8 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114397811797856850}
-  - {fileID: 114993927032880002}
+  - {fileID: 114178843460500568}
+  - {fileID: 114651321145779312}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -833,6 +894,21 @@ MonoBehaviour:
   Min: 0
   Max: 100
   Default: 0
+--- !u!114 &114393487424795584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: tile
+  Min: 0
+  Max: 4
+  Default: 0
 --- !u!114 &114395893749289826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -986,8 +1062,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 114202700628168144}
-  - {fileID: 114708806206726112}
+  - {fileID: 114357091982345484}
+  - {fileID: 114541059238288512}
   MinDistance: 3
   MaxDistance: 20
   Length: 0
@@ -1022,6 +1098,21 @@ MonoBehaviour:
   Max: 100
   Default: 0
 --- !u!114 &114446244996800010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: alarmType
+  Min: 0
+  Max: 3
+  Default: 0
+--- !u!114 &114456327337602572
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1181,6 +1272,21 @@ MonoBehaviour:
   Name: wallTile
   Min: 0
   Max: 1
+  Default: 0
+--- !u!114 &114541059238288512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: tile
+  Min: 0
+  Max: 4
   Default: 0
 --- !u!114 &114543246554030780
 MonoBehaviour:
@@ -1369,8 +1475,8 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114284432808335340}
-  - {fileID: 114359913903983222}
+  - {fileID: 114393487424795584}
+  - {fileID: 114646011530991802}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -1411,6 +1517,43 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1398
+--- !u!114 &114646011530991802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: speed
+  Min: 0
+  Max: 100
+  Default: 0
+--- !u!114 &114646695277104018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/impact/explosion
+  guid: a8531d1516ad414e9bb20476c426021b
+  Banks:
+  - {fileID: 114743682739912626}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 834
 --- !u!114 &114647915201579536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1430,6 +1573,21 @@ MonoBehaviour:
   - Name: Desktop
     Value: 2295712
   Exists: 1
+--- !u!114 &114651321145779312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: intensity
+  Min: 0
+  Max: 10
+  Default: 0
 --- !u!114 &114652303538426550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1588,11 +1746,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\omarm\Documents\Unity\Projects\Extra-Credits-Jam-2018\Assets\FMOD_Assets\sound\Build\Desktop\Master
     Bank.bank
-  lastModified: 636703255920136884
+  lastModified: 636703322483778687
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 2333344
+    Value: 2377952
   Exists: 1
 --- !u!114 &114751205742147542
 MonoBehaviour:
@@ -1801,7 +1959,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 114427472407196404}
+  - {fileID: 114456327337602572}
   MinDistance: 1
   MaxDistance: 20
   Length: 8000
@@ -1873,11 +2031,26 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 114424174221412312}
-  - {fileID: 114572471150323000}
+  - {fileID: 114921966331915282}
+  - {fileID: 114298602677790952}
   MinDistance: 50
   MaxDistance: 250
   Length: 1389
+--- !u!114 &114921966331915282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: speed
+  Min: 0
+  Max: 100
+  Default: 0
 --- !u!114 &114936583020712836
 MonoBehaviour:
   m_ObjectHideFlags: 0

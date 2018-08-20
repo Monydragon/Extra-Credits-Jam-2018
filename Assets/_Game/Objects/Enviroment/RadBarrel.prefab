@@ -92,6 +92,9 @@ MonoBehaviour:
   effectRadius: 1.5
   healthEffect: -2
   radEffect: 4
+  throwSfx: 
+  bounceSfx: event:/sfx/impact/barrel
+  explodeSfx: event:/sfx/impact/explosion
 --- !u!212 &212965765943248646
 SpriteRenderer:
   m_ObjectHideFlags: 1

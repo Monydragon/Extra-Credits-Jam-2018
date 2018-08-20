@@ -39,7 +39,10 @@ public class Barrel : MonoBehaviour
                 e.GetComponent<BullyController>().ApplyStatus(healthEffect, radEffect);
 
         RuntimeManager.PlayOneShot(explodeSfx, transform.position);
-        Destroy(gameObject);
+        GetComponent<SpriteRenderer>().enabled = false;
+        GetComponent<Collider2D>().enabled = false;
+        rb.simulated = false;
+        Destroy(gameObject, 3f);
     }
 
     /// <summary>

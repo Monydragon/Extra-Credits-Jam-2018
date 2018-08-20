@@ -9,48 +9,48 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1834724359730288}
+  m_RootGameObject: {fileID: 1980684911223260}
   m_IsPrefabAsset: 1
---- !u!1 &1834724359730288
+--- !u!1 &1980684911223260
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4725449530210592}
-  - component: {fileID: 212012379643975806}
-  - component: {fileID: 95596380748835766}
-  - component: {fileID: 50592749019801470}
-  - component: {fileID: 70345277054589866}
-  - component: {fileID: 114945376995393224}
+  - component: {fileID: 4471287182513398}
+  - component: {fileID: 212140372839221208}
+  - component: {fileID: 95986438550983620}
+  - component: {fileID: 50837835124453760}
+  - component: {fileID: 70583222903532204}
+  - component: {fileID: 114605001588253748}
   m_Layer: 0
   m_Name: Bully
-  m_TagString: Player
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4725449530210592
+--- !u!4 &4471287182513398
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1834724359730288}
+  m_GameObject: {fileID: 1980684911223260}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.06, y: 4.52, z: 0}
+  m_LocalPosition: {x: 7.5, y: 5.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50592749019801470
+--- !u!50 &50837835124453760
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1834724359730288}
+  m_GameObject: {fileID: 1980684911223260}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -63,13 +63,13 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!70 &70345277054589866
+  m_Constraints: 4
+--- !u!70 &70583222903532204
 CapsuleCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1834724359730288}
+  m_GameObject: {fileID: 1980684911223260}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -79,16 +79,16 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 1}
   m_Direction: 0
---- !u!95 &95596380748835766
+--- !u!95 &95986438550983620
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1834724359730288}
+  m_GameObject: {fileID: 1980684911223260}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a2f05fbac1399784e8a33bd1246a5475, type: 2}
+  m_Controller: {fileID: 9100000, guid: b4750ca54b64b954eb793d62f4768cc2, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -97,15 +97,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114945376995393224
+--- !u!114 &114605001588253748
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1834724359730288}
+  m_GameObject: {fileID: 1980684911223260}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94a8015cba4b4a84ea5eeee91e09f98c, type: 3}
+  m_Script: {fileID: 11500000, guid: d96adabbd7a06ff4a9e5caebd9b5e12b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _TileMove:
@@ -126,19 +126,27 @@ MonoBehaviour:
     DownRight: {fileID: 0}
     DownLeft: {fileID: 0}
   _Tilemap: {fileID: 0}
+  barrelDistThreshold: 1
+  throwSpeed: 10
+  chargePause: 1
+  chargeDuration: 1
+  chargeSpdMult: 3
+  damage: 2
   status:
-    health: 20
-    hunger: 20
-    rads: 20
-  statusPanel: {fileID: 0}
-  stepsEvent: event:/sfx/char/steps
+    health: 0
+    rads: 0
+  state: 0
+  player: {fileID: 0}
+  stepsEvent: event:/sfx/char/steps3D
+  hurtSfx: event:/sfx/char/hurt
+  dieSfx: 
   isControlDisabled: 0
---- !u!212 &212012379643975806
+--- !u!212 &212140372839221208
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1834724359730288}
+  m_GameObject: {fileID: 1980684911223260}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -168,12 +176,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300026, guid: b08e7aaa162a8c1448f49ce6638893fa, type: 3}
+  m_Sprite: {fileID: 21300014, guid: 60cc6d19eba33c44f95a38b7f415cfcf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.1, y: 0.1}
+  m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
