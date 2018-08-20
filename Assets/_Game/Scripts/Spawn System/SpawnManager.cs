@@ -8,37 +8,28 @@ using Unity.Linq;
 using UnityEngine;
 using ItemSystem;
 
+public struct IntMinMax
+{
+    public int Min, Max;
+
+    public int GetRandom() => Random.Range(Min, Max + 1);
+
+}
 public class SpawnManager : MonoBehaviour
 {
-    [System.Serializable]
-    public class SpawnPointSpawn
-    {
-        public GameObject SpawnPoint;
-        public GameObject Prefab;
+    [Range(0, 30)] public int minSpawns = 6, maxSpawns = 12;
+    public bool setPrefabsOnStart = true;
+    public float spawnTimer = 5.0f;
 
-        public SpawnPointSpawn()
-        {
-
-        }
-
-        public SpawnPointSpawn(GameObject spawnPoint = null, GameObject prefab = null)
-        {
-            SpawnPoint = spawnPoint;
-            Prefab = prefab;
-        }
-    }
+    public int activeSpawns;
 
     [OdinSerialize] public List<SpawnPointSpawn> spawnPoints;
     [OdinSerialize] public List<GameObject> Prefabs;
 
-    [Range(0, 30)]
-    public int minSpawns = 8, maxSpawns = 10;
-
-
-    [ExecuteInEditMode]
     private void Awake()
     {
-        if (!spawnPoints.Any()) { SetSpawnPoints(); }
+        if (spawnPoints.Any()) return;
+        SetSpawnPoints(); if(setPrefabsOnStart){SetPrefabs();}
     }
 
     [Button("Set SpawnPoints", ButtonSizes.Medium, ButtonStyle.Box, ButtonHeight = 15, Expanded = false)]
@@ -69,10 +60,9 @@ public class SpawnManager : MonoBehaviour
             SetSpawnPoints();
             SetPrefabs();
         }
-
     }
 
-    void Start()
+    public void SpawnAll()
     {
         int amountOfSpawns = Random.Range(minSpawns, maxSpawns + 1);
         var usedPoints = new List<int>(amountOfSpawns);
@@ -81,22 +71,44 @@ public class SpawnManager : MonoBehaviour
             //Get a random spawn point to use and make sure we didn't already use it
             int index = Random.Range(0, spawnPoints.Count);
             while (usedPoints.Contains(index))
+            {
                 index = Random.Range(0, spawnPoints.Count);
+            }
 
             usedPoints.Add(index);
 
             //Instantiate the prefab
             var s = spawnPoints[index];
-            if (s.Prefab.name != "Item")
+            GameObject go = null;
+
+            switch (s.Prefab.tag)
             {
-                var go = Instantiate(s.Prefab, s.SpawnPoint.transform.position, Quaternion.identity);
+                case "Item":
+                    Item it = ItemSystemUtility.GetRandomItemCopy<Item>(ItemType.Item);
+                    go = ItemInstance.CreateItemInstance((ItemItems)it.itemID, s.SpawnPoint.transform.position);
+                    break;
+                default:
+                    go = Instantiate(s.Prefab, s.SpawnPoint.transform.position, Quaternion.identity);
+                    break;
             }
 
-            else
-            {
-                Item it = ItemSystemUtility.GetRandomItemCopy<Item>(ItemType.Item);
-                ItemInstance.CreateItemInstance((ItemItems)it.itemID, s.SpawnPoint.transform.position);
-            }
+            go.transform.SetParent(s.SpawnPoint.transform);
+            go.tag = "SpawnedObject";
+
+            //            activeSpawns++;
         }
     }
+    public void Start()
+    {
+        SpawnAll();
+    }
+
+    private void Update()
+    {
+        activeSpawns = GameObject.FindGameObjectsWithTag("SpawnedObject").Length;
+//        var spawnPoints = gameObject.Descendants(x => x.tag == "SpawnPoint").ToArray();
+//        activeSpawns = spawnPoints.Count(x => x.Children().Any());
+    }
+
+
 }
