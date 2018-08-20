@@ -8,37 +8,34 @@ using Unity.Linq;
 using UnityEngine;
 using ItemSystem;
 
+public struct IntMinMax
+{
+    public int Min, Max;
+
+    public int GetRandom() => Random.Range(Min, Max + 1);
+
+}
+
 public class SpawnManager : MonoBehaviour
 {
-    [System.Serializable]
-    public class SpawnPointSpawn
-    {
-        public GameObject SpawnPoint;
-        public GameObject Prefab;
+    [Range(0, 30)] public int minSpawns = 6, maxSpawns = 12;
+    public bool setPrefabsOnStart = true;
+    public float spawnTimer = 5.0f;
 
-        public SpawnPointSpawn()
-        {
+    public int maxEnemies = 3;
 
-        }
-
-        public SpawnPointSpawn(GameObject spawnPoint = null, GameObject prefab = null)
-        {
-            SpawnPoint = spawnPoint;
-            Prefab = prefab;
-        }
-    }
+    public int activeSpawns;
+    public int activeBarrels;
+    public int activeEnemies;
 
     [OdinSerialize] public List<SpawnPointSpawn> spawnPoints;
     [OdinSerialize] public List<GameObject> Prefabs;
 
-    [Range(0, 30)]
-    public int minSpawns = 8, maxSpawns = 10;
-
-
-    [ExecuteInEditMode]
+    public Transform playerTransform;
     private void Awake()
     {
-        if (!spawnPoints.Any()) { SetSpawnPoints(); }
+        if (spawnPoints.Any()) return;
+        SetSpawnPoints(); if (setPrefabsOnStart) { SetPrefabs(); }
     }
 
     [Button("Set SpawnPoints", ButtonSizes.Medium, ButtonStyle.Box, ButtonHeight = 15, Expanded = false)]
@@ -69,10 +66,9 @@ public class SpawnManager : MonoBehaviour
             SetSpawnPoints();
             SetPrefabs();
         }
-
     }
 
-    void Start()
+    public void SpawnAll()
     {
         int amountOfSpawns = Random.Range(minSpawns, maxSpawns + 1);
         var usedPoints = new List<int>(amountOfSpawns);
@@ -81,22 +77,150 @@ public class SpawnManager : MonoBehaviour
             //Get a random spawn point to use and make sure we didn't already use it
             int index = Random.Range(0, spawnPoints.Count);
             while (usedPoints.Contains(index))
+            {
                 index = Random.Range(0, spawnPoints.Count);
+            }
 
             usedPoints.Add(index);
 
             //Instantiate the prefab
             var s = spawnPoints[index];
-            if (s.Prefab.name != "Item")
+            if (playerTransform != null)
             {
-                var go = Instantiate(s.Prefab, s.SpawnPoint.transform.position, Quaternion.identity);
+                if (Vector2.Distance(playerTransform.position, s.SpawnPoint.transform.position) < 1.5f)
+                {
+                    Debug.Log("Skipping because player is blocking the spawn point");
+                    continue;
+                }
             }
 
-            else
+            GameObject go = null;
+
+            var tags = s.Prefab.MultiTags();
+            var spawned = false;
+            foreach (var tag in tags)
             {
-                Item it = ItemSystemUtility.GetRandomItemCopy<Item>(ItemType.Item);
-                ItemInstance.CreateItemInstance((ItemItems)it.itemID, s.SpawnPoint.transform.position);
+                switch (tag)
+                {
+                    case "Item":
+                        Item it = ItemSystemUtility.GetRandomItemCopy<Item>(ItemType.Item);
+                        go = ItemInstance.CreateItemInstance((ItemItems)it.itemID, s.SpawnPoint.transform.position);
+                        spawned = true;
+                        break;
+                    case "Enemy":
+                        if (activeEnemies < maxEnemies)
+                        {
+                            go = Instantiate(s.Prefab, s.SpawnPoint.transform.position, Quaternion.identity);
+                            spawned = true;
+                        }
+                        else
+                        {
+                            Debug.Log("Skipped because max enemies!");
+                        }
+                        break;
+                    default:
+                        go = Instantiate(s.Prefab, s.SpawnPoint.transform.position, Quaternion.identity);
+                        spawned = true;
+                        break;
+                }
+                if (spawned) { break; }
             }
+
+            if (go == null) continue;
+
+            go.transform.SetParent(s.SpawnPoint.transform);
+            go.AddTag("SpawnedObject");
+
         }
     }
+
+    public void Start()
+    {
+        if(playerTransform == null) { playerTransform = MultiTags.FindGameObjectWithMultiTag("Player").transform; }
+
+        SpawnAll();
+        StartCoroutine(SpawnMore());
+    }
+
+    IEnumerator SpawnMore()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(spawnTimer);
+            Spawn(1);
+        }
+    }
+
+
+    private void Spawn(int amount)
+    {
+        if (activeSpawns + amount > maxSpawns) return;
+
+        var spawnLimit = amount;
+        var usedPoints = new List<int>(amount);
+
+        for (int i = 0; i < spawnLimit; i++)
+        {
+            //Get a random spawn point to use and make sure we didn't already use it
+            int index = Random.Range(0, spawnPoints.Count);
+            while (usedPoints.Contains(index))
+            {
+                index = Random.Range(0, spawnPoints.Count);
+            }
+
+            usedPoints.Add(index);
+
+            //Instantiate the prefab
+            var s = spawnPoints[index];
+            var playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+            if (Vector2.Distance(playerTransform.position, s.SpawnPoint.transform.position) < 1.5f)
+            {
+                Debug.Log("Skipping because player is blocking the spawn point");
+                continue;
+            }
+            GameObject go = null;
+
+            var tags = s.Prefab.MultiTags();
+            var spawned = false;
+            foreach (var tag in tags)
+            {
+                switch (tag)
+                {
+                    case "Item":
+                        Item it = ItemSystemUtility.GetRandomItemCopy<Item>(ItemType.Item);
+                        go = ItemInstance.CreateItemInstance((ItemItems)it.itemID, s.SpawnPoint.transform.position);
+                        spawned = true;
+                        break;
+                    case "Enemy":
+                        if (activeEnemies < maxEnemies)
+                        {
+                            go = Instantiate(s.Prefab, s.SpawnPoint.transform.position, Quaternion.identity);
+                            spawned = true;
+                        }
+                        else
+                        {
+                            Debug.Log("Max Enemies Reached");
+                        }
+                        break;
+                    default:
+                        go = Instantiate(s.Prefab, s.SpawnPoint.transform.position, Quaternion.identity);
+                        spawned = true;
+                        break;
+                }
+                if (spawned) { break; }
+            }
+
+            if(go == null) continue;
+            go.transform.SetParent(s.SpawnPoint.transform);
+            go.AddTag("SpawnedObject");
+        }
+
+    }
+    private void Update()
+    {
+        activeSpawns = MultiTags.FindGameObjectsWithMultiTagCount("SpawnedObject");
+        activeBarrels = MultiTags.FindGameObjectsWithMultiTagCount("Barrel");
+    }
+
+
 }

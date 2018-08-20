@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 50837835124453760}
   - component: {fileID: 70583222903532204}
   - component: {fileID: 114605001588253748}
+  - component: {fileID: 114506798549416910}
   m_Layer: 0
   m_Name: Bully
   m_TagString: Enemy
@@ -97,6 +98,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114506798549416910
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1980684911223260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5812814b7685642dbad1c7b3dd6e5abf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localTagList: []
 --- !u!114 &114605001588253748
 MonoBehaviour:
   m_ObjectHideFlags: 1
