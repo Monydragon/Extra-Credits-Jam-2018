@@ -162,6 +162,11 @@ Prefab:
       propertyPath: statusPanel
       value: 
       objectReference: {fileID: 1357379881}
+    - target: {fileID: 114887293701359256, guid: 4594487366a1fcd46b1000dbd3879171,
+        type: 2}
+      propertyPath: dieSfx
+      value: event:/sfx/characters/death
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4594487366a1fcd46b1000dbd3879171, type: 2}
   m_IsPrefabAsset: 0
@@ -474,6 +479,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicEvent: event:/st/fightST
+  vol: 0
 --- !u!1 &527247786
 GameObject:
   m_ObjectHideFlags: 0
@@ -593,6 +599,16 @@ Prefab:
       propertyPath: _Tilemap
       value: 
       objectReference: {fileID: 972329262}
+    - target: {fileID: 114605001588253748, guid: 4d5906f1ff113e546bef05c3eea233da,
+        type: 2}
+      propertyPath: stepsEvent
+      value: event:/sfx/characters/steps3D
+      objectReference: {fileID: 0}
+    - target: {fileID: 114605001588253748, guid: 4d5906f1ff113e546bef05c3eea233da,
+        type: 2}
+      propertyPath: dieSfx
+      value: event:/sfx/characters/death
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d5906f1ff113e546bef05c3eea233da, type: 2}
   m_IsPrefabAsset: 0
