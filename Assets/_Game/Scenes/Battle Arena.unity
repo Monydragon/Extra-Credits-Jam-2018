@@ -162,6 +162,11 @@ Prefab:
       propertyPath: statusPanel
       value: 
       objectReference: {fileID: 1357379881}
+    - target: {fileID: 114887293701359256, guid: 4594487366a1fcd46b1000dbd3879171,
+        type: 2}
+      propertyPath: dieSfx
+      value: event:/sfx/characters/death
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4594487366a1fcd46b1000dbd3879171, type: 2}
   m_IsPrefabAsset: 0
@@ -380,7 +385,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 0.75
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -403,7 +408,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.4891295, y: 1.515044, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -474,6 +479,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicEvent: event:/st/fightST
+  vol: 100
 --- !u!1 &527247786
 GameObject:
   m_ObjectHideFlags: 0
@@ -602,6 +608,11 @@ Prefab:
         type: 2}
       propertyPath: stepsEvent
       value: event:/sfx/characters/steps3D
+      objectReference: {fileID: 0}
+    - target: {fileID: 114605001588253748, guid: 4d5906f1ff113e546bef05c3eea233da,
+        type: 2}
+      propertyPath: dieSfx
+      value: event:/sfx/characters/death
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d5906f1ff113e546bef05c3eea233da, type: 2}

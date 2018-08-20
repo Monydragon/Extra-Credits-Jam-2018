@@ -14,6 +14,8 @@ public class battleSceneST : MonoBehaviour {
 	
 	//intensity VARIABLE HERE (substitute number)
 	int intensityPar = 1;
+	
+	public int vol;
 
 private void OnEnable()
     {
@@ -25,6 +27,7 @@ private void OnEnable()
 
 		//starts "intensity" as 0
 		music.setParameterValue("intensity", 0);
+		music.setParameterValue("vol", vol);
     }
 
     private void OnDisable()
