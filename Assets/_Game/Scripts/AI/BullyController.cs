@@ -143,6 +143,7 @@ public class BullyController : BaseMovementController
     void Die()
     {
         RuntimeManager.PlayOneShot(dieSfx, transform.position);
+        Destroy(gameObject);
     }
 
     IEnumerator Think()
