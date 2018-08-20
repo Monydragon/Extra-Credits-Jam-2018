@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 212000897312943832}
   - component: {fileID: 58563475484652434}
   - component: {fileID: 50417080533619926}
+  - component: {fileID: 114762816966041226}
   m_Layer: 8
   m_Name: HazardBarrel
   m_TagString: Barrel
@@ -92,7 +93,20 @@ MonoBehaviour:
   effectRadius: 1.5
   healthEffect: -5
   radEffect: 2
-  spd: 0
+--- !u!114 &114762816966041226
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1075369981148180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5812814b7685642dbad1c7b3dd6e5abf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localTagList:
+  - Name: Barrel
+    ID: 0
 --- !u!212 &212000897312943832
 SpriteRenderer:
   m_ObjectHideFlags: 1

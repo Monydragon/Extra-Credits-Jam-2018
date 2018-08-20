@@ -380,7 +380,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 0.75
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -403,7 +403,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.4926746, y: 1.515044, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -583,8 +583,11 @@ MonoBehaviour:
     DownRight: {fileID: 0}
     DownLeft: {fileID: 0}
   _Tilemap: {fileID: 972329262}
-  throwDistanceThreshold: 1.5
+  barrelDistThreshold: 1.5
   throwSpeed: 10
+  chargePause: 1
+  chargeDuration: 1.5
+  chargeSpdMult: 2
   damage: 2
   status:
     health: 0
@@ -593,6 +596,35 @@ MonoBehaviour:
   player: {fileID: 0}
   stepsEvent: event:/sfx/char/steps
   isControlDisabled: 0
+--- !u!114 &639288053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 639288046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5812814b7685642dbad1c7b3dd6e5abf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localTagList: []
+--- !u!1 &695022160 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1973143457750114, guid: 4594487366a1fcd46b1000dbd3879171,
+    type: 2}
+  m_PrefabInternal: {fileID: 129390929}
+--- !u!114 &695022166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 695022160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5812814b7685642dbad1c7b3dd6e5abf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localTagList: []
 --- !u!1001 &708447055
 Prefab:
   m_ObjectHideFlags: 0

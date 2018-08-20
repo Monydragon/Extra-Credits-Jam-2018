@@ -219,7 +219,7 @@ public partial class PlayerControl : BaseMovementController
 
     void OnCollisionEnter2D(UnityEngine.Collision2D collision)
     {
-        if (collision.transform.tag == "Barrel")
+        if (collision.gameObject.HasTag("Barrel"))
             StartCoroutine(BarrelHit());
     }
 
