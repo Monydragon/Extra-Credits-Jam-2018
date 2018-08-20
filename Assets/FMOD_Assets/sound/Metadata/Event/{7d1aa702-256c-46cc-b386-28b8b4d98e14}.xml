@@ -14,7 +14,7 @@
             <value>1</value>
         </property>
         <relationship name="folder">
-            <destination>{879ef9a8-0343-4de0-aa9e-60d8217401bf}</destination>
+            <destination>{99c10d75-7870-404b-8d46-e287c4c92bd9}</destination>
         </relationship>
         <relationship name="mixer">
             <destination>{ef6a0cb9-501b-4dd2-95b4-fcc322a686c0}</destination>
@@ -790,16 +790,19 @@
     <object class="MixerBusPanner" id="{edd6976a-731d-4f21-b21e-afe58b89290a}"/>
     <object class="ObjectSpatialiserEffect" id="{be5d6763-a648-4a13-a222-d61b1b9828e4}">
         <property name="distanceRolloffType">
-            <value>2</value>
+            <value>1</value>
         </property>
         <property name="minimumDistance">
-            <value>3</value>
+            <value>6.80000019</value>
+        </property>
+        <property name="maximumDistance">
+            <value>4000</value>
         </property>
     </object>
     <object class="MixerBusFader" id="{fa593663-d66b-4ce0-904a-f5e24e8c96b7}"/>
     <object class="GainEffect" id="{f7e3b8bb-0a5e-4507-9e7b-8c8daf2f66ca}">
         <property name="gain">
-            <value>6</value>
+            <value>10</value>
         </property>
     </object>
     <object class="AutomationCurve" id="{e288b01d-1799-487c-b2a6-54b98a609379}">
