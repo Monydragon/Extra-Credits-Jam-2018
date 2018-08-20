@@ -550,58 +550,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &708447055
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4471287182513398, guid: 4d5906f1ff113e546bef05c3eea233da, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 7.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4471287182513398, guid: 4d5906f1ff113e546bef05c3eea233da, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 5.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4471287182513398, guid: 4d5906f1ff113e546bef05c3eea233da, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4471287182513398, guid: 4d5906f1ff113e546bef05c3eea233da, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4471287182513398, guid: 4d5906f1ff113e546bef05c3eea233da, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4471287182513398, guid: 4d5906f1ff113e546bef05c3eea233da, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4471287182513398, guid: 4d5906f1ff113e546bef05c3eea233da, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4471287182513398, guid: 4d5906f1ff113e546bef05c3eea233da, type: 2}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 114605001588253748, guid: 4d5906f1ff113e546bef05c3eea233da,
-        type: 2}
-      propertyPath: _Tilemap
-      value: 
-      objectReference: {fileID: 972329262}
-    - target: {fileID: 114605001588253748, guid: 4d5906f1ff113e546bef05c3eea233da,
-        type: 2}
-      propertyPath: damage
-      value: 8
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4d5906f1ff113e546bef05c3eea233da, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!1 &883395780
 GameObject:
   m_ObjectHideFlags: 3
@@ -1809,11 +1757,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114671942987019432, guid: fb44a5721cd18024c9f3be1077bf4189,
-        type: 2}
-      propertyPath: Prefabs.Array.size
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 4510935242424142, guid: fb44a5721cd18024c9f3be1077bf4189, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1848,42 +1791,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114671942987019432, guid: fb44a5721cd18024c9f3be1077bf4189,
         type: 2}
-      propertyPath: Prefabs.Array.data[5]
-      value: 
-      objectReference: {fileID: 1509813307449206, guid: beeca70cc8aabf14f9bc82186e424f3f,
-        type: 2}
-    - target: {fileID: 114671942987019432, guid: fb44a5721cd18024c9f3be1077bf4189,
-        type: 2}
-      propertyPath: Prefabs.Array.data[4]
-      value: 
-      objectReference: {fileID: 1075369981148180, guid: 504e6e1649b8a5445a541acc1daf2fd9,
-        type: 2}
-    - target: {fileID: 114671942987019432, guid: fb44a5721cd18024c9f3be1077bf4189,
-        type: 2}
-      propertyPath: maxSpawns
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 114671942987019432, guid: fb44a5721cd18024c9f3be1077bf4189,
-        type: 2}
       propertyPath: playerTransform
       value: 
       objectReference: {fileID: 1666244260}
-    - target: {fileID: 114671942987019432, guid: fb44a5721cd18024c9f3be1077bf4189,
-        type: 2}
-      propertyPath: spawnTimer
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114671942987019432, guid: fb44a5721cd18024c9f3be1077bf4189,
-        type: 2}
-      propertyPath: maxEnemies
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114671942987019432, guid: fb44a5721cd18024c9f3be1077bf4189,
-        type: 2}
-      propertyPath: Prefabs.Array.data[6]
-      value: 
-      objectReference: {fileID: 1980684911223260, guid: 4d5906f1ff113e546bef05c3eea233da,
-        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb44a5721cd18024c9f3be1077bf4189, type: 2}
   m_IsPrefabAsset: 0

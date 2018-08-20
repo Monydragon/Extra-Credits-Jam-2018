@@ -951,10 +951,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minSpawns: 8
-  maxSpawns: 15
+  maxSpawns: 20
   setPrefabsOnStart: 1
-  spawnTimer: 1
-  maxEnemies: 3
+  spawnTimer: 0.5
+  maxEnemies: 4
   activeSpawns: 0
   activeBarrels: 0
   activeEnemies: 0
@@ -1024,6 +1024,7 @@ MonoBehaviour:
   - {fileID: 1509813307449206, guid: beeca70cc8aabf14f9bc82186e424f3f, type: 2}
   - {fileID: 1980684911223260, guid: 4d5906f1ff113e546bef05c3eea233da, type: 2}
   - {fileID: 1756718901606954, guid: 63871124f7faea84c92364263a525fb2, type: 2}
-  - {fileID: 1756718901606954, guid: 63871124f7faea84c92364263a525fb2, type: 2}
-  - {fileID: 1756718901606954, guid: 63871124f7faea84c92364263a525fb2, type: 2}
+  - {fileID: 1075369981148180, guid: 504e6e1649b8a5445a541acc1daf2fd9, type: 2}
+  - {fileID: 1509813307449206, guid: beeca70cc8aabf14f9bc82186e424f3f, type: 2}
+  - {fileID: 1980684911223260, guid: 4d5906f1ff113e546bef05c3eea233da, type: 2}
   playerTransform: {fileID: 0}
