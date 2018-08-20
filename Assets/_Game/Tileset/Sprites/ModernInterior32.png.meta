@@ -1,0 +1,6910 @@
+fileFormatVersion: 2
+guid: b55ad09e65ddbdc48ab9a1f4e94b6456
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ModernInterior_0
+    21300002: ModernInterior_1
+    21300004: ModernInterior_2
+    21300006: ModernInterior_3
+    21300008: ModernInterior_4
+    21300010: ModernInterior_5
+    21300012: ModernInterior_6
+    21300014: ModernInterior_7
+    21300016: ModernInterior_8
+    21300018: ModernInterior_9
+    21300020: ModernInterior_10
+    21300022: ModernInterior_11
+    21300024: ModernInterior_12
+    21300026: ModernInterior_13
+    21300028: ModernInterior_14
+    21300030: ModernInterior_15
+    21300032: ModernInterior_16
+    21300034: ModernInterior_17
+    21300036: ModernInterior_18
+    21300038: ModernInterior_19
+    21300040: ModernInterior_20
+    21300042: ModernInterior_21
+    21300044: ModernInterior_22
+    21300046: ModernInterior_23
+    21300048: ModernInterior_24
+    21300050: ModernInterior_25
+    21300052: ModernInterior_26
+    21300054: ModernInterior_27
+    21300056: ModernInterior_28
+    21300058: ModernInterior_29
+    21300060: ModernInterior_30
+    21300062: ModernInterior_31
+    21300064: ModernInterior_32
+    21300066: ModernInterior_33
+    21300068: ModernInterior_34
+    21300070: ModernInterior_35
+    21300072: ModernInterior_36
+    21300074: ModernInterior_37
+    21300076: ModernInterior_38
+    21300078: ModernInterior_39
+    21300080: ModernInterior_40
+    21300082: ModernInterior_41
+    21300084: ModernInterior_42
+    21300086: ModernInterior_43
+    21300088: ModernInterior_44
+    21300090: ModernInterior_45
+    21300092: ModernInterior_46
+    21300094: ModernInterior_47
+    21300096: ModernInterior_48
+    21300098: ModernInterior_49
+    21300100: ModernInterior_50
+    21300102: ModernInterior_51
+    21300104: ModernInterior_52
+    21300106: ModernInterior_53
+    21300108: ModernInterior_54
+    21300110: ModernInterior_55
+    21300112: ModernInterior_56
+    21300114: ModernInterior_57
+    21300116: ModernInterior_58
+    21300118: ModernInterior_59
+    21300120: ModernInterior_60
+    21300122: ModernInterior_61
+    21300124: ModernInterior_62
+    21300126: ModernInterior_63
+    21300128: ModernInterior_64
+    21300130: ModernInterior_65
+    21300132: ModernInterior_66
+    21300134: ModernInterior_67
+    21300136: ModernInterior_68
+    21300138: ModernInterior_69
+    21300140: ModernInterior_70
+    21300142: ModernInterior_71
+    21300144: ModernInterior_72
+    21300146: ModernInterior_73
+    21300148: ModernInterior_74
+    21300150: ModernInterior_75
+    21300152: ModernInterior_76
+    21300154: ModernInterior_77
+    21300156: ModernInterior_78
+    21300158: ModernInterior_79
+    21300160: ModernInterior_80
+    21300162: ModernInterior_81
+    21300164: ModernInterior_82
+    21300166: ModernInterior_83
+    21300168: ModernInterior_84
+    21300170: ModernInterior_85
+    21300172: ModernInterior_86
+    21300174: ModernInterior_87
+    21300176: ModernInterior_88
+    21300178: ModernInterior_89
+    21300180: ModernInterior_90
+    21300182: ModernInterior_91
+    21300184: ModernInterior_92
+    21300186: ModernInterior_93
+    21300188: ModernInterior_94
+    21300190: ModernInterior_95
+    21300192: ModernInterior_96
+    21300194: ModernInterior_97
+    21300196: ModernInterior_98
+    21300198: ModernInterior_99
+    21300200: ModernInterior_100
+    21300202: ModernInterior_101
+    21300204: ModernInterior_102
+    21300206: ModernInterior_103
+    21300208: ModernInterior_104
+    21300210: ModernInterior_105
+    21300212: ModernInterior_106
+    21300214: ModernInterior_107
+    21300216: ModernInterior_108
+    21300218: ModernInterior_109
+    21300220: ModernInterior_110
+    21300222: ModernInterior_111
+    21300224: ModernInterior_112
+    21300226: ModernInterior_113
+    21300228: ModernInterior_114
+    21300230: ModernInterior_115
+    21300232: ModernInterior_116
+    21300234: ModernInterior_117
+    21300236: ModernInterior_118
+    21300238: ModernInterior_119
+    21300240: ModernInterior_120
+    21300242: ModernInterior_121
+    21300244: ModernInterior_122
+    21300246: ModernInterior_123
+    21300248: ModernInterior_124
+    21300250: ModernInterior_125
+    21300252: ModernInterior_126
+    21300254: ModernInterior_127
+    21300256: ModernInterior_128
+    21300258: ModernInterior_129
+    21300260: ModernInterior_130
+    21300262: ModernInterior_131
+    21300264: ModernInterior_132
+    21300266: ModernInterior_133
+    21300268: ModernInterior_134
+    21300270: ModernInterior_135
+    21300272: ModernInterior_136
+    21300274: ModernInterior_137
+    21300276: ModernInterior_138
+    21300278: ModernInterior_139
+    21300280: ModernInterior_140
+    21300282: ModernInterior_141
+    21300284: ModernInterior_142
+    21300286: ModernInterior_143
+    21300288: ModernInterior_144
+    21300290: ModernInterior_145
+    21300292: ModernInterior_146
+    21300294: ModernInterior_147
+    21300296: ModernInterior_148
+    21300298: ModernInterior_149
+    21300300: ModernInterior_150
+    21300302: ModernInterior_151
+    21300304: ModernInterior_152
+    21300306: ModernInterior_153
+    21300308: ModernInterior_154
+    21300310: ModernInterior_155
+    21300312: ModernInterior_156
+    21300314: ModernInterior_157
+    21300316: ModernInterior_158
+    21300318: ModernInterior_159
+    21300320: ModernInterior_160
+    21300322: ModernInterior_161
+    21300324: ModernInterior_162
+    21300326: ModernInterior_163
+    21300328: ModernInterior_164
+    21300330: ModernInterior_165
+    21300332: ModernInterior_166
+    21300334: ModernInterior_167
+    21300336: ModernInterior_168
+    21300338: ModernInterior_169
+    21300340: ModernInterior_170
+    21300342: ModernInterior_171
+    21300344: ModernInterior_172
+    21300346: ModernInterior_173
+    21300348: ModernInterior_174
+    21300350: ModernInterior_175
+    21300352: ModernInterior_176
+    21300354: ModernInterior_177
+    21300356: ModernInterior_178
+    21300358: ModernInterior_179
+    21300360: ModernInterior_180
+    21300362: ModernInterior_181
+    21300364: ModernInterior_182
+    21300366: ModernInterior_183
+    21300368: ModernInterior_184
+    21300370: ModernInterior_185
+    21300372: ModernInterior_186
+    21300374: ModernInterior_187
+    21300376: ModernInterior_188
+    21300378: ModernInterior_189
+    21300380: ModernInterior_190
+    21300382: ModernInterior_191
+    21300384: ModernInterior_192
+    21300386: ModernInterior_193
+    21300388: ModernInterior_194
+    21300390: ModernInterior_195
+    21300392: ModernInterior_196
+    21300394: ModernInterior_197
+    21300396: ModernInterior_198
+    21300398: ModernInterior_199
+    21300400: ModernInterior_200
+    21300402: ModernInterior_201
+    21300404: ModernInterior_202
+    21300406: ModernInterior_203
+    21300408: ModernInterior_204
+    21300410: ModernInterior_205
+    21300412: ModernInterior_206
+    21300414: ModernInterior_207
+    21300416: ModernInterior_208
+    21300418: ModernInterior_209
+    21300420: ModernInterior_210
+    21300422: ModernInterior_211
+    21300424: ModernInterior_212
+    21300426: ModernInterior_213
+    21300428: ModernInterior_214
+    21300430: ModernInterior_215
+    21300432: ModernInterior_216
+    21300434: ModernInterior_217
+    21300436: ModernInterior_218
+    21300438: ModernInterior_219
+    21300440: ModernInterior_220
+    21300442: ModernInterior_221
+    21300444: ModernInterior_222
+    21300446: ModernInterior_223
+    21300448: ModernInterior_224
+    21300450: ModernInterior_225
+    21300452: ModernInterior_226
+    21300454: ModernInterior_227
+    21300456: ModernInterior_228
+    21300458: ModernInterior_229
+    21300460: ModernInterior_230
+    21300462: ModernInterior_231
+    21300464: ModernInterior_232
+    21300466: ModernInterior_233
+    21300468: ModernInterior_234
+    21300470: ModernInterior_235
+    21300472: ModernInterior_236
+    21300474: ModernInterior_237
+    21300476: ModernInterior_238
+    21300478: ModernInterior_239
+    21300480: ModernInterior_240
+    21300482: ModernInterior_241
+    21300484: ModernInterior_242
+    21300486: ModernInterior_243
+    21300488: ModernInterior_244
+    21300490: ModernInterior_245
+    21300492: ModernInterior_246
+    21300494: ModernInterior_247
+    21300496: ModernInterior_248
+    21300498: ModernInterior_249
+    21300500: ModernInterior_250
+    21300502: ModernInterior_251
+    21300504: ModernInterior_252
+    21300506: ModernInterior_253
+    21300508: ModernInterior_254
+    21300510: ModernInterior_255
+    21300512: ModernInterior_256
+    21300514: ModernInterior_257
+    21300516: ModernInterior_258
+    21300518: ModernInterior_259
+    21300520: ModernInterior_260
+    21300522: ModernInterior_261
+    21300524: ModernInterior_262
+    21300526: ModernInterior_263
+    21300528: ModernInterior_264
+    21300530: ModernInterior_265
+    21300532: ModernInterior_266
+    21300534: ModernInterior_267
+    21300536: ModernInterior_268
+    21300538: ModernInterior_269
+    21300540: ModernInterior_270
+    21300542: ModernInterior_271
+    21300544: ModernInterior_272
+    21300546: ModernInterior_273
+    21300548: ModernInterior_274
+    21300550: ModernInterior_275
+    21300552: ModernInterior_276
+    21300554: ModernInterior_277
+    21300556: ModernInterior_278
+    21300558: ModernInterior_279
+    21300560: ModernInterior_280
+    21300562: ModernInterior_281
+    21300564: ModernInterior_282
+    21300566: ModernInterior_283
+    21300568: ModernInterior_284
+    21300570: ModernInterior_285
+    21300572: ModernInterior_286
+    21300574: ModernInterior_287
+    21300576: ModernInterior_288
+    21300578: ModernInterior_289
+    21300580: ModernInterior_290
+    21300582: ModernInterior_291
+    21300584: ModernInterior_292
+    21300586: ModernInterior_293
+    21300588: ModernInterior_294
+    21300590: ModernInterior_295
+    21300592: ModernInterior_296
+    21300594: ModernInterior_297
+    21300596: ModernInterior_298
+    21300598: ModernInterior_299
+    21300600: ModernInterior_300
+    21300602: ModernInterior_301
+    21300604: ModernInterior_302
+    21300606: ModernInterior_303
+    21300608: ModernInterior_304
+    21300610: ModernInterior_305
+    21300612: ModernInterior_306
+    21300614: ModernInterior_307
+    21300616: ModernInterior_308
+    21300618: ModernInterior_309
+    21300620: ModernInterior_310
+    21300622: ModernInterior_311
+    21300624: ModernInterior_312
+    21300626: ModernInterior_313
+    21300628: ModernInterior_314
+    21300630: ModernInterior_315
+    21300632: ModernInterior_316
+    21300634: ModernInterior_317
+    21300636: ModernInterior_318
+    21300638: ModernInterior_319
+    21300640: ModernInterior_320
+    21300642: ModernInterior_321
+    21300644: ModernInterior_322
+    21300646: ModernInterior_323
+    21300648: ModernInterior_324
+    21300650: ModernInterior_325
+    21300652: ModernInterior_326
+    21300654: ModernInterior_327
+    21300656: ModernInterior_328
+    21300658: ModernInterior_329
+    21300660: ModernInterior_330
+    21300662: ModernInterior_331
+    21300664: ModernInterior_332
+    21300666: ModernInterior_333
+    21300668: ModernInterior_334
+    21300670: ModernInterior_335
+    21300672: ModernInterior_336
+    21300674: ModernInterior_337
+    21300676: ModernInterior_338
+    21300678: ModernInterior_339
+    21300680: ModernInterior_340
+    21300682: ModernInterior_341
+    21300684: ModernInterior_342
+    21300686: ModernInterior_343
+    21300688: ModernInterior_344
+    21300690: ModernInterior_345
+    21300692: ModernInterior_346
+    21300694: ModernInterior_347
+    21300696: ModernInterior_348
+    21300698: ModernInterior_349
+    21300700: ModernInterior_350
+    21300702: ModernInterior_351
+    21300704: ModernInterior_352
+    21300706: ModernInterior_353
+    21300708: ModernInterior_354
+    21300710: ModernInterior_355
+    21300712: ModernInterior_356
+    21300714: ModernInterior_357
+    21300716: ModernInterior_358
+    21300718: ModernInterior_359
+    21300720: ModernInterior_360
+    21300722: ModernInterior_361
+    21300724: ModernInterior_362
+    21300726: ModernInterior_363
+    21300728: ModernInterior_364
+    21300730: ModernInterior_365
+    21300732: ModernInterior_366
+    21300734: ModernInterior_367
+    21300736: ModernInterior_368
+    21300738: ModernInterior_369
+    21300740: ModernInterior_370
+    21300742: ModernInterior_371
+    21300744: ModernInterior_372
+    21300746: ModernInterior_373
+    21300748: ModernInterior_374
+    21300750: ModernInterior_375
+    21300752: ModernInterior_376
+    21300754: ModernInterior_377
+    21300756: ModernInterior_378
+    21300758: ModernInterior_379
+    21300760: ModernInterior_380
+    21300762: ModernInterior_381
+    21300764: ModernInterior_382
+    21300766: ModernInterior_383
+    21300768: ModernInterior_384
+    21300770: ModernInterior_385
+    21300772: ModernInterior_386
+    21300774: ModernInterior_387
+    21300776: ModernInterior_388
+    21300778: ModernInterior_389
+    21300780: ModernInterior_390
+    21300782: ModernInterior_391
+    21300784: ModernInterior_392
+    21300786: ModernInterior_393
+    21300788: ModernInterior_394
+    21300790: ModernInterior_395
+    21300792: ModernInterior_396
+    21300794: ModernInterior_397
+    21300796: ModernInterior_398
+    21300798: ModernInterior_399
+    21300800: ModernInterior_400
+    21300802: ModernInterior_401
+    21300804: ModernInterior_402
+    21300806: ModernInterior_403
+    21300808: ModernInterior_404
+    21300810: ModernInterior_405
+    21300812: ModernInterior_406
+    21300814: ModernInterior_407
+    21300816: ModernInterior_408
+    21300818: ModernInterior_409
+    21300820: ModernInterior_410
+    21300822: ModernInterior_411
+    21300824: ModernInterior_412
+    21300826: ModernInterior_413
+    21300828: ModernInterior_414
+    21300830: ModernInterior_415
+    21300832: ModernInterior_416
+    21300834: ModernInterior_417
+    21300836: ModernInterior_418
+    21300838: ModernInterior_419
+    21300840: ModernInterior_420
+    21300842: ModernInterior_421
+    21300844: ModernInterior_422
+    21300846: ModernInterior_423
+    21300848: ModernInterior_424
+    21300850: ModernInterior_425
+    21300852: ModernInterior_426
+    21300854: ModernInterior_427
+    21300856: ModernInterior_428
+    21300858: ModernInterior_429
+    21300860: ModernInterior_430
+    21300862: ModernInterior_431
+    21300864: ModernInterior_432
+    21300866: ModernInterior_433
+    21300868: ModernInterior_434
+    21300870: ModernInterior_435
+    21300872: ModernInterior_436
+    21300874: ModernInterior_437
+    21300876: ModernInterior_438
+    21300878: ModernInterior_439
+    21300880: ModernInterior_440
+    21300882: ModernInterior_441
+    21300884: ModernInterior_442
+    21300886: ModernInterior_443
+    21300888: ModernInterior_444
+    21300890: ModernInterior_445
+    21300892: ModernInterior_446
+    21300894: ModernInterior_447
+    21300896: ModernInterior_448
+    21300898: ModernInterior_449
+    21300900: ModernInterior_450
+    21300902: ModernInterior_451
+    21300904: ModernInterior_452
+    21300906: ModernInterior_453
+    21300908: ModernInterior_454
+    21300910: ModernInterior_455
+    21300912: ModernInterior_456
+    21300914: ModernInterior_457
+    21300916: ModernInterior_458
+    21300918: ModernInterior_459
+    21300920: ModernInterior_460
+    21300922: ModernInterior_461
+    21300924: ModernInterior_462
+    21300926: ModernInterior_463
+    21300928: ModernInterior_464
+    21300930: ModernInterior_465
+    21300932: ModernInterior_466
+    21300934: ModernInterior_467
+    21300936: ModernInterior_468
+    21300938: ModernInterior_469
+    21300940: ModernInterior_470
+    21300942: ModernInterior_471
+    21300944: ModernInterior_472
+    21300946: ModernInterior_473
+    21300948: ModernInterior_474
+    21300950: ModernInterior_475
+    21300952: ModernInterior_476
+    21300954: ModernInterior_477
+    21300956: ModernInterior_478
+    21300958: ModernInterior_479
+    21300960: ModernInterior_480
+    21300962: ModernInterior_481
+    21300964: ModernInterior_482
+    21300966: ModernInterior_483
+    21300968: ModernInterior_484
+    21300970: ModernInterior_485
+    21300972: ModernInterior_486
+    21300974: ModernInterior_487
+    21300976: ModernInterior_488
+    21300978: ModernInterior_489
+    21300980: ModernInterior_490
+    21300982: ModernInterior_491
+    21300984: ModernInterior_492
+    21300986: ModernInterior_493
+    21300988: ModernInterior_494
+    21300990: ModernInterior_495
+    21300992: ModernInterior_496
+    21300994: ModernInterior_497
+    21300996: ModernInterior_498
+    21300998: ModernInterior_499
+    21301000: ModernInterior_500
+    21301002: ModernInterior_501
+    21301004: ModernInterior_502
+    21301006: ModernInterior_503
+    21301008: ModernInterior_504
+    21301010: ModernInterior_505
+    21301012: ModernInterior_506
+    21301014: ModernInterior_507
+    21301016: ModernInterior_508
+    21301018: ModernInterior_509
+    21301020: ModernInterior_510
+    21301022: ModernInterior_511
+    21301024: ModernInterior_512
+    21301026: ModernInterior_513
+    21301028: ModernInterior_514
+    21301030: ModernInterior_515
+    21301032: ModernInterior_516
+    21301034: ModernInterior_517
+    21301036: ModernInterior_518
+    21301038: ModernInterior_519
+    21301040: ModernInterior_520
+    21301042: ModernInterior_521
+    21301044: ModernInterior_522
+    21301046: ModernInterior_523
+    21301048: ModernInterior_524
+    21301050: ModernInterior_525
+    21301052: ModernInterior_526
+    21301054: ModernInterior_527
+    21301056: ModernInterior_528
+    21301058: ModernInterior_529
+    21301060: ModernInterior_530
+    21301062: ModernInterior_531
+    21301064: ModernInterior_532
+    21301066: ModernInterior_533
+    21301068: ModernInterior_534
+    21301070: ModernInterior_535
+    21301072: ModernInterior_536
+    21301074: ModernInterior_537
+    21301076: ModernInterior_538
+    21301078: ModernInterior_539
+    21301080: ModernInterior_540
+    21301082: ModernInterior_541
+    21301084: ModernInterior_542
+    21301086: ModernInterior_543
+    21301088: ModernInterior_544
+    21301090: ModernInterior_545
+    21301092: ModernInterior_546
+    21301094: ModernInterior_547
+    21301096: ModernInterior_548
+    21301098: ModernInterior_549
+    21301100: ModernInterior_550
+    21301102: ModernInterior_551
+    21301104: ModernInterior_552
+    21301106: ModernInterior_553
+    21301108: ModernInterior_554
+    21301110: ModernInterior_555
+    21301112: ModernInterior_556
+    21301114: ModernInterior_557
+    21301116: ModernInterior_558
+    21301118: ModernInterior_559
+    21301120: ModernInterior_560
+    21301122: ModernInterior_561
+    21301124: ModernInterior_562
+    21301126: ModernInterior_563
+    21301128: ModernInterior_564
+    21301130: ModernInterior_565
+    21301132: ModernInterior_566
+    21301134: ModernInterior_567
+    21301136: ModernInterior_568
+    21301138: ModernInterior_569
+    21301140: ModernInterior_570
+    21301142: ModernInterior_571
+    21301144: ModernInterior_572
+    21301146: ModernInterior_573
+    21301148: ModernInterior_574
+    21301150: ModernInterior_575
+    21301152: ModernInterior_576
+    21301154: ModernInterior_577
+    21301156: ModernInterior_578
+    21301158: ModernInterior_579
+    21301160: ModernInterior_580
+    21301162: ModernInterior_581
+    21301164: ModernInterior_582
+    21301166: ModernInterior_583
+    21301168: ModernInterior_584
+    21301170: ModernInterior_585
+    21301172: ModernInterior_586
+    21301174: ModernInterior_587
+    21301176: ModernInterior_588
+    21301178: ModernInterior_589
+    21301180: ModernInterior_590
+    21301182: ModernInterior_591
+    21301184: ModernInterior_592
+    21301186: ModernInterior_593
+    21301188: ModernInterior_594
+    21301190: ModernInterior_595
+    21301192: ModernInterior_596
+    21301194: ModernInterior_597
+    21301196: ModernInterior_598
+    21301198: ModernInterior_599
+    21301200: ModernInterior_600
+    21301202: ModernInterior_601
+    21301204: ModernInterior_602
+    21301206: ModernInterior_603
+    21301208: ModernInterior_604
+    21301210: ModernInterior_605
+    21301212: ModernInterior_606
+    21301214: ModernInterior_607
+    21301216: ModernInterior_608
+    21301218: ModernInterior_609
+    21301220: ModernInterior_610
+    21301222: ModernInterior_611
+    21301224: ModernInterior_612
+    21301226: ModernInterior_613
+    21301228: ModernInterior_614
+    21301230: ModernInterior_615
+    21301232: ModernInterior_616
+    21301234: ModernInterior_617
+    21301236: ModernInterior_618
+    21301238: ModernInterior_619
+    21301240: ModernInterior_620
+    21301242: ModernInterior_621
+    21301244: ModernInterior_622
+    21301246: ModernInterior_623
+    21301248: ModernInterior_624
+    21301250: ModernInterior_625
+    21301252: ModernInterior_626
+    21301254: ModernInterior_627
+    21301256: ModernInterior_628
+    21301258: ModernInterior_629
+    21301260: ModernInterior_630
+    21301262: ModernInterior_631
+    21301264: ModernInterior_632
+    21301266: ModernInterior_633
+    21301268: ModernInterior_634
+    21301270: ModernInterior_635
+    21301272: ModernInterior_636
+    21301274: ModernInterior_637
+    21301276: ModernInterior_638
+    21301278: ModernInterior_639
+    21301280: ModernInterior_640
+    21301282: ModernInterior_641
+    21301284: ModernInterior_642
+    21301286: ModernInterior_643
+    21301288: ModernInterior_644
+    21301290: ModernInterior_645
+    21301292: ModernInterior_646
+    21301294: ModernInterior_647
+    21301296: ModernInterior_648
+    21301298: ModernInterior_649
+    21301300: ModernInterior_650
+    21301302: ModernInterior_651
+    21301304: ModernInterior_652
+    21301306: ModernInterior_653
+    21301308: ModernInterior_654
+    21301310: ModernInterior_655
+    21301312: ModernInterior_656
+    21301314: ModernInterior_657
+    21301316: ModernInterior_658
+    21301318: ModernInterior_659
+    21301320: ModernInterior_660
+    21301322: ModernInterior_661
+    21301324: ModernInterior_662
+    21301326: ModernInterior_663
+    21301328: ModernInterior_664
+    21301330: ModernInterior_665
+    21301332: ModernInterior_666
+    21301334: ModernInterior_667
+    21301336: ModernInterior_668
+    21301338: ModernInterior_669
+    21301340: ModernInterior_670
+    21301342: ModernInterior_671
+    21301344: ModernInterior_672
+    21301346: ModernInterior_673
+    21301348: ModernInterior_674
+    21301350: ModernInterior_675
+    21301352: ModernInterior_676
+    21301354: ModernInterior_677
+    21301356: ModernInterior_678
+    21301358: ModernInterior_679
+    21301360: ModernInterior_680
+    21301362: ModernInterior_681
+    21301364: ModernInterior_682
+    21301366: ModernInterior_683
+    21301368: ModernInterior_684
+    21301370: ModernInterior_685
+    21301372: ModernInterior_686
+    21301374: ModernInterior_687
+    21301376: ModernInterior_688
+    21301378: ModernInterior_689
+    21301380: ModernInterior_690
+    21301382: ModernInterior_691
+    21301384: ModernInterior_692
+    21301386: ModernInterior_693
+    21301388: ModernInterior_694
+    21301390: ModernInterior_695
+    21301392: ModernInterior_696
+    21301394: ModernInterior_697
+    21301396: ModernInterior_698
+    21301398: ModernInterior_699
+    21301400: ModernInterior_700
+    21301402: ModernInterior_701
+    21301404: ModernInterior_702
+    21301406: ModernInterior_703
+    21301408: ModernInterior_704
+    21301410: ModernInterior_705
+    21301412: ModernInterior_706
+    21301414: ModernInterior_707
+    21301416: ModernInterior_708
+    21301418: ModernInterior_709
+    21301420: ModernInterior_710
+    21301422: ModernInterior_711
+    21301424: ModernInterior_712
+    21301426: ModernInterior_713
+    21301428: ModernInterior_714
+    21301430: ModernInterior_715
+    21301432: ModernInterior_716
+    21301434: ModernInterior_717
+    21301436: ModernInterior_718
+    21301438: ModernInterior_719
+    21301440: ModernInterior_720
+    21301442: ModernInterior_721
+    21301444: ModernInterior_722
+    21301446: ModernInterior_723
+    21301448: ModernInterior_724
+    21301450: ModernInterior_725
+    21301452: ModernInterior_726
+    21301454: ModernInterior_727
+    21301456: ModernInterior_728
+    21301458: ModernInterior_729
+    21301460: ModernInterior_730
+    21301462: ModernInterior_731
+    21301464: ModernInterior_732
+    21301466: ModernInterior_733
+    21301468: ModernInterior_734
+    21301470: ModernInterior_735
+    21301472: ModernInterior_736
+    21301474: ModernInterior_737
+    21301476: ModernInterior_738
+    21301478: ModernInterior_739
+    21301480: ModernInterior_740
+    21301482: ModernInterior_741
+    21301484: ModernInterior_742
+    21301486: ModernInterior_743
+    21301488: ModernInterior_744
+    21301490: ModernInterior_745
+    21301492: ModernInterior_746
+    21301494: ModernInterior_747
+    21301496: ModernInterior_748
+    21301498: ModernInterior_749
+    21301500: ModernInterior_750
+    21301502: ModernInterior_751
+    21301504: ModernInterior_752
+    21301506: ModernInterior_753
+    21301508: ModernInterior_754
+    21301510: ModernInterior_755
+    21301512: ModernInterior_756
+    21301514: ModernInterior_757
+    21301516: ModernInterior_758
+    21301518: ModernInterior_759
+    21301520: ModernInterior_760
+    21301522: ModernInterior_761
+    21301524: ModernInterior_762
+    21301526: ModernInterior_763
+    21301528: ModernInterior_764
+    21301530: ModernInterior_765
+    21301532: ModernInterior_766
+    21301534: ModernInterior_767
+    21301536: ModernInterior_768
+    21301538: ModernInterior_769
+    21301540: ModernInterior_770
+    21301542: ModernInterior_771
+    21301544: ModernInterior_772
+    21301546: ModernInterior_773
+    21301548: ModernInterior_774
+    21301550: ModernInterior_775
+    21301552: ModernInterior_776
+    21301554: ModernInterior_777
+    21301556: ModernInterior_778
+    21301558: ModernInterior_779
+    21301560: ModernInterior_780
+    21301562: ModernInterior_781
+    21301564: ModernInterior_782
+    21301566: ModernInterior_783
+    21301568: ModernInterior_784
+    21301570: ModernInterior_785
+    21301572: ModernInterior_786
+    21301574: ModernInterior_787
+    21301576: ModernInterior_788
+    21301578: ModernInterior_789
+    21301580: ModernInterior_790
+    21301582: ModernInterior_791
+    21301584: ModernInterior_792
+    21301586: ModernInterior_793
+    21301588: ModernInterior_794
+    21301590: ModernInterior_795
+    21301592: ModernInterior_796
+    21301594: ModernInterior_797
+    21301596: ModernInterior_798
+    21301598: ModernInterior_799
+    21301600: ModernInterior_800
+    21301602: ModernInterior_801
+    21301604: ModernInterior_802
+    21301606: ModernInterior_803
+    21301608: ModernInterior_804
+    21301610: ModernInterior_805
+    21301612: ModernInterior_806
+    21301614: ModernInterior_807
+    21301616: ModernInterior_808
+    21301618: ModernInterior_809
+    21301620: ModernInterior_810
+    21301622: ModernInterior_811
+    21301624: ModernInterior_812
+    21301626: ModernInterior_813
+    21301628: ModernInterior_814
+    21301630: ModernInterior_815
+    21301632: ModernInterior_816
+    21301634: ModernInterior_817
+    21301636: ModernInterior_818
+    21301638: ModernInterior_819
+    21301640: ModernInterior_820
+    21301642: ModernInterior_821
+    21301644: ModernInterior_822
+    21301646: ModernInterior_823
+    21301648: ModernInterior_824
+    21301650: ModernInterior_825
+    21301652: ModernInterior_826
+    21301654: ModernInterior_827
+    21301656: ModernInterior_828
+    21301658: ModernInterior_829
+    21301660: ModernInterior_830
+    21301662: ModernInterior_831
+    21301664: ModernInterior_832
+    21301666: ModernInterior_833
+    21301668: ModernInterior_834
+    21301670: ModernInterior_835
+    21301672: ModernInterior_836
+    21301674: ModernInterior_837
+    21301676: ModernInterior_838
+    21301678: ModernInterior_839
+    21301680: ModernInterior_840
+    21301682: ModernInterior_841
+    21301684: ModernInterior_842
+    21301686: ModernInterior_843
+    21301688: ModernInterior_844
+    21301690: ModernInterior_845
+    21301692: ModernInterior_846
+    21301694: ModernInterior_847
+    21301696: ModernInterior_848
+    21301698: ModernInterior_849
+    21301700: ModernInterior_850
+    21301702: ModernInterior_851
+    21301704: ModernInterior_852
+    21301706: ModernInterior_853
+    21301708: ModernInterior_854
+    21301710: ModernInterior_855
+    21301712: ModernInterior_856
+    21301714: ModernInterior_857
+    21301716: ModernInterior_858
+    21301718: ModernInterior_859
+    21301720: ModernInterior_860
+    21301722: ModernInterior_861
+    21301724: ModernInterior_862
+    21301726: ModernInterior_863
+    21301728: ModernInterior_864
+    21301730: ModernInterior_865
+    21301732: ModernInterior_866
+    21301734: ModernInterior_867
+    21301736: ModernInterior_868
+    21301738: ModernInterior_869
+    21301740: ModernInterior_870
+    21301742: ModernInterior_871
+    21301744: ModernInterior_872
+    21301746: ModernInterior_873
+    21301748: ModernInterior_874
+    21301750: ModernInterior_875
+    21301752: ModernInterior_876
+    21301754: ModernInterior_877
+    21301756: ModernInterior_878
+    21301758: ModernInterior_879
+    21301760: ModernInterior_880
+    21301762: ModernInterior_881
+    21301764: ModernInterior_882
+    21301766: ModernInterior_883
+    21301768: ModernInterior_884
+    21301770: ModernInterior_885
+    21301772: ModernInterior_886
+    21301774: ModernInterior_887
+    21301776: ModernInterior_888
+    21301778: ModernInterior_889
+    21301780: ModernInterior_890
+    21301782: ModernInterior_891
+    21301784: ModernInterior_892
+    21301786: ModernInterior_893
+    21301788: ModernInterior_894
+    21301790: ModernInterior_895
+    21301792: ModernInterior_896
+    21301794: ModernInterior_897
+    21301796: ModernInterior_898
+    21301798: ModernInterior_899
+    21301800: ModernInterior_900
+    21301802: ModernInterior_901
+    21301804: ModernInterior_902
+    21301806: ModernInterior_903
+    21301808: ModernInterior_904
+    21301810: ModernInterior_905
+    21301812: ModernInterior_906
+    21301814: ModernInterior_907
+    21301816: ModernInterior_908
+    21301818: ModernInterior_909
+    21301820: ModernInterior_910
+    21301822: ModernInterior_911
+    21301824: ModernInterior_912
+    21301826: ModernInterior_913
+    21301828: ModernInterior_914
+    21301830: ModernInterior_915
+    21301832: ModernInterior_916
+    21301834: ModernInterior_917
+    21301836: ModernInterior_918
+    21301838: ModernInterior_919
+    21301840: ModernInterior_920
+    21301842: ModernInterior_921
+    21301844: ModernInterior_922
+    21301846: ModernInterior_923
+    21301848: ModernInterior_924
+    21301850: ModernInterior_925
+    21301852: ModernInterior_926
+    21301854: ModernInterior_927
+    21301856: ModernInterior_928
+    21301858: ModernInterior_929
+    21301860: ModernInterior_930
+    21301862: ModernInterior_931
+    21301864: ModernInterior_932
+    21301866: ModernInterior_933
+    21301868: ModernInterior_934
+    21301870: ModernInterior_935
+    21301872: ModernInterior_936
+    21301874: ModernInterior_937
+    21301876: ModernInterior_938
+    21301878: ModernInterior_939
+    21301880: ModernInterior_940
+    21301882: ModernInterior_941
+    21301884: ModernInterior_942
+    21301886: ModernInterior_943
+    21301888: ModernInterior_944
+    21301890: ModernInterior_945
+    21301892: ModernInterior_946
+    21301894: ModernInterior_947
+    21301896: ModernInterior_948
+    21301898: ModernInterior_949
+    21301900: ModernInterior_950
+    21301902: ModernInterior_951
+    21301904: ModernInterior_952
+    21301906: ModernInterior_953
+    21301908: ModernInterior_954
+    21301910: ModernInterior_955
+    21301912: ModernInterior_956
+    21301914: ModernInterior_957
+    21301916: ModernInterior_958
+    21301918: ModernInterior_959
+    21301920: ModernInterior_960
+    21301922: ModernInterior_961
+    21301924: ModernInterior_962
+    21301926: ModernInterior_963
+    21301928: ModernInterior_964
+    21301930: ModernInterior_965
+    21301932: ModernInterior_966
+    21301934: ModernInterior_967
+    21301936: ModernInterior_968
+    21301938: ModernInterior_969
+    21301940: ModernInterior_970
+    21301942: ModernInterior_971
+    21301944: ModernInterior_972
+    21301946: ModernInterior_973
+    21301948: ModernInterior_974
+    21301950: ModernInterior_975
+    21301952: ModernInterior_976
+    21301954: ModernInterior_977
+    21301956: ModernInterior_978
+    21301958: ModernInterior_979
+    21301960: ModernInterior_980
+    21301962: ModernInterior_981
+    21301964: ModernInterior_982
+    21301966: ModernInterior_983
+    21301968: ModernInterior_984
+    21301970: ModernInterior_985
+    21301972: ModernInterior_986
+    21301974: ModernInterior_987
+    21301976: ModernInterior_988
+    21301978: ModernInterior_989
+    21301980: ModernInterior_990
+    21301982: ModernInterior_991
+    21301984: ModernInterior_992
+    21301986: ModernInterior_993
+    21301988: ModernInterior_994
+    21301990: ModernInterior_995
+    21301992: ModernInterior_996
+    21301994: ModernInterior_997
+    21301996: ModernInterior_998
+    21301998: ModernInterior_999
+    21302000: ModernInterior_1000
+    21302002: ModernInterior_1001
+    21302004: ModernInterior_1002
+    21302006: ModernInterior_1003
+    21302008: ModernInterior_1004
+    21302010: ModernInterior_1005
+    21302012: ModernInterior_1006
+    21302014: ModernInterior_1007
+    21302016: ModernInterior_1008
+    21302018: ModernInterior_1009
+    21302020: ModernInterior_1010
+    21302022: ModernInterior_1011
+    21302024: ModernInterior_1012
+    21302026: ModernInterior_1013
+    21302028: ModernInterior_1014
+    21302030: ModernInterior_1015
+    21302032: ModernInterior_1016
+    21302034: ModernInterior_1017
+    21302036: ModernInterior_1018
+    21302038: ModernInterior_1019
+    21302040: ModernInterior_1020
+    21302042: ModernInterior_1021
+    21302044: ModernInterior_1022
+    21302046: ModernInterior_1023
+    21302048: ModernInterior_1024
+    21302050: ModernInterior_1025
+    21302052: ModernInterior_1026
+    21302054: ModernInterior_1027
+    21302056: ModernInterior_1028
+    21302058: ModernInterior_1029
+    21302060: ModernInterior_1030
+    21302062: ModernInterior_1031
+    21302064: ModernInterior_1032
+    21302066: ModernInterior_1033
+    21302068: ModernInterior_1034
+    21302070: ModernInterior_1035
+    21302072: ModernInterior_1036
+    21302074: ModernInterior_1037
+    21302076: ModernInterior_1038
+    21302078: ModernInterior_1039
+    21302080: ModernInterior_1040
+    21302082: ModernInterior_1041
+    21302084: ModernInterior_1042
+    21302086: ModernInterior_1043
+    21302088: ModernInterior_1044
+    21302090: ModernInterior_1045
+    21302092: ModernInterior_1046
+    21302094: ModernInterior_1047
+    21302096: ModernInterior_1048
+    21302098: ModernInterior_1049
+    21302100: ModernInterior_1050
+    21302102: ModernInterior_1051
+    21302104: ModernInterior_1052
+    21302106: ModernInterior_1053
+    21302108: ModernInterior_1054
+    21302110: ModernInterior_1055
+    21302112: ModernInterior_1056
+    21302114: ModernInterior_1057
+    21302116: ModernInterior_1058
+    21302118: ModernInterior_1059
+    21302120: ModernInterior_1060
+    21302122: ModernInterior_1061
+    21302124: ModernInterior_1062
+    21302126: ModernInterior_1063
+    21302128: ModernInterior_1064
+    21302130: ModernInterior_1065
+    21302132: ModernInterior_1066
+    21302134: ModernInterior_1067
+    21302136: ModernInterior_1068
+    21302138: ModernInterior_1069
+    21302140: ModernInterior_1070
+    21302142: ModernInterior_1071
+    21302144: ModernInterior_1072
+    21302146: ModernInterior_1073
+    21302148: ModernInterior_1074
+    21302150: ModernInterior_1075
+    21302152: ModernInterior_1076
+    21302154: ModernInterior32_0
+    21302156: ModernInterior32_1
+    21302158: ModernInterior32_2
+    21302160: ModernInterior32_3
+    21302162: ModernInterior32_4
+    21302164: ModernInterior32_5
+    21302166: ModernInterior32_6
+    21302168: ModernInterior32_7
+    21302170: ModernInterior32_8
+    21302172: ModernInterior32_9
+    21302174: ModernInterior32_10
+    21302176: ModernInterior32_11
+    21302178: ModernInterior32_12
+    21302180: ModernInterior32_13
+    21302182: ModernInterior32_14
+    21302184: ModernInterior32_15
+    21302186: ModernInterior32_16
+    21302188: ModernInterior32_17
+    21302190: ModernInterior32_18
+    21302192: ModernInterior32_19
+    21302194: ModernInterior32_20
+    21302196: ModernInterior32_21
+    21302198: ModernInterior32_22
+    21302200: ModernInterior32_23
+    21302202: ModernInterior32_24
+    21302204: ModernInterior32_25
+    21302206: ModernInterior32_26
+    21302208: ModernInterior32_27
+    21302210: ModernInterior32_28
+    21302212: ModernInterior32_29
+    21302214: ModernInterior32_30
+    21302216: ModernInterior32_31
+    21302218: ModernInterior32_32
+    21302220: ModernInterior32_33
+    21302222: ModernInterior32_34
+    21302224: ModernInterior32_35
+    21302226: ModernInterior32_36
+    21302228: ModernInterior32_37
+    21302230: ModernInterior32_38
+    21302232: ModernInterior32_39
+    21302234: ModernInterior32_40
+    21302236: ModernInterior32_41
+    21302238: ModernInterior32_42
+    21302240: ModernInterior32_43
+    21302242: ModernInterior32_44
+    21302244: ModernInterior32_45
+    21302246: ModernInterior32_46
+    21302248: ModernInterior32_47
+    21302250: ModernInterior32_48
+    21302252: ModernInterior32_49
+    21302254: ModernInterior32_50
+    21302256: ModernInterior32_51
+    21302258: ModernInterior32_52
+    21302260: ModernInterior32_53
+    21302262: ModernInterior32_54
+    21302264: ModernInterior32_55
+    21302266: ModernInterior32_56
+    21302268: ModernInterior32_57
+    21302270: ModernInterior32_58
+    21302272: ModernInterior32_59
+    21302274: ModernInterior32_60
+    21302276: ModernInterior32_61
+    21302278: ModernInterior32_62
+    21302280: ModernInterior32_63
+    21302282: ModernInterior32_64
+    21302284: ModernInterior32_65
+    21302286: ModernInterior32_66
+    21302288: ModernInterior32_67
+    21302290: ModernInterior32_68
+    21302292: ModernInterior32_69
+    21302294: ModernInterior32_70
+    21302296: ModernInterior32_71
+    21302298: ModernInterior32_72
+    21302300: ModernInterior32_73
+    21302302: ModernInterior32_74
+    21302304: ModernInterior32_75
+    21302306: ModernInterior32_76
+    21302308: ModernInterior32_77
+    21302310: ModernInterior32_78
+    21302312: ModernInterior32_79
+    21302314: ModernInterior32_80
+    21302316: ModernInterior32_81
+    21302318: ModernInterior32_82
+    21302320: ModernInterior32_83
+    21302322: ModernInterior32_84
+    21302324: ModernInterior32_85
+    21302326: ModernInterior32_86
+    21302328: ModernInterior32_87
+    21302330: ModernInterior32_88
+    21302332: ModernInterior32_89
+    21302334: ModernInterior32_90
+    21302336: ModernInterior32_91
+    21302338: ModernInterior32_92
+    21302340: ModernInterior32_93
+    21302342: ModernInterior32_94
+    21302344: ModernInterior32_95
+    21302346: ModernInterior32_96
+    21302348: ModernInterior32_97
+    21302350: ModernInterior32_98
+    21302352: ModernInterior32_99
+    21302354: ModernInterior32_100
+    21302356: ModernInterior32_101
+    21302358: ModernInterior32_102
+    21302360: ModernInterior32_103
+    21302362: ModernInterior32_104
+    21302364: ModernInterior32_105
+    21302366: ModernInterior32_106
+    21302368: ModernInterior32_107
+    21302370: ModernInterior32_108
+    21302372: ModernInterior32_109
+    21302374: ModernInterior32_110
+    21302376: ModernInterior32_111
+    21302378: ModernInterior32_112
+    21302380: ModernInterior32_113
+    21302382: ModernInterior32_114
+    21302384: ModernInterior32_115
+    21302386: ModernInterior32_116
+    21302388: ModernInterior32_117
+    21302390: ModernInterior32_118
+    21302392: ModernInterior32_119
+    21302394: ModernInterior32_120
+    21302396: ModernInterior32_121
+    21302398: ModernInterior32_122
+    21302400: ModernInterior32_123
+    21302402: ModernInterior32_124
+    21302404: ModernInterior32_125
+    21302406: ModernInterior32_126
+    21302408: ModernInterior32_127
+    21302410: ModernInterior32_128
+    21302412: ModernInterior32_129
+    21302414: ModernInterior32_130
+    21302416: ModernInterior32_131
+    21302418: ModernInterior32_132
+    21302420: ModernInterior32_133
+    21302422: ModernInterior32_134
+    21302424: ModernInterior32_135
+    21302426: ModernInterior32_136
+    21302428: ModernInterior32_137
+    21302430: ModernInterior32_138
+    21302432: ModernInterior32_139
+    21302434: ModernInterior32_140
+    21302436: ModernInterior32_141
+    21302438: ModernInterior32_142
+    21302440: ModernInterior32_143
+    21302442: ModernInterior32_144
+    21302444: ModernInterior32_145
+    21302446: ModernInterior32_146
+    21302448: ModernInterior32_147
+    21302450: ModernInterior32_148
+    21302452: ModernInterior32_149
+    21302454: ModernInterior32_150
+    21302456: ModernInterior32_151
+    21302458: ModernInterior32_152
+    21302460: ModernInterior32_153
+    21302462: ModernInterior32_154
+    21302464: ModernInterior32_155
+    21302466: ModernInterior32_156
+    21302468: ModernInterior32_157
+    21302470: ModernInterior32_158
+    21302472: ModernInterior32_159
+    21302474: ModernInterior32_160
+    21302476: ModernInterior32_161
+    21302478: ModernInterior32_162
+    21302480: ModernInterior32_163
+    21302482: ModernInterior32_164
+    21302484: ModernInterior32_165
+    21302486: ModernInterior32_166
+    21302488: ModernInterior32_167
+    21302490: ModernInterior32_168
+    21302492: ModernInterior32_169
+    21302494: ModernInterior32_170
+    21302496: ModernInterior32_171
+    21302498: ModernInterior32_172
+    21302500: ModernInterior32_173
+    21302502: ModernInterior32_174
+    21302504: ModernInterior32_175
+    21302506: ModernInterior32_176
+    21302508: ModernInterior32_177
+    21302510: ModernInterior32_178
+    21302512: ModernInterior32_179
+    21302514: ModernInterior32_180
+    21302516: ModernInterior32_181
+    21302518: ModernInterior32_182
+    21302520: ModernInterior32_183
+    21302522: ModernInterior32_184
+    21302524: ModernInterior32_185
+    21302526: ModernInterior32_186
+    21302528: ModernInterior32_187
+    21302530: ModernInterior32_188
+    21302532: ModernInterior32_189
+    21302534: ModernInterior32_190
+    21302536: ModernInterior32_191
+    21302538: ModernInterior32_192
+    21302540: ModernInterior32_193
+    21302542: ModernInterior32_194
+    21302544: ModernInterior32_195
+    21302546: ModernInterior32_196
+    21302548: ModernInterior32_197
+    21302550: ModernInterior32_198
+    21302552: ModernInterior32_199
+    21302554: ModernInterior32_200
+    21302556: ModernInterior32_201
+    21302558: ModernInterior32_202
+    21302560: ModernInterior32_203
+    21302562: ModernInterior32_204
+    21302564: ModernInterior32_205
+    21302566: ModernInterior32_206
+    21302568: ModernInterior32_207
+    21302570: ModernInterior32_208
+    21302572: ModernInterior32_209
+    21302574: ModernInterior32_210
+    21302576: ModernInterior32_211
+    21302578: ModernInterior32_212
+    21302580: ModernInterior32_213
+    21302582: ModernInterior32_214
+    21302584: ModernInterior32_215
+    21302586: ModernInterior32_216
+    21302588: ModernInterior32_217
+    21302590: ModernInterior32_218
+    21302592: ModernInterior32_219
+    21302594: ModernInterior32_220
+    21302596: ModernInterior32_221
+    21302598: ModernInterior32_222
+    21302600: ModernInterior32_223
+    21302602: ModernInterior32_224
+    21302604: ModernInterior32_225
+    21302606: ModernInterior32_226
+    21302608: ModernInterior32_227
+    21302610: ModernInterior32_228
+    21302612: ModernInterior32_229
+    21302614: ModernInterior32_230
+    21302616: ModernInterior32_231
+    21302618: ModernInterior32_232
+    21302620: ModernInterior32_233
+    21302622: ModernInterior32_234
+    21302624: ModernInterior32_235
+    21302626: ModernInterior32_236
+    21302628: ModernInterior32_237
+    21302630: ModernInterior32_238
+    21302632: ModernInterior32_239
+    21302634: ModernInterior32_240
+    21302636: ModernInterior32_241
+    21302638: ModernInterior32_242
+    21302640: ModernInterior32_243
+    21302642: ModernInterior32_244
+    21302644: ModernInterior32_245
+    21302646: ModernInterior32_246
+    21302648: ModernInterior32_247
+    21302650: ModernInterior32_248
+    21302652: ModernInterior32_249
+    21302654: ModernInterior32_250
+    21302656: ModernInterior32_251
+    21302658: ModernInterior32_252
+    21302660: ModernInterior32_253
+    21302662: ModernInterior32_254
+    21302664: ModernInterior32_255
+    21302666: ModernInterior32_256
+    21302668: ModernInterior32_257
+    21302670: ModernInterior32_258
+    21302672: ModernInterior32_259
+    21302674: ModernInterior32_260
+    21302676: ModernInterior32_261
+    21302678: ModernInterior32_262
+    21302680: ModernInterior32_263
+    21302682: ModernInterior32_264
+    21302684: ModernInterior32_265
+    21302686: ModernInterior32_266
+    21302688: ModernInterior32_267
+    21302690: ModernInterior32_268
+    21302692: ModernInterior32_269
+    21302694: ModernInterior32_270
+    21302696: ModernInterior32_271
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ModernInterior32_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a22f6a965a954914286c4d2dd4873899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62ec260d1e4cde74d8accd0c72258049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69e9508b5c1a90f4fbb4da99624b1a1a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bed1a33b1f94084eb6b952961ce0a5a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d99f140453219654e860889af66ca8f4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68228ea1795995b4d93d2e630aaeaec5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 026ba5d4b491aa149af5b95b6bd65897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6b77a9c859c33f409c49fb6b4bfb22f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd04316de5f48c1478d451288224049a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 247ad3aee94a4bc49b736834de6610bd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7575fcd5f7a661f42bb46f1397e9ba44
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab228a3b0dbe0054d836a3ba3b211ab6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7d6b6b4b1de16e4f83f1b2fa0272717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_13
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e46dafaa9a216c848968ed2365d0c089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_14
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a25824ed28b0144f9761b0250b557cf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_15
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1b170443e4f5984c8af9aa083cc5329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8e3ff389358b7046b0c3d5ac1af431f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_17
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef108a1c2188c4f489ef9effd9ff1601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67362e6f3024cc44cbfb1e517f284119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_19
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed9b1a36be0e4854d9b9120940e205b2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_20
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0df54fc018b149479212d082d98ee89
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_21
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 568ea893e0d222843adfcd5c9e5122dc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_22
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abcebde9108384d47af56fbd4ed2b249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_23
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f35a4b78859ca14f9956cf4943be71c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_24
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 451f9bc19ebb8ae4a93be3e5e05fb880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_25
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2896a71c3784d81409eb3a39e2632cb4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_26
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e82eb532ff89af44ae33308ce4dfc77
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_27
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60e551d3953671942932c78fb4c0ae02
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_28
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ba318e1871ce2e4584f99b402b9d520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_29
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fec5827c0022bf4387b2a5c3d1e375d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_30
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44c83a7c60115294dbbabb780b4c9023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_31
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69d1afbb42094934aa073a0f2eab1186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7bd91127ea77884c9ea05c308eb077e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_33
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c305915287ca88945b5f40b9d90ef0ff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_34
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ee983657eaaa740a4852aadc4120cc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_35
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b32a53d74df20246854741d4bc9ff20
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_36
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8edcc5370e5cac40b36b7a630478a44
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_37
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ecc209dc7233574d9aca9ac671f904e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_38
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57c58f4fb37e44345aa4bd7bda3b90f0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_39
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41c3890b66019b84592fce3124d3ad6a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_40
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e425a853f27cddd49ae413f3c8068340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_41
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e86fb3d8aec8ad4aabea6460390484b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_42
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc9f004ab777b74fb0140f80884af80
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_43
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33dbee0dec38c5e4fa43a4f944078e55
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_44
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffd53ec3f046ace43bd9d94df146f712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_45
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1848e17d8d9e52e4dbc4c90b9df964e2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_46
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 834f624b0c397d14bb4a29a4eda76e5a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_47
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d5d835ab6868464c8aca0c2fb2610e8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c68f1fe94c64f5e4fa090cad17619fc0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_49
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3466e27b9479ea41895442ffc99d746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_50
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c1e6cd00761c614fb7f64b132d66f25
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_51
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b154a8e6303b714291c8bc58b6e0b3f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_52
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af9d13da70cc47348a7002826d69ce62
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_53
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65f960a4fbcee3d4aa4398f628217c01
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_54
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c040471fd71c24443ae9ddfd057b0764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_55
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c8f174cd84f0ad4b9eb059c679e0518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_56
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c83daaebe70ca745a2b67ed75a6d860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_57
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3d935253b4a8244791d3529046330dc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_58
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce4c7bac899f1a0498f7c5185c195c34
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_59
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 796eba217de985149b7eabc36aa583a0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_60
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c2c582b331a7a34e8279ebc7680149b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_61
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a5b65c77b14892409e3a59b923025b1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_62
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b25e7af5169fb9a4c9f998a3d14e85fe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_63
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bf8e8a0b4ff25a41b8e8b685bbfddb6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49ccad6748e83bc4a91889725db136b1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_65
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc55e1661ced9ec458580f99036a2972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_66
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01c23d10ceb539146ba68752bfcbaba7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_67
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c24b0c297fea794489bfca9783eade72
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_68
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8716985b62c4d4a498380569a8d9d90c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_69
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc0a17c816f8e0344879b52c6389e272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_70
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0dddd15f19c0fc4c8ba17aac6100c21
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_71
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 137e5460fd32a1143894d91d6ce114a9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_72
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 697a2da3698729f49924221ff7783132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_73
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b15c1f1309fbde446863b1a44439049d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_74
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8df2f518b906ec41889a874141d1d53
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_75
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 404c71110150b3d41b12170f2fad65e9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_76
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2fbc3eb7d67a9346b476b8adb323830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_77
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a32e4516ae2f5ce4381b1eba3088c5dd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_78
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6461a704498fea54b953925875d3cab9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_79
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6939e74191319fb4d8fd9fd665795ec9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb36a73e369f90544befa429a65df7f6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_81
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b009a8edeac35c949b243fa324b32ef4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_82
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 456eb4dd1e3e5b94da1c693d15ec1f92
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_83
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7096cf5f9ce712343b1e9bf66440c19f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_84
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbef9b5d1bad8cc49ad512d17e83827e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_85
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 346abfbbfffe55346ba1d32358aab3d5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_86
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 967ed1ff71e44b245bd3c80ea30fd7ef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_87
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a30ac0d7df664a64e817be632fe94ec1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_88
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d8dec865b65549479b2756150e3c7fd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_89
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72b210c83237cad448ad02c781115d32
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_90
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfb29fd2d9abb904e92cb6a881445dc8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_91
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 938ae4b826b56a747a883083a2ed34f9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_92
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ff103f4c37aa034c97b0693a4dfe5ad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_93
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8054a2713794b72448238a3117c79cc0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_94
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 911fa9c514fe63f458dafc387e00ea4a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_95
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a9d418a74dc9cd43aac05e5e7d969ee
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff765d86fefda66408620fdb5be39de3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_97
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8caf40d136f20c449535e2e3bf99b31
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_98
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b3830ee4ef103a40a35bb4b3e002ab2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_99
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e62c348f99c8104ab8650d8b5a6afdd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_100
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e47f85edfe332ac45bdfc27585abd3c1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_101
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96182e55d8faad3489aa33f060c10477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_102
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89ee3242081ad634db1582b4b5258d1c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_103
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96f22237b8566f74d92d6cf5ba8b209b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_104
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a74eca62dbc76c47960184bfd6743be
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_105
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b01139f74e6d9844b9db32f3d4ecf2b5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_106
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ae547186043b9344a4a1ba506cc7ae0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_107
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99def9e206571914d98166e0b254c2d0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_108
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b35588447a53a74f9fb444ea0aa4210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_109
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8326599aad1105d40801f0ede3e3c9c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_110
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96afd3c4872316d44ac51c4f61677b48
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_111
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6210519169df53745892e890f4cf436e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_112
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5736ef3688b776340bfce8da8131412b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_113
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b36a4d995f916fd41a60b49909383bf3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_114
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 080e12a14760da245b8394dfbbc82b41
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_115
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a3204b8ed608494da368fe0de25268c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_116
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adfefafbd6737b5498e87a7963b647f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_117
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41a11a5c37d91d24aa4cbec4cdd81edf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_118
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c512ebdc855f894f879c6f0c202a8c0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_119
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c91f8117b186744f991b8480ed5434d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_120
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 039170a85057ae04e893863091abcadb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_121
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd4b935e52d524f41bffb731fc846ef1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_122
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2807ce3399ce6f443a1262573c40972d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_123
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cad2d5c1b5db9e4fb8ffe2c6043aa53
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_124
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd52f8b0ef2eb124b844de3cebbcda7e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_125
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 007f5af4a71d7f04a89701daf40e2e5b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_126
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a627bf5aa60bb3469e958b16c8b7ec7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_127
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 382c24677067fd54891a55b0d638e30a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_128
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55914d1da7056e849a6344730ead7e4e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_129
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e329ff7ec4b1c418470a8eb9d1f0fc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_130
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68291f55013a2984caf2a34e80231c21
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_131
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45520ff477c87fe4498f0ef083aaa17a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_132
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 947ca3163bba49e439d96e7cca6b2b77
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_133
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f850cd101348fd47b0e1c624418ffdc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_134
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70729e38445e8d44da036afc789cc86f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_135
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cf1713a2de78ed459087da36571d1c5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_136
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee2ed942d913cd04bae5ba5914260d1b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_137
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ac1056375e2e7945a3d170f1d75c85e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_138
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f92bbf6c610424a9e8a4e3ad67c08d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_139
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99aa38cb79c1f7640972ea4608a9b781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_140
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7190876db61d0f544a5b4d81588bbf74
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_141
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89ec64bb725b1a942afc2ec01174ce08
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_142
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 077b606282ebab04297a0f374d75be3a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_143
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a1faefe9c247fa4ab5e182a04dea998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_144
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4012bd2267fdbad48b6a8b6d09e4dd33
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_145
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d40823f0f2c36c441913bb04c7cceaab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_146
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 770fbcbd2bed1fa4b953a11ef0abdf53
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_147
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9d9c728c4b917c4781d165257ef583a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_148
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efc8ecfc490ed1446a8553dfea0864da
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_149
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca49d6dab67099c4c8df739c381c24f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_150
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e72b210d17e47ad4caedc1b42d271e72
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_151
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4bddd8cabfc5b848b27b80c6095dd4c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_152
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ddc237a8c53fec46893ed62f537dcd1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_153
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb72ae15956d3f2478357ff81538cc57
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_154
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d9e9088b67260b4e8e4f0759ecdca6f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_155
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83dff1f6cb782c8459b78b997f07b707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_156
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4d2b0da57ffebe4da054fe5574bebb3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_157
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15b5764dfd70c2546b20fa4b5d66c469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_158
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 457cb9e2f6d04a94480b31f67474b421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_159
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bec13cfda819a4549a6abedf39f79b73
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_160
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6acf201666cd3224ebab297b195b0b47
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_161
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f7096477a2da4d42961d94ba7250ce4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_162
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aa53b0ff1d64c64aa3353a7d8aabc74
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_163
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddaa4ee9089e82648a381e448ba1b6d9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_164
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49a841b0518063848ae44be2cb4975cc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_165
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a6fa926caea2b9409a4e227f3427915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_166
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7111cb1b3a551b4a852dd294a0967e2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_167
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 544b1b50cd7f1454092dd2fc397f55d5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_168
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea81b07dd78ba464188a69988b6e7d72
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_169
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c78774fba09523042b5e8b738a3de61f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_170
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef88cfa676ab7de4db314752c660e6cd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_171
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bb3483a0e2b5634bb81be0bc75180eb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_172
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 223af90acdcae8941a6e3c341ab28872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_173
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70fcb720becf7964e88c6db551d8648d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_174
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79d5c68b105585f43af4abb8aa71be8d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_175
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3981c10bc6d578f409ef3ee0db8f2105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_176
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fde16bbfedad794fb2bef122e5a2e9c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_177
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9be9c2699db280c4e815104c89dffe2c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_178
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bb610b9703cd2341a14f2b75f24f37f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_179
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f361d71666ff23442a373adfe49152ea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_180
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c60dbb7c8742ce740aeda923999308a2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_181
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1190c91b43714c54e8636a04ec0b8ef9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_182
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae817c3f129739343a1388accab08c5f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_183
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e52caa4efcac0fa40a97b9215e878902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_184
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00aff93f423203c4abeb20e61d233cc7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_185
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1726df49f26ee0c47ad2568b3ac24c82
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_186
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a24bb3c010acd4d489e621bfd3f0ca7a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_187
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3dff0b68108965478b6ccddcf5b38ac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_188
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db074a8ad7533034aaaebbac48aa5932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_189
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9f1a107e8ffd054bb7f2b732a64a4bb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_190
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d06692d18296ca84cab5ce287c373393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_191
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a86a081c28268e04aa9fc454faa62feb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_192
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 576978d949b589842ae95d82e0d4876a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_193
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 981bd0bf3939cb4429845f392ad99b78
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_194
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36b04f45b1039b64a907c742d99db8aa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_195
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04a321b39411003409a6973bb8839b33
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_196
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c2f6ce14b771df44a93257eaa848839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_197
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ec9edf3eb8baad40a71a3e742508441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_198
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 822505cbceb15cf44a406645e09c4c06
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_199
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00a8080a240cae447aa5e36d62f86d68
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_200
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a05af62d218c2c4890d9a2aaae3cde2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_201
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fb2a39e24934db498ed750d900547c7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_202
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aafafa02ce892a549b66bf1728d4c9d1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_203
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d84f4e1cda041914a9c7e35ad64eabee
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_204
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d4602c1261a81045b3e8d636c1c5233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_205
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b33ce22b83f736147aa2140729a2e8ed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_206
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dd63a7720da3a444a1c1e68304d916a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_207
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed07a5596b0a64b4c8ff2dbfa762cbb2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_208
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12074720848bb9c439ee7e4732f9c704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_209
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b79ffc290dcbc5147863c400549fb1c1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_210
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3afdcb911213f79428e311289ccacb1e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_211
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02daa1c18b1fc524299e6fecc89593e6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_212
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97e98a3c350c75e45bfbd06fb9cffb7a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_213
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e37072f09bdec54f8aadfb5cadc9ab1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_214
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3215c446fe929a24e8f30789495aafd5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_215
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0875dea6cffdc6147a3928a2f5bb52c7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_216
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e9f716bdae612c40b6d922233905e30
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_217
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a1e0d3e5e7f6d64f9c3d047c86bf4b0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_218
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61c4d64cbd4eff345836523ba1077724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_219
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 442aed31664866f4eade91e1cbf3060a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_220
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 153c4dd3531ddb64f9b27e5e0a7f0032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_221
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e447cdba64b7d4a47a97ca9a8791b53a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_222
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c5b884ce80203444abc7c0910f7002e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_223
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dfaa18068f768241b27d0a3ff661d54
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_224
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7d1063869b2c4647bebd3b75faaf15f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_225
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c4882a2b33cb8946bd43b6a114787bd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_226
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a44ad74c45ed61b4c816711bd4e98e0e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_227
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e11709e307e62d4f935852ff29b0676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_228
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 656fc23ca8768964f8021c48f98f8509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_229
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b44cbbfe1163954a820030a63ead8d7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_230
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61c1d5fb4ec4fa4eb1f4af1f096d93c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_231
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d44094feb3c48ef44920ed5284089086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_232
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6196ff0bcd3cc7c458833f2754b530e5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_233
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a73273727948bf4bbaba7d9fc905591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_234
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04e3ecf37fb678a4090e65e630cc74c7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_235
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d396db3206eaf8a4f898e217ea033de1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_236
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cffc0496a64b9ed4e9957e81e343b915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_237
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc832d9ad7eed84092962b7ba6fbae9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_238
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38936bdacff606e4895950d1a8455e58
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_239
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c52464c28ee115468bd0cc1121b7167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_240
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37af13e46a888224c80954eb6cc18475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_241
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92d53026079ae904bb0adc3c0782a327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_242
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b893f9f54a796b24caed30db643016a9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_243
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bc2bc0ede3bd32448bf4f2dd778c68c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_244
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a0ec297abcc7b442a9aa7f0a7951222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_245
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de66fa2ab19d5094c9095f6f92092c81
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_246
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30700d996d669534499a274483613857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_247
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ae4beaf2465a684c9d84136289dd0bb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_248
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37534b48a664c964a82a187509736c83
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_249
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76438fc4c00f53448868af43fb66ad9a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_250
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67667429f45b5db4282d42a204ad37ae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_251
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b68c75b7552d84419b61fc316338516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_252
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5df463a93f9b286418a56557771c9841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_253
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b57a6131d44b114c99dead71eb947af
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_254
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c4d11762fa82f04ea7610433187cdb0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_255
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fec6fd30ca3ca945b91046b16c4383d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_256
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15375cdb8ee2ac947986161448fcadbf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_257
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c8409bc0f94b7a46ad0a30d3aea9a3a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_258
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f80fa7e9de0baa54386a73f9ae80b88e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_259
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34f8442c31f1fb743b034a04560a43a6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_260
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 296afcb6cc6e80341b96a230f8538087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_261
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d34bfb8272999d9449ebd0c0fe06ceb4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_262
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87b2449c529901147bed92ac56489357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_263
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ae9c897865b97a4da7ccc05de08c2c2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_264
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b548a8c9f2ab48449484fe2cb149066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_265
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea038164a11c6e4f8f9bcea3a9403d3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_266
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8be48ae2c541d964394c224e975fd3e9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_267
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d4535c35733ae94eb69a7fb63070d9e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_268
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d13b0a08e4df76c46ac35044c30eee2e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_269
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3bf573f38cb11e499e4a2ba735909d8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_270
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e456469c126dd74ebe54e244fbbc0dc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModernInterior32_271
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8df1a595ca1cea4c8e25f69cedff4fd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: e744bd25bb7f31142a9ede3d10a8f844
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
