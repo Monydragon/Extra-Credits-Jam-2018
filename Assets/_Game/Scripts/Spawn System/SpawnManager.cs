@@ -112,6 +112,7 @@ public class SpawnManager : MonoBehaviour
                         {
                             go = Instantiate(s.Prefab, s.SpawnPoint.transform.position, Quaternion.identity);
                             spawned = true;
+                            activeEnemies++;
                         }
                         else
                         {
@@ -136,7 +137,7 @@ public class SpawnManager : MonoBehaviour
 
     public void Start()
     {
-        if(playerTransform == null) { playerTransform = MultiTags.FindGameObjectWithMultiTag("Player").transform; }
+        if (playerTransform == null) { playerTransform = MultiTags.FindGameObjectWithMultiTag("Player").transform; }
 
         SpawnAll();
         StartCoroutine(SpawnMore());
@@ -148,9 +149,9 @@ public class SpawnManager : MonoBehaviour
         {
             yield return new WaitForSeconds(spawnTimer);
             Spawn(1);
+            SetPrefabs();
         }
     }
-
 
     private void Spawn(int amount)
     {
@@ -210,17 +211,17 @@ public class SpawnManager : MonoBehaviour
                 if (spawned) { break; }
             }
 
-            if(go == null) continue;
+            if (go == null) continue;
             go.transform.SetParent(s.SpawnPoint.transform);
             go.AddTag("SpawnedObject");
         }
 
     }
+
     private void Update()
     {
         activeSpawns = MultiTags.FindGameObjectsWithMultiTagCount("SpawnedObject");
         activeBarrels = MultiTags.FindGameObjectsWithMultiTagCount("Barrel");
+        activeEnemies = MultiTags.FindGameObjectsWithMultiTagCount("Enemy");
     }
-
-
 }
